@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RuralPulse: the right care, in your language</title>
+<meta name="description" content="Speak or type your health problem in any of 22 Indian languages. RuralPulse tells you how urgent it is, what to do right now, and the nearest health centre with a safe route.">
+<meta name="theme-color" content="#0F2A2E">
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Tamil:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#app">Skip to the check</a>
+
+<header class="topbar" id="top">
+  <a class="brand" href="#top" aria-label="RuralPulse home">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M6 38h13l5-12 7 22 6-16 4 6h17" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>RuralPulse</span>
+  </a>
+  <div class="top-actions">
+    <button class="lang-btn" id="langBtn" type="button" aria-haspopup="dialog"><span aria-hidden="true">अ</span><b id="langBtnLabel">English</b></button>
+    <a class="top-link" href="doctor.html">For doctors</a>
+    <button class="gear-btn" id="gearBtn" type="button" aria-label="Settings: API keys and map" title="Settings: Gemini key, map services">⚙</button>
+    <span class="net-dot" id="netDot" title="Connection"></span>
+    <a class="sos" href="tel:108" id="sosBtn" aria-label="Emergency: call 108"><span class="sos-dot"></span>108</a>
+  </div>
+</header>
+
+<!-- ============================================================ HERO -->
+<section class="hero" aria-labelledby="heroTitle">
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="hero-poster" aria-hidden="true"></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <h1 id="heroTitle" data-i18n="hero_title">Where should I go, and how soon?</h1>
+    <p class="hero-lede" data-i18n="hero_lede">Speak or type the problem in your own language. Get the safe next step, what to do right now, and the nearest health centre with a route.</p>
+    <div class="hero-actions">
+      <a class="btn btn-marigold btn-lg" href="#app" data-i18n="check">Check</a>
+      <button class="btn btn-ghost btn-lg" type="button" id="heroTalk"><span class="mic-ico" aria-hidden="true"></span><span data-i18n="talk">Talk to RuralPulse</span></button>
+      <div class="hero-lang" role="group" aria-label="Language / भाषा / மொழி">
+        <span class="hero-lang-ico" aria-hidden="true">🌐</span>
+        <button type="button" data-hl="en" lang="en">English</button>
+        <button type="button" data-hl="hi" lang="hi">हिन्दी</button>
+        <button type="button" data-hl="ta" lang="ta">தமிழ்</button>
+        <button type="button" data-hl="more" class="hl-more" title="More languages">+19</button>
+      </div>
+    </div>
+    <ul class="hero-points">
+      <li>22 Indian languages + English</li><li>Works offline</li><li>Never diagnoses</li>
+    </ul>
+  </div>
+  <button class="motion-toggle" id="motionToggle" type="button" aria-pressed="false">Pause animation</button>
+</section>
+
+<!-- ============================================================ APP -->
+<main id="app" class="app">
+  <div class="app-shell">
+    <div class="app-top">
+      <ol class="steps" aria-label="Progress">
+        <li class="on" data-step="1"><span>1</span><b data-i18n="describe">What is the problem?</b></li>
+        <li data-step="2"><span>2</span><b data-i18n="confirm_title">Is this right?</b></li>
+        <li data-step="3"><span>3</span><b data-i18n="quick_dos">Do this now</b></li>
+      </ol>
+      <span class="engine-chip" id="engineChip" title=""><span class="dot"></span><span id="engineLabel">Starting…</span></span>
+    </div>
+
+    <!-- ---------- screen 1: describe -->
+    <form class="screen" data-screen="describe" id="describeForm" autocomplete="off">
+      <div class="who seg" role="radiogroup" aria-label="Who is using RuralPulse">
+        <button type="button" role="radio" aria-checked="true" data-mode="patient"><span aria-hidden="true">🧑‍🌾</span> <span data-i18n="who_patient">Patient or family</span></button>
+        <button type="button" role="radio" aria-checked="false" data-mode="asha"><span aria-hidden="true">🩺</span> <span data-i18n="who_asha">ASHA / health worker</span></button>
+      </div>
+
+      <div class="speak-row">
+        <button type="button" class="big-mic" id="micBtn" aria-label="Tap and speak"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12h-2Z" fill="currentColor"/></svg></button>
+        <div class="speak-text">
+          <label for="msg" class="q-title" data-i18n="describe">What is the problem?</label>
+          <span class="hint" id="micHint" data-i18n="describe_hint">Speak or type in your own words</span>
+        </div>
+        <div class="hero-lang app-lang" role="group" aria-label="Language / भाषा / மொழி">
+          <span class="hero-lang-ico" aria-hidden="true">🌐</span>
+          <button type="button" data-hl="en" lang="en">English</button>
+          <button type="button" data-hl="hi" lang="hi">हिन्दी</button>
+          <button type="button" data-hl="ta" lang="ta">தமிழ்</button>
+          <button type="button" data-hl="more" class="hl-more" title="More languages">+19</button>
+        </div>
+      </div>
+      <textarea id="msg" rows="3" maxlength="2000" required></textarea>
+      <div class="live-flag" id="liveFlag" role="alert" hidden></div>
+
+      <details class="tap-panel" open>
+        <summary data-i18n="where_hurt">Or tap where it hurts</summary>
+        <div class="tap-grid">
+          <svg class="body-map" id="bodyMap" viewBox="0 0 160 300" role="group" aria-label="Body map">
+            <g class="body-fill">
+              <circle cx="80" cy="34" r="22"/><rect x="70" y="54" width="20" height="14" rx="5"/>
+              <path d="M44 72q36-10 72 0l6 74q-42 10-84 0z"/><path d="M48 146q32 8 64 0l-4 38q-28 8-56 0z"/>
+              <path d="M44 74l-18 70 12 4 20-60z"/><path d="M116 74l18 70-12 4-20-60z"/>
+              <path d="M54 184l-6 100h16l12-96z"/><path d="M106 184l6 100H96l-12-96z"/>
+            </g>
+            <g class="zones">
+              <circle data-c="headache" cx="80" cy="34" r="22"><title>Head</title></circle>
+              <rect data-c="sore_throat" x="68" y="54" width="24" height="15" rx="5"><title>Throat</title></rect>
+              <path data-c="chest_pain" d="M46 74q34-9 68 0l2 34H44z"><title>Chest</title></path>
+              <path data-c="stomach_pain" d="M44 110h72l4 36q-40 10-80 0z"><title>Stomach</title></path>
+              <path data-c="joint_pain" d="M44 74l-18 70 12 4 20-60zM116 74l18 70-12 4-20-60zM54 184l-6 100h16l12-96zM106 184l6 100H96l-12-96z"><title>Arms and legs</title></path>
+              <path data-c="burning_urination" d="M48 148q32 8 64 0l-4 36q-28 8-56 0z"><title>Lower belly</title></path>
+            </g>
+          </svg>
+          <div class="sym-icons" id="symIcons"></div>
+        </div>
+      </details>
+
+      <fieldset class="asha-fields" id="ashaFields" hidden>
+        <legend>ASHA</legend>
+        <label><span data-i18n="age">Age</span><input type="number" id="ashaAge" min="0" max="120" inputmode="numeric"></label>
+        <label>SpO<sub>2</sub> %<input type="number" id="ashaSpo2" min="50" max="100" inputmode="numeric"></label>
+        <label>Temp °C<input type="number" id="ashaTemp" min="30" max="45" step="0.1" inputmode="decimal"></label>
+        <label>🤰<select id="ashaPreg"><option value="">–</option><option value="yes" data-i18n="yes">Yes</option><option value="no" data-i18n="no">No</option><option value="na" data-i18n="na">Not applicable</option></select></label>
+      </fieldset>
+
+      <button class="btn btn-ink btn-block btn-lg" type="submit" id="checkBtn" data-i18n="check">Check</button>
+
+      <details class="small-print">
+        <summary>Examples and demo settings</summary>
+        <div class="examples" id="examples"></div>
+        <label class="inline">Assessment time <input type="datetime-local" id="atTime"></label>
+        <label class="inline"><input type="checkbox" id="lowBw"> Low bandwidth mode (no 3D, no map tiles)</label>
+        <label class="inline"><input type="checkbox" id="consent"> Save an anonymised copy of my words for quality review (off by default)</label>
+      </details>
+    </form>
+
+    <!-- ---------- screen 2: confirm -->
+    <form class="screen" data-screen="confirm" id="confirmForm" hidden>
+      <div class="readback" id="readback" aria-live="polite"></div>
+      <button type="button" class="listen" data-speak="readback"><span aria-hidden="true">🔊</span> <span data-i18n="read_aloud">Listen</span></button>
+      <p class="hint" data-i18n="remove_wrong">Tap × to remove anything wrong</p>
+      <div id="symChips" class="sym-chips"></div>
+      <label class="add-sym"><span data-i18n="add_sym">Add a symptom</span> <select id="addSym"></select></label>
+      <div class="qgrid" id="questions"></div>
+      <div class="row">
+        <button class="btn btn-ink btn-lg" type="submit" id="confirmBtn" data-i18n="yes">Yes</button>
+        <button class="btn btn-quiet" type="button" data-action="restart" data-i18n="back">Back</button>
+      </div>
+    </form>
+
+    <!-- ---------- screen 3: result -->
+    <section class="screen" data-screen="result" id="resultScreen" hidden aria-live="polite">
+      <div id="verdict"></div>
+      <div class="tabs" role="tablist" id="resultTabs">
+        <button role="tab" aria-selected="true" data-tab="now"><span aria-hidden="true">✋</span> <span data-i18n="quick_dos">Do this now</span></button>
+        <button role="tab" aria-selected="false" data-tab="care"><span aria-hidden="true">📍</span> <span data-i18n="nearest">Nearest care</span></button>
+        <button role="tab" aria-selected="false" data-tab="slip"><span aria-hidden="true">🧾</span> <span data-i18n="slip">Visit slip</span></button>
+        <button role="tab" aria-selected="false" data-tab="why"><span aria-hidden="true">ℹ️</span> <span>Why</span></button>
+      </div>
+      <div class="tab-panel" data-panel="now" role="tabpanel"></div>
+      <div class="tab-panel" data-panel="care" role="tabpanel" hidden>
+        <div id="locBox" class="loc-box">
+          <p class="q-title" data-i18n="find_near">Find care near me</p>
+          <div class="loc-row">
+            <button class="btn btn-ink" type="button" id="gpsBtn"><span aria-hidden="true">📍</span> <span data-i18n="use_gps">Use my location</span></button>
+            <form id="placeForm" class="place-form"><input id="placeInput" type="search" autocomplete="off" aria-label="Village, town or PIN code"><button class="btn btn-quiet" type="submit" aria-label="Search">→</button></form>
+          </div>
+          <div id="placeResults" class="place-results"></div>
+          <p class="hint" id="locStatus"></p>
+        </div>
+        <div id="mapWrap" class="map-wrap" hidden><div id="map" class="map" aria-label="Map of nearby health centres"></div><div id="routeInfo" class="route-info" hidden></div></div>
+        <div id="careList"></div>
+        <div id="notifyBox"></div>
+        <details class="sub" id="dirDetails"><summary>Verified demo directory (always available offline)</summary><div id="dirList"></div></details>
+      </div>
+      <div class="tab-panel" data-panel="slip" role="tabpanel" hidden></div>
+      <div class="tab-panel" data-panel="why" role="tabpanel" hidden></div>
+      <button class="btn btn-quiet btn-block" type="button" data-action="restart" data-i18n="new_check">New check</button>
+    </section>
+  </div>
+</main>
+
+<!-- ============================================================ ABOUT (judges, health officials) -->
+<section class="about" id="about" aria-labelledby="aboutTitle">
+  <div class="wrap">
+    <h2 id="aboutTitle">How RuralPulse works</h2>
+    <p class="lede">A care-navigation aid, not a diagnosis tool. Rules decide urgency; AI only helps understand language and can only ever escalate.</p>
+    <div class="tabs about-tabs" role="tablist" id="aboutTabs">
+      <button role="tab" aria-selected="true" data-tab="how">How it decides</button>
+      <button role="tab" aria-selected="false" data-tab="safety">Safety rules</button>
+      <button role="tab" aria-selected="false" data-tab="lang">Languages</button>
+      <button role="tab" aria-selected="false" data-tab="data">Data sources</button>
+      <button role="tab" aria-selected="false" data-tab="eval">Evaluation</button>
+      <button role="tab" aria-selected="false" data-tab="evidence">Evidence</button>
+    </div>
+
+    <div class="tab-panel" data-panel="how">
+      <ol class="flow">
+        <li><b>Danger signs first</b><span>16 red-flag rules run on the raw words before anything else, even offline. A match shows 108 at once.</span></li>
+        <li><b>Understand</b><span>Offline vocabulary for 14 languages. With a Gemini key, AI helps with the rest, under a strict schema. It can only add, never remove, a danger sign.</span></li>
+        <li><b>Read back</b><span>"You said… I understood… Is this right?" in the patient's language. Only missing facts are asked.</span></li>
+        <li><b>Versioned urgency rules</b><span>Emergency, today, 2-3 days, self-care, or "I can't safely decide". Children, older adults, pregnancy and long-term illness raise the level.</span></li>
+        <li><b>Nearest right place</b><span>OpenStreetMap health centres near the patient, government first, hospitals only for emergencies, with fastest and main-road routes.</span></li>
+        <li><b>Doctor gets ready</b><span>The ASHA sends the case; the nearest doctor's dashboard rings with symptoms and a prep list. The doctor's medicine card reaches the patient in their language.</span></li>
+      </ol>
+    </div>
+    <div class="tab-panel" data-panel="safety" hidden>
+      <ul class="never">
+        <li><b>Never names a disease.</b> Symptom checkers get the first diagnosis right only 19–38% of the time.</li>
+        <li><b>Never gives medicine doses.</b> Only the doctor's prescription does, shown exactly as written.</li>
+        <li><b>AI cannot lower urgency.</b> Patient edits cannot remove a danger sign either.</li>
+        <li><b>Says when it is unsure.</b> Untested language, missing age or duration: hand-over to the ASHA or 104.</li>
+        <li><b>Shows where data comes from.</b> Verified records, OpenStreetMap places and listed doctors are labelled differently.</li>
+        <li><b>Ignores hidden instructions.</b> "Ignore previous instructions" is detected and logged.</li>
+      </ul>
+      <details class="sub"><summary>Danger-sign rules <span class="ver" id="protoVersion"></span></summary>
+        <div class="table-scroll"><table id="rfTable"><thead><tr><th>Rule</th><th>Danger sign</th><th>Action</th></tr></thead><tbody></tbody></table></div></details>
+      <details class="sub"><summary>Urgency decision table</summary>
+        <div class="table-scroll"><table id="rulesTable"><thead><tr><th>Rule</th><th>Outcome</th><th>When</th></tr></thead><tbody></tbody></table></div></details>
+    </div>
+    <div class="tab-panel" data-panel="lang" hidden>
+      <p>All 22 languages of the Eighth Schedule plus English. Each has an honest tier:</p>
+      <div class="tier-key"><span class="tier validated">Tested</span> offline rules, tested demo cases <span class="tier core">Offline draft</span> offline vocabulary + full screens, needs native-speaker review <span class="tier assisted">AI-assisted</span> needs the Gemini layer or an ASHA</div>
+      <div class="lang-table" id="langTable"></div>
+    </div>
+    <div class="tab-panel" data-panel="data" hidden>
+      <ul class="plain">
+        <li><b>Verified demo directory</b>: 11 synthetic facilities with source, verifier and date (stale and unverified examples included).</li>
+        <li><b>OpenStreetMap</b>: real health centres and pharmacies around the patient, via Overpass. Community data, shown as not verified.</li>
+        <li><b>Doctors listing</b>: <span id="docCount">99</span> listings from the pan-India doctors dataset, matched by distance and specialty. Not NMC-verified; locations are approximate.</li>
+        <li><b>Routing</b>: OSRM over OpenStreetMap roads.</li>
+      </ul>
+      <details class="sub"><summary>Verified demo directory</summary><div class="table-scroll"><table id="facTable"><thead><tr><th>Facility</th><th>Hours now</th><th>Verified</th></tr></thead><tbody></tbody></table></div></details>
+    </div>
+    <div class="tab-panel" data-panel="eval" hidden>
+      <p>Harm-weighted metrics on <span id="evalN">41</span> synthetic cases (pending clinician review).</p>
+      <button class="btn btn-ink" type="button" id="runEval">Run the safety suite</button>
+      <div id="evalOut" class="eval-out" hidden></div>
+    </div>
+    <div class="tab-panel" data-panel="evidence" hidden>
+      <div class="ev-cols">
+        <div><h3>Supported</h3><p>Telehealth works across rural contexts; triage is more reliable than diagnosis; most eSanjeevani use (93%) is assisted by health workers.</p></div>
+        <div><h3>Promising, untested here</h3><p>Read-back confirmation, hybrid facility matching and AI translation for low-resource languages: RuralPulse is built to measure them.</p></div>
+        <div><h3>Not claimed</h3><p>That it saves lives or money, handles any dialect, or that OSM and listing data are current. These are hypotheses to test.</p></div>
+      </div>
+      <details class="sub"><summary>References</summary>
+        <ol class="refs"><li>Wallace et al., 2021. Diagnostic and triage accuracy of symptom checkers. npj Digital Medicine.</li><li>Sood et al., 2025. Adoption of eSanjeevani. Oxford Open Digital Health.</li><li>C &amp; J, 2024. eSanjeevani in rural South India. BVMJ.</li><li>Lestari et al., 2024. Barriers to rural telemedicine. CEGH.</li><li>Amugongo et al., 2025. RAG in healthcare. PLOS Digital Health.</li><li>Singh et al., 2024. INDIC QA Benchmark. NAACL.</li><li>WHO, 2024. Ethics and governance of AI for health.</li></ol>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <p><b>RuralPulse</b> is a hackathon prototype for care navigation. Not a medical device. Demo directory facilities are fictional; OpenStreetMap and listing data are not verified.</p>
+    <div class="numbers">
+      <a href="tel:108"><b>108</b> Ambulance</a><a href="tel:112"><b>112</b> Emergency</a><a href="tel:14416"><b>14416</b> Tele-MANAS</a><a href="tel:104"><b>104</b> Health helpline</a><a href="tel:14555"><b>14555</b> Ayushman Bharat</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================ SHEETS -->
+<dialog class="sheet" id="langSheet" aria-labelledby="langTitle">
+  <h2 id="langTitle" data-i18n="choose_lang">Choose your language</h2>
+  <div class="lang-grid" id="langGrid"></div>
+  <form method="dialog"><button class="btn btn-quiet btn-block">×</button></form>
+</dialog>
+
+<dialog class="sheet voice" id="voiceSheet" aria-labelledby="voiceTitle">
+  <div class="voice-head"><h2 id="voiceTitle" data-i18n="talk">Talk to RuralPulse</h2><span class="badge" id="voiceMode"></span></div>
+  <div class="voice-lang" id="voiceLangRow" hidden><label for="voiceLang">🎙 I will speak in</label><select id="voiceLang"></select></div>
+  <div class="orb-wrap"><div class="orb" id="orb"><span></span></div></div>
+  <p class="voice-status" id="voiceStatus" data-i18n="talk_hint">Speak naturally.</p>
+  <div class="voice-flag" id="voiceFlag" hidden></div>
+  <div class="transcript" id="transcript" aria-live="polite"></div>
+  <form class="voice-type" id="voiceType"><input id="voiceText" autocomplete="off" aria-label="Type instead"><button class="btn btn-quiet" type="submit">→</button></form>
+  <div class="row"><button class="btn btn-ink" type="button" id="voiceStop" data-i18n="stop">Stop</button><button class="btn btn-quiet" type="button" id="voiceToCheck" data-i18n="check">Check</button></div>
+</dialog>
+
+<dialog class="sheet" id="notifySheet" aria-labelledby="notifyTitle">
+  <h2 id="notifyTitle" data-i18n="send_doctor">Notify the nearest doctor</h2>
+  <form id="notifyForm">
+    <p class="notify-target" id="notifyTarget"></p>
+    <label><span data-i18n="patient">Patient</span><input id="nfName" autocomplete="off" maxlength="60"></label>
+    <label><span>📱 Patient phone (for SMS)</span><input id="nfPhone" type="tel" inputmode="tel" maxlength="14"></label>
+    <label><span data-i18n="book">Book a visit</span><select id="nfSlot"></select></label>
+    <div id="ashaAuth" hidden>
+      <label><span>ASHA phone</span><input id="nfAshaPhone" type="tel" inputmode="tel" maxlength="14"></label>
+      <div class="otp-row"><button class="btn btn-quiet" type="button" id="nfOtpBtn">Send OTP</button><input id="nfOtp" inputmode="numeric" maxlength="6" placeholder="OTP" aria-label="OTP"></div>
+      <p class="hint" id="nfOtpHint"></p>
+      <label><span>ASHA name</span><input id="nfAshaName" maxlength="60"></label>
+    </div>
+    <p class="hint">Shared with the selected facility only. No sign-up needed.</p>
+    <div class="row"><button class="btn btn-ink" type="submit" id="nfSend" data-i18n="send_doctor">Notify</button><button class="btn btn-quiet" type="button" value="cancel" id="nfCancel" data-i18n="back">Back</button></div>
+  </form>
+</dialog>
+
+<dialog class="sheet" id="settingsSheet" aria-labelledby="setTitle">
+  <h2 id="setTitle">⚙ Settings</h2>
+  <form id="settingsForm">
+    <p class="hint" id="setWhere"></p>
+    <fieldset class="set-group"><legend>🤖 Gemini AI (voice in any language, translation, understanding)</legend>
+      <p class="hint">Free key: <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a>. Stays on this computer's server; never shown to other users.</p>
+      <div class="key-row"><input id="setKey" type="password" autocomplete="off" placeholder="Paste API key (starts with AIza…)"><button type="button" class="btn btn-quiet btn-sm" id="setKeyShow">Show</button></div>
+      <p class="set-status" id="setKeyStatus"></p>
+    </fieldset>
+    <fieldset class="set-group"><legend>🗺 Map and location (OpenStreetMap)</legend>
+      <p class="hint">OpenStreetMap needs no key. For heavy use, point these at your own servers or a provider (MapTiler, LocationIQ, Stadia) and paste their URL with your key.</p>
+      <label>Map tiles<select id="setTilePreset">
+        <option value="https://tile.openstreetmap.org/{z}/{x}/{y}.png">OpenStreetMap standard</option>
+        <option value="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png">OpenStreetMap Humanitarian (clear for rural areas)</option>
+        <option value="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png">CARTO Voyager (light, fast)</option>
+        <option value="custom">Custom URL with key…</option></select></label>
+      <label id="setTileCustomWrap" hidden>Custom tile URL<input id="setTileCustom" placeholder="https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=YOUR_KEY"></label>
+      <details class="sub"><summary>Advanced: place search, health centres and routing services</summary>
+        <label>Overpass (health centres)<input id="setOverpass"></label>
+        <label>Nominatim (place / PIN search)<input id="setNominatim"></label>
+        <label>OSRM (routing)<input id="setOsrm"></label>
+      </details>
+    </fieldset>
+    <label class="inline-check"><input type="checkbox" id="setSave" checked> Remember after restart (save to .env)</label>
+    <div class="row"><button class="btn btn-ink" type="submit" id="setApply">Test and apply</button><button class="btn btn-quiet" type="button" id="setClose">Close</button></div>
+  </form>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="assets/js/engine.js"></script>
+<script src="assets/js/geo.js"></script>
+<script src="assets/vendor/leaflet/leaflet.js" defer></script>
+<script src="assets/js/slip.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/where.js"></script>
+<script src="assets/js/voice.js"></script>
+<script src="assets/js/settings.js"></script>
+<script src="assets/vendor/three.min.js" defer></script>
+<script src="assets/vendor/three-postfx.js" defer></script>
+<script src="assets/js/scene.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,5052 @@
+{
+ "version": "RP-PROTOCOL-1.1-demo",
+ "status": "DEMO protocol authored by the RuralPulse team. Pending clinician review. Not for clinical use.",
+ "last_reviewed": "2026-10-07",
+ "emergency_numbers": {
+  "ambulance": {
+   "number": "108",
+   "label": {
+    "en": "Ambulance",
+    "hi": "एम्बुलेंस",
+    "ta": "ஆம்புலன்ஸ்"
+   }
+  },
+  "emergency": {
+   "number": "112",
+   "label": {
+    "en": "National emergency",
+    "hi": "राष्ट्रीय आपातकाल",
+    "ta": "தேசிய அவசர எண்"
+   }
+  },
+  "mental_health": {
+   "number": "14416",
+   "label": {
+    "en": "Tele-MANAS mental health",
+    "hi": "टेली-मानस मानसिक स्वास्थ्य",
+    "ta": "டெலி-மானஸ் மனநலம்"
+   }
+  },
+  "health_helpline": {
+   "number": "104",
+   "label": {
+    "en": "Health helpline (most states)",
+    "hi": "स्वास्थ्य हेल्पलाइन",
+    "ta": "சுகாதார உதவி எண்"
+   }
+  }
+ },
+ "supported_languages": {
+  "en": {
+   "name": "English",
+   "native": "English",
+   "script": "Latin",
+   "speech": "en-IN",
+   "tier": "validated",
+   "fallback": "en",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "hi": {
+   "name": "Hindi",
+   "native": "हिन्दी",
+   "script": "Devanagari",
+   "speech": "hi-IN",
+   "tier": "validated",
+   "fallback": "en",
+   "rtl": false,
+   "romanized": true,
+   "ui_pack": true
+  },
+  "ta": {
+   "name": "Tamil",
+   "native": "தமிழ்",
+   "script": "Tamil",
+   "speech": "ta-IN",
+   "tier": "validated",
+   "fallback": "en",
+   "rtl": false,
+   "romanized": true,
+   "ui_pack": true
+  },
+  "bn": {
+   "name": "Bengali",
+   "native": "বাংলা",
+   "script": "Bengali",
+   "speech": "bn-IN",
+   "tier": "core",
+   "fallback": "en",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "te": {
+   "name": "Telugu",
+   "native": "తెలుగు",
+   "script": "Telugu",
+   "speech": "te-IN",
+   "tier": "core",
+   "fallback": "en",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "mr": {
+   "name": "Marathi",
+   "native": "मराठी",
+   "script": "Devanagari",
+   "speech": "mr-IN",
+   "tier": "core",
+   "fallback": "hi",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "gu": {
+   "name": "Gujarati",
+   "native": "ગુજરાતી",
+   "script": "Gujarati",
+   "speech": "gu-IN",
+   "tier": "core",
+   "fallback": "hi",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "kn": {
+   "name": "Kannada",
+   "native": "ಕನ್ನಡ",
+   "script": "Kannada",
+   "speech": "kn-IN",
+   "tier": "core",
+   "fallback": "en",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "ml": {
+   "name": "Malayalam",
+   "native": "മലയാളം",
+   "script": "Malayalam",
+   "speech": "ml-IN",
+   "tier": "core",
+   "fallback": "en",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "pa": {
+   "name": "Punjabi",
+   "native": "ਪੰਜਾਬੀ",
+   "script": "Gurmukhi",
+   "speech": "pa-IN",
+   "tier": "core",
+   "fallback": "hi",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "or": {
+   "name": "Odia",
+   "native": "ଓଡ଼ିଆ",
+   "script": "Odia",
+   "speech": "or-IN",
+   "tier": "core",
+   "fallback": "hi",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "ur": {
+   "name": "Urdu",
+   "native": "اردو",
+   "script": "Perso-Arabic",
+   "speech": "ur-IN",
+   "tier": "core",
+   "fallback": "hi",
+   "rtl": true,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "as": {
+   "name": "Assamese",
+   "native": "অসমীয়া",
+   "script": "Bengali-Assamese",
+   "speech": "as-IN",
+   "tier": "core",
+   "fallback": "bn",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "ne": {
+   "name": "Nepali",
+   "native": "नेपाली",
+   "script": "Devanagari",
+   "speech": "ne-NP",
+   "tier": "core",
+   "fallback": "hi",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": true
+  },
+  "mai": {
+   "name": "Maithili",
+   "native": "मैथिली",
+   "script": "Devanagari",
+   "speech": "mai-IN",
+   "tier": "assisted",
+   "fallback": "hi",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": false
+  },
+  "kok": {
+   "name": "Konkani",
+   "native": "कोंकणी",
+   "script": "Devanagari",
+   "speech": "kok-IN",
+   "tier": "assisted",
+   "fallback": "mr",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": false
+  },
+  "doi": {
+   "name": "Dogri",
+   "native": "डोगरी",
+   "script": "Devanagari",
+   "speech": "doi-IN",
+   "tier": "assisted",
+   "fallback": "hi",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": false
+  },
+  "brx": {
+   "name": "Bodo",
+   "native": "बड़ो",
+   "script": "Devanagari",
+   "speech": "brx-IN",
+   "tier": "assisted",
+   "fallback": "hi",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": false
+  },
+  "sa": {
+   "name": "Sanskrit",
+   "native": "संस्कृतम्",
+   "script": "Devanagari",
+   "speech": "sa-IN",
+   "tier": "assisted",
+   "fallback": "hi",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": false
+  },
+  "ks": {
+   "name": "Kashmiri",
+   "native": "کٲشُر",
+   "script": "Perso-Arabic",
+   "speech": "ks-IN",
+   "tier": "assisted",
+   "fallback": "ur",
+   "rtl": true,
+   "romanized": false,
+   "ui_pack": false
+  },
+  "sd": {
+   "name": "Sindhi",
+   "native": "سنڌي",
+   "script": "Perso-Arabic",
+   "speech": "sd-IN",
+   "tier": "assisted",
+   "fallback": "ur",
+   "rtl": true,
+   "romanized": false,
+   "ui_pack": false
+  },
+  "mni": {
+   "name": "Manipuri (Meitei)",
+   "native": "ꯃꯤꯇꯩꯂꯣꯟ",
+   "script": "Meitei Mayek",
+   "speech": "mni-IN",
+   "tier": "assisted",
+   "fallback": "bn",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": false
+  },
+  "sat": {
+   "name": "Santali",
+   "native": "ᱥᱟᱱᱛᱟᱲᱤ",
+   "script": "Ol Chiki",
+   "speech": "sat-IN",
+   "tier": "assisted",
+   "fallback": "hi",
+   "rtl": false,
+   "romanized": false,
+   "ui_pack": false
+  }
+ },
+ "script_ranges": [
+  {
+   "lang": "hi",
+   "name": "Devanagari",
+   "from": "0900",
+   "to": "097F"
+  },
+  {
+   "lang": "ta",
+   "name": "Tamil",
+   "from": "0B80",
+   "to": "0BFF"
+  },
+  {
+   "lang": "bn",
+   "name": "Bengali",
+   "from": "0980",
+   "to": "09FF"
+  },
+  {
+   "lang": "pa",
+   "name": "Gurmukhi",
+   "from": "0A00",
+   "to": "0A7F"
+  },
+  {
+   "lang": "gu",
+   "name": "Gujarati",
+   "from": "0A80",
+   "to": "0AFF"
+  },
+  {
+   "lang": "or",
+   "name": "Odia",
+   "from": "0B00",
+   "to": "0B7F"
+  },
+  {
+   "lang": "te",
+   "name": "Telugu",
+   "from": "0C00",
+   "to": "0C7F"
+  },
+  {
+   "lang": "kn",
+   "name": "Kannada",
+   "from": "0C80",
+   "to": "0CFF"
+  },
+  {
+   "lang": "ml",
+   "name": "Malayalam",
+   "from": "0D00",
+   "to": "0D7F"
+  },
+  {
+   "lang": "ur",
+   "name": "Perso-Arabic",
+   "from": "0600",
+   "to": "06FF"
+  },
+  {
+   "lang": "sat",
+   "name": "Ol Chiki",
+   "from": "1C50",
+   "to": "1C7F"
+  },
+  {
+   "lang": "mni",
+   "name": "Meitei Mayek",
+   "from": "ABC0",
+   "to": "ABFF"
+  }
+ ],
+ "roman_hints": {
+  "en": [
+   "i",
+   "have",
+   "has",
+   "my",
+   "pain",
+   "for",
+   "days",
+   "since",
+   "the",
+   "and",
+   "is",
+   "fever",
+   "cough",
+   "feel",
+   "not",
+   "he",
+   "she",
+   "her",
+   "his",
+   "since",
+   "very",
+   "with",
+   "a",
+   "of",
+   "last",
+   "week"
+  ],
+  "hi": [
+   "hai",
+   "hain",
+   "mein",
+   "se",
+   "ka",
+   "ki",
+   "ko",
+   "nahi",
+   "nahin",
+   "bahut",
+   "dard",
+   "din",
+   "bukhar",
+   "khansi",
+   "mera",
+   "meri",
+   "mujhe",
+   "raha",
+   "rahi",
+   "ho",
+   "aur",
+   "kal",
+   "bhi",
+   "tha",
+   "thi",
+   "pet",
+   "sar",
+   "sir"
+  ],
+  "ta": [
+   "iruku",
+   "irukku",
+   "irukudhu",
+   "vali",
+   "naal",
+   "naala",
+   "romba",
+   "illa",
+   "illai",
+   "enaku",
+   "enakku",
+   "kaichal",
+   "irumal",
+   "aagudhu",
+   "mudiyala",
+   "ennoda",
+   "en",
+   "amma",
+   "appa",
+   "paiyan",
+   "ponnu",
+   "vayasu",
+   "konjam",
+   "thalai",
+   "vayiru"
+  ],
+  "or": [
+   "mor",
+   "mora",
+   "mote",
+   "heli",
+   "heuchi",
+   "hoichi",
+   "paruni",
+   "dukhuchi",
+   "dukhena",
+   "achhi",
+   "tini",
+   "dina",
+   "kariduchi",
+   "buka",
+   "jara",
+   "chhua",
+   "khaibaku",
+   "swasa"
+  ]
+ },
+ "unsupported_language_names": {
+  "unknown": "an unrecognised language",
+  "or-roman": "Odia (romanised)"
+ },
+ "concepts": {
+  "chest_pain": {
+   "category": "cardiac",
+   "label": {
+    "en": "chest pain",
+    "hi": "सीने में दर्द",
+    "ta": "நெஞ்சு வலி",
+    "bn": "বুকে ব্যথা",
+    "as": "বুকুত বিষ",
+    "te": "ఛాతీ నొప్పి",
+    "mr": "छातीत दुखत",
+    "gu": "છાતીમાં દુખાવો",
+    "kn": "ಎದೆ ನೋವು",
+    "ml": "നെഞ്ചുവേദന",
+    "pa": "ਛਾਤੀ ਵਿੱਚ ਦਰਦ",
+    "or": "ଛାତି ଯନ୍ତ୍ରଣା",
+    "ur": "سینے میں درد",
+    "ne": "छाती दुख"
+   },
+   "patterns": {
+    "en": [
+     "chest pain",
+     "pain in chest",
+     "pain in my chest",
+     "chest tightness",
+     "chest pressure",
+     "heart pain"
+    ],
+    "hi": [
+     "seene mein dard",
+     "seene me dard",
+     "sine me dard",
+     "chhati me dard",
+     "chhati mein dard",
+     "chati me dard",
+     "chati mein dard",
+     "सीने में दर्द",
+     "सीने मे दर्द",
+     "छाती में दर्द",
+     "सीने में दबाव",
+     "dil me dard"
+    ],
+    "ta": [
+     "நெஞ்சு வலி",
+     "நெஞ்சுவலி",
+     "நெஞ்சில் வலி",
+     "nenju vali",
+     "nenjuvali",
+     "nenju valikuthu",
+     "nenju valikudhu",
+     "nenjula vali"
+    ],
+    "bn": [
+     "বুকে ব্যথা",
+     "বুক ব্যথা",
+     "বুকে চাপ"
+    ],
+    "as": [
+     "বুকুত বিষ",
+     "বুকুৰ বিষ"
+    ],
+    "te": [
+     "ఛాతీ నొప్పి",
+     "ఛాతిలో నొప్పి",
+     "గుండె నొప్పి"
+    ],
+    "mr": [
+     "छातीत दुखत",
+     "छातीत दुखणे",
+     "छातीत वेदना"
+    ],
+    "gu": [
+     "છાતીમાં દુખાવો",
+     "છાતીમાં દુઃખાવો",
+     "છાતીમાં દુખે"
+    ],
+    "kn": [
+     "ಎದೆ ನೋವು",
+     "ಎದೆನೋವು"
+    ],
+    "ml": [
+     "നെഞ്ചുവേദന",
+     "നെഞ്ച് വേദന",
+     "നെഞ്ചിൽ വേദന"
+    ],
+    "pa": [
+     "ਛਾਤੀ ਵਿੱਚ ਦਰਦ",
+     "ਛਾਤੀ ਦਰਦ",
+     "ਛਾਤੀ ਵਿਚ ਦਰਦ"
+    ],
+    "or": [
+     "ଛାତି ଯନ୍ତ୍ରଣା",
+     "ଛାତି ବିନ୍ଧା",
+     "ଛାତିରେ ଯନ୍ତ୍ରଣା"
+    ],
+    "ur": [
+     "سینے میں درد",
+     "سینے میں دباؤ"
+    ],
+    "ne": [
+     "छाती दुख",
+     "छातीमा दुख",
+     "छाती दुखेको"
+    ]
+   }
+  },
+  "breathing_difficulty": {
+   "category": "respiratory",
+   "label": {
+    "en": "difficulty breathing",
+    "hi": "सांस लेने में तकलीफ",
+    "ta": "மூச்சுத் திணறல்",
+    "bn": "শ্বাসকষ্ট",
+    "as": "উশাহ লোৱাত কষ্ট",
+    "te": "ఊపిరి ఆడటం లేదు",
+    "mr": "श्वास घेण्यास त्रास",
+    "gu": "શ્વાસ લેવામાં તકલીફ",
+    "kn": "ಉಸಿರಾಟದ ತೊಂದರೆ",
+    "ml": "ശ്വാസം മുട്ടൽ",
+    "pa": "ਸਾਹ ਲੈਣ ਵਿੱਚ ਤਕਲੀਫ਼",
+    "or": "ଶ୍ୱାସ କଷ୍ଟ",
+    "ur": "سانس لینے میں دشواری",
+    "ne": "सास फेर्न गाह्रो"
+   },
+   "patterns": {
+    "en": [
+     "difficulty breathing",
+     "trouble breathing",
+     "can't breathe",
+     "cannot breathe",
+     "short of breath",
+     "shortness of breath",
+     "breathless",
+     "gasping"
+    ],
+    "hi": [
+     "saans lene mein takleef",
+     "saans lene me takleef",
+     "saans lene me dikkat",
+     "saans nahi",
+     "saans phool",
+     "sans phool",
+     "saas phool",
+     "dum ghut",
+     "सांस लेने में तकलीफ",
+     "सांस लेने में दिक्कत",
+     "साँस लेने में तकलीफ",
+     "सांस नहीं",
+     "सांस फूल",
+     "साँस फूल",
+     "दम घुट"
+    ],
+    "ta": [
+     "மூச்சு விட முடியவில்லை",
+     "மூச்சுத் திணறல்",
+     "மூச்சு திணறல்",
+     "மூச்சுவிட முடியவில்லை",
+     "moochu vida mudiyala",
+     "moochu thinaral",
+     "moochu muttuthu",
+     "mooche vida mudiyala",
+     "swasam vida mudiyala"
+    ],
+    "bn": [
+     "শ্বাসকষ্ট",
+     "শ্বাস নিতে কষ্ট",
+     "নিঃশ্বাস নিতে পারছে না"
+    ],
+    "as": [
+     "উশাহ লোৱাত কষ্ট",
+     "উশাহত কষ্ট"
+    ],
+    "te": [
+     "ఊపిరి ఆడటం లేదు",
+     "శ్వాస తీసుకోవడం కష్టం",
+     "ఆయాసం"
+    ],
+    "mr": [
+     "श्वास घेण्यास त्रास",
+     "दम लागतो",
+     "श्वास लागणे"
+    ],
+    "gu": [
+     "શ્વાસ લેવામાં તકલીફ",
+     "શ્વાસ ચડે"
+    ],
+    "kn": [
+     "ಉಸಿರಾಟದ ತೊಂದರೆ",
+     "ಉಸಿರು ಕಟ್ಟು",
+     "ಉಸಿರಾಡಲು ಕಷ್ಟ"
+    ],
+    "ml": [
+     "ശ്വാസം മുട്ടൽ",
+     "ശ്വാസതടസ്സം",
+     "ശ്വാസം കിട്ടുന്നില്ല"
+    ],
+    "pa": [
+     "ਸਾਹ ਲੈਣ ਵਿੱਚ ਤਕਲੀਫ਼",
+     "ਸਾਹ ਚੜ੍ਹ",
+     "ਸਾਹ ਨਹੀਂ ਆ ਰਿਹਾ"
+    ],
+    "or": [
+     "ଶ୍ୱାସ କଷ୍ଟ",
+     "ନିଶ୍ୱାସ ନେବାରେ କଷ୍ଟ"
+    ],
+    "ur": [
+     "سانس لینے میں دشواری",
+     "سانس لینے میں تکلیف",
+     "سانس پھول"
+    ],
+    "ne": [
+     "सास फेर्न गाह्रो",
+     "सास फुल"
+    ]
+   }
+  },
+  "unconscious": {
+   "category": "neuro",
+   "label": {
+    "en": "unconscious / not responding",
+    "hi": "बेहोश",
+    "ta": "சுயநினைவு இல்லை",
+    "bn": "অজ্ঞান",
+    "as": "অজ্ঞান",
+    "te": "స్పృహ లేదు",
+    "mr": "बेशुद्ध",
+    "gu": "બેભાન",
+    "kn": "ಪ್ರಜ್ಞೆ ಇಲ್ಲ",
+    "ml": "ബോധം ഇല്ല",
+    "pa": "ਬੇਹੋਸ਼",
+    "or": "ଚେତା ନାହିଁ",
+    "ur": "بے ہوش",
+    "ne": "बेहोस"
+   },
+   "patterns": {
+    "en": [
+     "unconscious",
+     "not responding",
+     "unresponsive",
+     "passed out",
+     "fainted",
+     "collapsed"
+    ],
+    "hi": [
+     "behosh",
+     "behoshi",
+     "hosh nahi",
+     "बेहोश",
+     "होश नहीं"
+    ],
+    "ta": [
+     "சுயநினைவு இல்லை",
+     "நினைவு இல்லை",
+     "மயங்கி விழுந்தார்",
+     "மயங்கி விழுந்தாள்",
+     "ninaivu illa",
+     "suyaninaivu illai",
+     "mayangi vizhundhar",
+     "mayangi vizhunthutaanga"
+    ],
+    "bn": [
+     "অজ্ঞান",
+     "জ্ঞান নেই"
+    ],
+    "as": [
+     "অজ্ঞান",
+     "জ্ঞান নাই"
+    ],
+    "te": [
+     "స్పృహ లేదు",
+     "స్పృహ తప్పి"
+    ],
+    "mr": [
+     "बेशुद्ध",
+     "शुद्ध नाही"
+    ],
+    "gu": [
+     "બેભાન",
+     "ભાન નથી"
+    ],
+    "kn": [
+     "ಪ್ರಜ್ಞೆ ಇಲ್ಲ",
+     "ಪ್ರಜ್ಞೆ ತಪ್ಪಿ",
+     "ಪ್ರಜ್ಞಾಹೀನ"
+    ],
+    "ml": [
+     "ബോധം ഇല്ല",
+     "ബോധമില്ല",
+     "ബോധം പോയി"
+    ],
+    "pa": [
+     "ਬੇਹੋਸ਼",
+     "ਹੋਸ਼ ਨਹੀਂ"
+    ],
+    "or": [
+     "ଚେତା ନାହିଁ",
+     "ଅଚେତ",
+     "ବେହୋସ"
+    ],
+    "ur": [
+     "بے ہوش",
+     "ہوش نہیں"
+    ],
+    "ne": [
+     "बेहोस"
+    ]
+   }
+  },
+  "seizure": {
+   "category": "neuro",
+   "label": {
+    "en": "fits / seizure",
+    "hi": "दौरा / झटके",
+    "ta": "வலிப்பு",
+    "bn": "খিঁচুনি",
+    "as": "মৃগী",
+    "te": "ఫిట్స్",
+    "mr": "आकडी",
+    "gu": "આંચકી",
+    "kn": "ಮೂರ್ಛೆ",
+    "ml": "അപസ്മാരം",
+    "pa": "ਦੌਰਾ",
+    "or": "ମୃଗୀ",
+    "ur": "دورہ",
+    "ne": "छारे रोग"
+   },
+   "patterns": {
+    "en": [
+     "seizure",
+     "seizures",
+     "fits",
+     "convulsion",
+     "convulsions"
+    ],
+    "hi": [
+     "daura",
+     "daure",
+     "jhatke",
+     "mirgi",
+     "दौरा",
+     "दौरे",
+     "झटके",
+     "मिर्गी"
+    ],
+    "ta": [
+     "வலிப்பு",
+     "valippu",
+     "fits vandhuchu"
+    ],
+    "bn": [
+     "খিঁচুনি",
+     "মৃগী"
+    ],
+    "as": [
+     "মৃগী"
+    ],
+    "te": [
+     "ఫిట్స్",
+     "మూర్ఛ"
+    ],
+    "mr": [
+     "आकडी",
+     "फिट येत",
+     "झटके"
+    ],
+    "gu": [
+     "આંચકી",
+     "ખેંચ"
+    ],
+    "kn": [
+     "ಮೂರ್ಛೆ",
+     "ಫಿಟ್ಸ್"
+    ],
+    "ml": [
+     "അപസ്മാരം",
+     "ജന്നി"
+    ],
+    "pa": [
+     "ਦੌਰਾ",
+     "ਮਿਰਗੀ"
+    ],
+    "or": [
+     "ମୃଗୀ",
+     "ଝଟକା"
+    ],
+    "ur": [
+     "دورہ",
+     "مرگی",
+     "جھٹکے"
+    ],
+    "ne": [
+     "छारे रोग",
+     "कम्पन"
+    ]
+   }
+  },
+  "stroke_signs": {
+   "category": "neuro",
+   "label": {
+    "en": "face drooping / one-side weakness / slurred speech",
+    "hi": "मुंह टेढ़ा / एक तरफ कमजोरी",
+    "ta": "முகம் கோணல் / ஒரு பக்க செயலிழப்பு",
+    "bn": "মুখ বেঁকে",
+    "as": "পক্ষাঘাত",
+    "te": "పక్షవాతం",
+    "mr": "अर्धांगवायू",
+    "gu": "લકવો",
+    "kn": "ಪಾರ್ಶ್ವವಾಯು",
+    "ml": "പക്ഷാഘാതം",
+    "pa": "ਲਕਵਾ",
+    "or": "ପକ୍ଷାଘାତ",
+    "ur": "فالج",
+    "ne": "पक्षाघात"
+   },
+   "patterns": {
+    "en": [
+     "face drooping",
+     "face droop",
+     "one side weak",
+     "one-sided weakness",
+     "weakness on one side",
+     "slurred speech",
+     "can't speak properly",
+     "paralysis"
+    ],
+    "hi": [
+     "muh tedha",
+     "munh tedha",
+     "ek taraf kamzori",
+     "ek taraf kamjori",
+     "lakwa",
+     "laqwa",
+     "bolne mein dikkat",
+     "bolne me dikkat",
+     "मुंह टेढ़ा",
+     "मुँह टेढ़ा",
+     "एक तरफ कमजोरी",
+     "एक तरफ कमज़ोरी",
+     "लकवा",
+     "बोलने में दिक्कत"
+    ],
+    "ta": [
+     "முகம் கோணல்",
+     "முகம் ஒரு பக்கம்",
+     "பக்கவாதம்",
+     "ஒரு பக்கம் செயலிழப்பு",
+     "பேச முடியவில்லை",
+     "mugam konal",
+     "mugam konalaga",
+     "pakkavatham",
+     "pakshavatham",
+     "pesa mudiyala",
+     "oru pakkam kai kaal velai seyyala"
+    ],
+    "bn": [
+     "মুখ বেঁকে",
+     "পক্ষাঘাত",
+     "এক দিক অবশ"
+    ],
+    "as": [
+     "পক্ষাঘাত"
+    ],
+    "te": [
+     "పక్షవాతం",
+     "మూతి వంకర"
+    ],
+    "mr": [
+     "अर्धांगवायू",
+     "तोंड वाकडे"
+    ],
+    "gu": [
+     "લકવો",
+     "મોં વાંકું"
+    ],
+    "kn": [
+     "ಪಾರ್ಶ್ವವಾಯು",
+     "ಬಾಯಿ ಸೊಟ್ಟ"
+    ],
+    "ml": [
+     "പക്ഷാഘാതം",
+     "മുഖം കോടി"
+    ],
+    "pa": [
+     "ਲਕਵਾ",
+     "ਮੂੰਹ ਟੇਢਾ"
+    ],
+    "or": [
+     "ପକ୍ଷାଘାତ",
+     "ମୁହଁ ବଙ୍କା"
+    ],
+    "ur": [
+     "فالج",
+     "منہ ٹیڑھا"
+    ],
+    "ne": [
+     "पक्षाघात",
+     "मुख बाङ्गो"
+    ]
+   }
+  },
+  "severe_bleeding": {
+   "category": "injury",
+   "label": {
+    "en": "heavy bleeding",
+    "hi": "बहुत खून बहना",
+    "ta": "அதிக ரத்தப்போக்கு",
+    "bn": "প্রচুর রক্ত",
+    "as": "বহুত তেজ",
+    "te": "చాలా రక్తం",
+    "mr": "खूप रक्त",
+    "gu": "ખૂબ લોહી",
+    "kn": "ತುಂಬಾ ರಕ್ತ",
+    "ml": "ധാരാളം രക്തം",
+    "pa": "ਬਹੁਤ ਖੂਨ",
+    "or": "ବହୁତ ରକ୍ତ",
+    "ur": "بہت خون",
+    "ne": "धेरै रगत"
+   },
+   "patterns": {
+    "en": [
+     "heavy bleeding",
+     "bleeding a lot",
+     "bleeding won't stop",
+     "bleeding wont stop",
+     "lot of blood",
+     "severe bleeding"
+    ],
+    "hi": [
+     "bahut khoon",
+     "khoon nahi ruk",
+     "khoon band nahi",
+     "बहुत खून",
+     "खून नहीं रुक",
+     "खून बंद नहीं"
+    ],
+    "ta": [
+     "அதிக ரத்தம்",
+     "ரத்தம் நிற்கவில்லை",
+     "அதிக ரத்தப்போக்கு",
+     "athiga ratham",
+     "ratham nikkala",
+     "ratham nikkavillai",
+     "niraya ratham"
+    ],
+    "bn": [
+     "প্রচুর রক্ত",
+     "রক্ত বন্ধ হচ্ছে না"
+    ],
+    "as": [
+     "বহুত তেজ",
+     "তেজ বন্ধ হোৱা নাই"
+    ],
+    "te": [
+     "చాలా రక్తం",
+     "రక్తం ఆగడం లేదు"
+    ],
+    "mr": [
+     "खूप रक्त",
+     "रक्त थांबत नाही"
+    ],
+    "gu": [
+     "ખૂબ લોહી",
+     "લોહી બંધ થતું નથી"
+    ],
+    "kn": [
+     "ತುಂಬಾ ರಕ್ತ",
+     "ರಕ್ತ ನಿಲ್ಲುತ್ತಿಲ್ಲ"
+    ],
+    "ml": [
+     "ധാരാളം രക്തം",
+     "രക്തം നിൽക്കുന്നില്ല"
+    ],
+    "pa": [
+     "ਬਹੁਤ ਖੂਨ",
+     "ਖੂਨ ਨਹੀਂ ਰੁਕ"
+    ],
+    "or": [
+     "ବହୁତ ରକ୍ତ",
+     "ରକ୍ତ ବନ୍ଦ ହେଉନି"
+    ],
+    "ur": [
+     "بہت خون",
+     "خون نہیں رک"
+    ],
+    "ne": [
+     "धेरै रगत",
+     "रगत रोकिएन"
+    ]
+   }
+  },
+  "vomiting_blood": {
+   "category": "digestive",
+   "label": {
+    "en": "vomiting blood",
+    "hi": "खून की उल्टी",
+    "ta": "ரத்த வாந்தி"
+   },
+   "patterns": {
+    "en": [
+     "vomiting blood",
+     "blood in vomit",
+     "vomited blood",
+     "coughing blood",
+     "coughing up blood"
+    ],
+    "hi": [
+     "khoon ki ulti",
+     "khun ki ulti",
+     "खून की उल्टी",
+     "khaansi mein khoon",
+     "खांसी में खून"
+    ],
+    "ta": [
+     "ரத்த வாந்தி",
+     "ratha vanthi",
+     "ratham vanthi"
+    ]
+   }
+  },
+  "snake_bite": {
+   "category": "bite",
+   "label": {
+    "en": "snake bite",
+    "hi": "सांप का काटना",
+    "ta": "பாம்பு கடி",
+    "bn": "সাপে কামড়",
+    "as": "সাপে খুটিছে",
+    "te": "పాము కాటు",
+    "mr": "साप चावला",
+    "gu": "સાપ કરડ્યો",
+    "kn": "ಹಾವು ಕಚ್ಚಿದೆ",
+    "ml": "പാമ്പ് കടി",
+    "pa": "ਸੱਪ ਨੇ ਡੰਗ",
+    "or": "ସାପ କାମୁଡ଼ି",
+    "ur": "سانپ نے کاٹ",
+    "ne": "सर्पले टोक"
+   },
+   "patterns": {
+    "en": [
+     "snake bite",
+     "snakebite",
+     "bitten by a snake",
+     "snake bit"
+    ],
+    "hi": [
+     "saap ne kata",
+     "saanp ne kata",
+     "saap ne kaata",
+     "saanp ne kaata",
+     "सांप ने काटा",
+     "साँप ने काटा",
+     "सांप का काटना"
+    ],
+    "ta": [
+     "பாம்பு கடி",
+     "பாம்பு கடித்தது",
+     "paambu kadi",
+     "pambu kadi",
+     "pambu kadichiruchu",
+     "paambu kadichirukku"
+    ],
+    "bn": [
+     "সাপে কামড়",
+     "সাপের কামড়"
+    ],
+    "as": [
+     "সাপে খুটিছে",
+     "সাপে কামোৰ"
+    ],
+    "te": [
+     "పాము కాటు",
+     "పాము కరిచింది"
+    ],
+    "mr": [
+     "साप चावला",
+     "सर्पदंश"
+    ],
+    "gu": [
+     "સાપ કરડ્યો",
+     "સર્પદંશ"
+    ],
+    "kn": [
+     "ಹಾವು ಕಚ್ಚಿದೆ",
+     "ಹಾವು ಕಡಿತ"
+    ],
+    "ml": [
+     "പാമ്പ് കടി",
+     "പാമ്പ് കടിച്ചു"
+    ],
+    "pa": [
+     "ਸੱਪ ਨੇ ਡੰਗ",
+     "ਸੱਪ ਦਾ ਡੰਗ"
+    ],
+    "or": [
+     "ସାପ କାମୁଡ଼ି",
+     "ସାପ କାମୁଡ଼ା"
+    ],
+    "ur": [
+     "سانپ نے کاٹ",
+     "سانپ کا کاٹا"
+    ],
+    "ne": [
+     "सर्पले टोक",
+     "सर्पदंश"
+    ]
+   }
+  },
+  "poisoning": {
+   "category": "toxic",
+   "label": {
+    "en": "poisoning / swallowed pesticide",
+    "hi": "ज़हर / कीटनाशक",
+    "ta": "விஷம் / பூச்சி மருந்து",
+    "bn": "বিষ খেয়েছে",
+    "as": "বিহ খাইছে",
+    "te": "విషం",
+    "mr": "विष प्याले",
+    "gu": "ઝેર",
+    "kn": "ವಿಷ ಕುಡಿದ",
+    "ml": "വിഷം",
+    "pa": "ਜ਼ਹਿਰ",
+    "or": "ବିଷ ଖାଇ",
+    "ur": "زہر",
+    "ne": "विष खायो"
+   },
+   "patterns": {
+    "en": [
+     "poison",
+     "poisoning",
+     "swallowed pesticide",
+     "drank pesticide",
+     "pesticide",
+     "overdose"
+    ],
+    "hi": [
+     "zeher",
+     "zahar",
+     "jahar",
+     "keetnashak",
+     "कीटनाशक",
+     "ज़हर",
+     "जहर"
+    ],
+    "ta": [
+     "விஷம்",
+     "பூச்சி மருந்து",
+     "visham",
+     "poochi marunthu",
+     "poochi mandhu"
+    ],
+    "bn": [
+     "বিষ খেয়েছে",
+     "কীটনাশক"
+    ],
+    "as": [
+     "বিহ খাইছে"
+    ],
+    "te": [
+     "విషం",
+     "పురుగుల మందు"
+    ],
+    "mr": [
+     "विष प्याले",
+     "विष घेतले",
+     "कीटकनाशक"
+    ],
+    "gu": [
+     "ઝેર",
+     "જંતુનાશક"
+    ],
+    "kn": [
+     "ವಿಷ ಕುಡಿದ",
+     "ವಿಷ ಸೇವನೆ",
+     "ಕೀಟನಾಶಕ"
+    ],
+    "ml": [
+     "വിഷം",
+     "കീടനാശിനി"
+    ],
+    "pa": [
+     "ਜ਼ਹਿਰ",
+     "ਕੀਟਨਾਸ਼ਕ"
+    ],
+    "or": [
+     "ବିଷ ଖାଇ",
+     "ବିଷ ପିଇ",
+     "କୀଟନାଶକ"
+    ],
+    "ur": [
+     "زہر",
+     "کیڑے مار دوا"
+    ],
+    "ne": [
+     "विष खायो",
+     "विषादी"
+    ]
+   }
+  },
+  "suicidal": {
+   "category": "mental",
+   "label": {
+    "en": "thoughts of self-harm",
+    "hi": "खुद को नुकसान के विचार",
+    "ta": "தன்னைத் தானே காயப்படுத்தும் எண்ணம்",
+    "bn": "আত্মহত্যা",
+    "as": "আত্মহত্যা",
+    "te": "ఆత్మహత్య",
+    "mr": "आत्महत्या",
+    "gu": "આત્મહત્યા",
+    "kn": "ಆತ್ಮಹತ್ಯೆ",
+    "ml": "ആത്മഹത്യ",
+    "pa": "ਖੁਦਕੁਸ਼ੀ",
+    "or": "ଆତ୍ମହତ୍ୟା",
+    "ur": "خودکشی",
+    "ne": "आत्महत्या"
+   },
+   "patterns": {
+    "en": [
+     "kill myself",
+     "suicide",
+     "end my life",
+     "want to die",
+     "self harm",
+     "self-harm",
+     "hurt myself"
+    ],
+    "hi": [
+     "marna chahta",
+     "marna chahti",
+     "aatmahatya",
+     "atmahatya",
+     "khud ko nuksan",
+     "jeena nahi chahta",
+     "jeena nahi chahti",
+     "मरना चाहता",
+     "मरना चाहती",
+     "आत्महत्या",
+     "खुद को नुकसान",
+     "जीना नहीं चाहता",
+     "जीना नहीं चाहती"
+    ],
+    "ta": [
+     "தற்கொலை",
+     "சாக வேண்டும்",
+     "வாழ விருப்பம் இல்லை",
+     "tharkolai",
+     "saaganum",
+     "saaga poren",
+     "vaazha pidikkala"
+    ],
+    "bn": [
+     "আত্মহত্যা",
+     "মরে যেতে চাই"
+    ],
+    "as": [
+     "আত্মহত্যা"
+    ],
+    "te": [
+     "ఆత్మహత్య",
+     "చనిపోవాలని"
+    ],
+    "mr": [
+     "आत्महत्या",
+     "मरायचे आहे"
+    ],
+    "gu": [
+     "આત્મહત્યા",
+     "મરી જવું છે"
+    ],
+    "kn": [
+     "ಆತ್ಮಹತ್ಯೆ",
+     "ಸಾಯಬೇಕು"
+    ],
+    "ml": [
+     "ആത്മഹത്യ",
+     "മരിക്കണം"
+    ],
+    "pa": [
+     "ਖੁਦਕੁਸ਼ੀ",
+     "ਮਰਨਾ ਚਾਹੁੰਦਾ",
+     "ਮਰਨਾ ਚਾਹੁੰਦੀ"
+    ],
+    "or": [
+     "ଆତ୍ମହତ୍ୟା",
+     "ମରିଯିବାକୁ ଚାହେଁ"
+    ],
+    "ur": [
+     "خودکشی",
+     "مرنا چاہتا",
+     "مرنا چاہتی"
+    ],
+    "ne": [
+     "आत्महत्या",
+     "मर्न मन"
+    ]
+   }
+  },
+  "severe_burn": {
+   "category": "injury",
+   "label": {
+    "en": "serious burn",
+    "hi": "गंभीर रूप से जलना",
+    "ta": "தீக்காயம்",
+    "bn": "পুড়ে গেছে",
+    "as": "পুৰি গৈছে",
+    "te": "కాలిన గాయం",
+    "mr": "भाजले",
+    "gu": "દાઝી ગયો",
+    "kn": "ಸುಟ್ಟ ಗಾಯ",
+    "ml": "പൊള്ളൽ",
+    "pa": "ਸੜ ਗਿਆ",
+    "or": "ପୋଡ଼ି ଯାଇଛି",
+    "ur": "جل گیا",
+    "ne": "पोलेको"
+   },
+   "patterns": {
+    "en": [
+     "burned badly",
+     "bad burn",
+     "serious burn",
+     "severe burn",
+     "caught fire"
+    ],
+    "hi": [
+     "bahut jal gaya",
+     "bahut jal gayi",
+     "aag se jal",
+     "आग से जल",
+     "बहुत जल गया",
+     "बहुत जल गई"
+    ],
+    "ta": [
+     "தீக்காயம்",
+     "theekkayam",
+     "thee kayam",
+     "neruppu pattu"
+    ],
+    "bn": [
+     "পুড়ে গেছে"
+    ],
+    "as": [
+     "পুৰি গৈছে"
+    ],
+    "te": [
+     "కాలిన గాయం",
+     "కాలింది"
+    ],
+    "mr": [
+     "भाजले"
+    ],
+    "gu": [
+     "દાઝી ગયો",
+     "દાઝી ગઈ"
+    ],
+    "kn": [
+     "ಸುಟ್ಟ ಗಾಯ"
+    ],
+    "ml": [
+     "പൊള്ളൽ",
+     "പൊള്ളി"
+    ],
+    "pa": [
+     "ਸੜ ਗਿਆ",
+     "ਸੜ ਗਈ"
+    ],
+    "or": [
+     "ପୋଡ଼ି ଯାଇଛି"
+    ],
+    "ur": [
+     "جل گیا",
+     "جل گئی"
+    ],
+    "ne": [
+     "पोलेको",
+     "आगोले पोल्यो"
+    ]
+   }
+  },
+  "confusion": {
+   "category": "neuro",
+   "label": {
+    "en": "confusion",
+    "hi": "उलझन / बेहोशी जैसी हालत",
+    "ta": "குழப்பம்"
+   },
+   "patterns": {
+    "en": [
+     "confused",
+     "confusion",
+     "not making sense",
+     "drowsy and confused"
+    ],
+    "hi": [
+     "behki baatein",
+     "behki behki",
+     "ulti seedhi baatein",
+     "बहकी बातें",
+     "उलझन"
+    ],
+    "ta": [
+     "குழப்பம்",
+     "kuzhappam",
+     "olarudhu",
+     "ularal"
+    ]
+   }
+  },
+  "no_fetal_movement": {
+   "category": "maternal",
+   "label": {
+    "en": "baby not moving (in pregnancy)",
+    "hi": "बच्चा हिल नहीं रहा",
+    "ta": "கருவில் குழந்தை அசைவு இல்லை"
+   },
+   "patterns": {
+    "en": [
+     "baby not moving",
+     "no fetal movement",
+     "baby stopped moving"
+    ],
+    "hi": [
+     "bachcha hil nahi",
+     "baccha hil nahi",
+     "बच्चा हिल नहीं",
+     "बच्चा हलचल नहीं"
+    ],
+    "ta": [
+     "குழந்தை அசைவு இல்லை",
+     "அசைவு இல்லை",
+     "kuzhandhai asaivu illa",
+     "asaivu illai"
+    ]
+   }
+  },
+  "pregnancy": {
+   "category": "maternal",
+   "label": {
+    "en": "pregnant",
+    "hi": "गर्भवती",
+    "ta": "கர்ப்பம்",
+    "bn": "গর্ভবতী",
+    "as": "গৰ্ভৱতী",
+    "te": "గర్భవతి",
+    "mr": "गरोदर",
+    "gu": "ગર્ભવતી",
+    "kn": "ಗರ್ಭಿಣಿ",
+    "ml": "ഗർഭിണി",
+    "pa": "ਗਰਭਵਤੀ",
+    "or": "ଗର୍ଭବତୀ",
+    "ur": "حاملہ",
+    "ne": "गर्भवती"
+   },
+   "patterns": {
+    "en": [
+     "pregnant",
+     "pregnancy",
+     "expecting a baby"
+    ],
+    "hi": [
+     "garbhvati",
+     "garbhavati",
+     "pet se hai",
+     "pet se hoon",
+     "गर्भवती",
+     "गर्भ",
+     "pregnant hai"
+    ],
+    "ta": [
+     "கர்ப்பம்",
+     "கர்ப்பிணி",
+     "karppam",
+     "karpam",
+     "karbini",
+     "karppini",
+     "garbam",
+     "maasama irukken"
+    ],
+    "bn": [
+     "গর্ভবতী",
+     "অন্তঃসত্ত্বা"
+    ],
+    "as": [
+     "গৰ্ভৱতী"
+    ],
+    "te": [
+     "గర్భవతి",
+     "గర్భిణి"
+    ],
+    "mr": [
+     "गरोदर"
+    ],
+    "gu": [
+     "ગર્ભવતી",
+     "સગર્ભા"
+    ],
+    "kn": [
+     "ಗರ್ಭಿಣಿ"
+    ],
+    "ml": [
+     "ഗർഭിണി"
+    ],
+    "pa": [
+     "ਗਰਭਵਤੀ"
+    ],
+    "or": [
+     "ଗର୍ଭବତୀ"
+    ],
+    "ur": [
+     "حاملہ"
+    ],
+    "ne": [
+     "गर्भवती"
+    ]
+   },
+   "context": true
+  },
+  "newborn": {
+   "category": "pediatric",
+   "label": {
+    "en": "newborn baby",
+    "hi": "नवजात शिशु",
+    "ta": "பச்சிளம் குழந்தை"
+   },
+   "patterns": {
+    "en": [
+     "newborn",
+     "new born",
+     "few weeks old"
+    ],
+    "hi": [
+     "navjat",
+     "नवजात",
+     "nanha bachcha"
+    ],
+    "ta": [
+     "பச்சிளம் குழந்தை",
+     "பிறந்த குழந்தை",
+     "pachai kuzhandhai",
+     "pirandha kuzhandhai"
+    ]
+   },
+   "context": true
+  },
+  "child": {
+   "category": "pediatric",
+   "label": {
+    "en": "child",
+    "hi": "बच्चा",
+    "ta": "குழந்தை",
+    "bn": "শিশু",
+    "as": "শিশু",
+    "te": "పిల్లవాడు",
+    "mr": "बाळ",
+    "gu": "બાળક",
+    "kn": "ಮಗು",
+    "ml": "കുട്ടി",
+    "pa": "ਬੱਚਾ",
+    "or": "ଶିଶୁ",
+    "ur": "بچہ",
+    "ne": "बच्चा"
+   },
+   "patterns": {
+    "en": [
+     "baby",
+     "child",
+     "son",
+     "daughter",
+     "kid",
+     "toddler",
+     "infant"
+    ],
+    "hi": [
+     "bachcha",
+     "baccha",
+     "bachche",
+     "bachchi",
+     "beta",
+     "beti",
+     "बच्चा",
+     "बच्चे",
+     "बच्ची",
+     "बेटा",
+     "बेटी"
+    ],
+    "ta": [
+     "குழந்தை",
+     "மகன்",
+     "மகள்",
+     "kuzhandhai",
+     "kozhandhai",
+     "paiyan",
+     "ponnu",
+     "magan",
+     "magal"
+    ],
+    "bn": [
+     "শিশু",
+     "বাচ্চা"
+    ],
+    "as": [
+     "শিশু",
+     "কেঁচুৱা"
+    ],
+    "te": [
+     "పిల్లవాడు",
+     "బిడ్డ",
+     "పాప"
+    ],
+    "mr": [
+     "बाळ"
+    ],
+    "gu": [
+     "બાળક"
+    ],
+    "kn": [
+     "ಮಗು"
+    ],
+    "ml": [
+     "കുട്ടി",
+     "കുഞ്ഞ്"
+    ],
+    "pa": [
+     "ਬੱਚਾ",
+     "ਬੱਚੀ"
+    ],
+    "or": [
+     "ଶିଶୁ",
+     "ପିଲା"
+    ],
+    "ur": [
+     "بچہ",
+     "بچی"
+    ],
+    "ne": [
+     "बच्चा",
+     "नानी"
+    ]
+   },
+   "context": true
+  },
+  "head_injury": {
+   "category": "injury",
+   "label": {
+    "en": "head injury",
+    "hi": "सिर में चोट",
+    "ta": "தலையில் அடி"
+   },
+   "patterns": {
+    "en": [
+     "head injury",
+     "hit my head",
+     "hit his head",
+     "hit her head",
+     "fell on head",
+     "injury to head"
+    ],
+    "hi": [
+     "sir par chot",
+     "sir pe chot",
+     "sir mein chot",
+     "sar pe chot",
+     "सिर पर चोट",
+     "सिर में चोट"
+    ],
+    "ta": [
+     "தலையில் அடி",
+     "தலையில் காயம்",
+     "thalaila adi",
+     "thalaiyil adi",
+     "thalaila kaayam"
+    ]
+   },
+   "urgent": true
+  },
+  "bleeding": {
+   "category": "general",
+   "label": {
+    "en": "bleeding",
+    "hi": "खून बहना",
+    "ta": "ரத்தப்போக்கு"
+   },
+   "patterns": {
+    "en": [
+     "bleeding",
+     "blood coming"
+    ],
+    "hi": [
+     "khoon aa raha",
+     "khoon beh",
+     "khoon nikal",
+     "खून आ रहा",
+     "खून बह",
+     "खून निकल"
+    ],
+    "ta": [
+     "ரத்தப்போக்கு",
+     "ரத்தம் வருகிறது",
+     "ratham varudhu",
+     "ratham varuthu",
+     "ratham pogudhu"
+    ]
+   },
+   "urgent": true
+  },
+  "fever": {
+   "category": "general",
+   "label": {
+    "en": "fever",
+    "hi": "बुखार",
+    "ta": "காய்ச்சல்",
+    "bn": "জ্বর",
+    "as": "জ্বৰ",
+    "te": "జ్వరం",
+    "mr": "ताप",
+    "gu": "તાવ",
+    "kn": "ಜ್ವರ",
+    "ml": "പനി",
+    "pa": "ਬੁਖਾਰ",
+    "or": "ଜ୍ୱର",
+    "ur": "بخار",
+    "ne": "ज्वरो"
+   },
+   "patterns": {
+    "en": [
+     "fever",
+     "temperature",
+     "feverish",
+     "high temp"
+    ],
+    "hi": [
+     "bukhar",
+     "bukhaar",
+     "taap",
+     "बुखार",
+     "ताप"
+    ],
+    "ta": [
+     "காய்ச்சல்",
+     "kaichal",
+     "kaaichal",
+     "kaichel",
+     "juram",
+     "jooram"
+    ],
+    "bn": [
+     "জ্বর"
+    ],
+    "as": [
+     "জ্বৰ"
+    ],
+    "te": [
+     "జ్వరం"
+    ],
+    "mr": [
+     "ताप"
+    ],
+    "gu": [
+     "તાવ"
+    ],
+    "kn": [
+     "ಜ್ವರ"
+    ],
+    "ml": [
+     "പനി"
+    ],
+    "pa": [
+     "ਬੁਖਾਰ",
+     "ਬੁਖ਼ਾਰ"
+    ],
+    "or": [
+     "ଜ୍ୱର",
+     "ଜ୍ବର"
+    ],
+    "ur": [
+     "بخار"
+    ],
+    "ne": [
+     "ज्वरो"
+    ]
+   }
+  },
+  "cough": {
+   "category": "respiratory",
+   "label": {
+    "en": "cough",
+    "hi": "खांसी",
+    "ta": "இருமல்",
+    "bn": "কাশি",
+    "as": "কাহ",
+    "te": "దగ్గు",
+    "mr": "खोकला",
+    "gu": "ઉધરસ",
+    "kn": "ಕೆಮ್ಮು",
+    "ml": "ചുമ",
+    "pa": "ਖੰਘ",
+    "or": "କାଶ",
+    "ur": "کھانسی",
+    "ne": "खोकी"
+   },
+   "patterns": {
+    "en": [
+     "cough",
+     "coughing"
+    ],
+    "hi": [
+     "khansi",
+     "khaansi",
+     "khasi",
+     "खांसी",
+     "खाँसी"
+    ],
+    "ta": [
+     "இருமல்",
+     "irumal",
+     "irumbal"
+    ],
+    "bn": [
+     "কাশি"
+    ],
+    "as": [
+     "কাহ"
+    ],
+    "te": [
+     "దగ్గు"
+    ],
+    "mr": [
+     "खोकला"
+    ],
+    "gu": [
+     "ઉધરસ",
+     "ખાંસી"
+    ],
+    "kn": [
+     "ಕೆಮ್ಮು"
+    ],
+    "ml": [
+     "ചുമ"
+    ],
+    "pa": [
+     "ਖੰਘ"
+    ],
+    "or": [
+     "କାଶ"
+    ],
+    "ur": [
+     "کھانسی"
+    ],
+    "ne": [
+     "खोकी"
+    ]
+   },
+   "minor": true
+  },
+  "cold": {
+   "category": "respiratory",
+   "label": {
+    "en": "cold / runny nose",
+    "hi": "जुकाम",
+    "ta": "சளி",
+    "bn": "সর্দি",
+    "as": "চৰ্দি",
+    "te": "జలుబు",
+    "mr": "सर्दी",
+    "gu": "શરદી",
+    "kn": "ನೆಗಡಿ",
+    "ml": "ജലദോഷം",
+    "pa": "ਜ਼ੁਕਾਮ",
+    "or": "ଥଣ୍ଡା",
+    "ur": "زکام",
+    "ne": "रुघा"
+   },
+   "patterns": {
+    "en": [
+     "cold",
+     "runny nose",
+     "blocked nose",
+     "sneezing"
+    ],
+    "hi": [
+     "jukam",
+     "zukam",
+     "sardi",
+     "nazla",
+     "जुकाम",
+     "ज़ुकाम",
+     "सर्दी"
+    ],
+    "ta": [
+     "சளி",
+     "மூக்கு ஒழுகுதல்",
+     "sali",
+     "jaladosham",
+     "thummal"
+    ],
+    "bn": [
+     "সর্দি"
+    ],
+    "as": [
+     "চৰ্দি"
+    ],
+    "te": [
+     "జలుబు"
+    ],
+    "mr": [
+     "सर्दी"
+    ],
+    "gu": [
+     "શરદી"
+    ],
+    "kn": [
+     "ನೆಗಡಿ",
+     "ಶೀತ"
+    ],
+    "ml": [
+     "ജലദോഷം"
+    ],
+    "pa": [
+     "ਜ਼ੁਕਾਮ"
+    ],
+    "or": [
+     "ଥଣ୍ଡା"
+    ],
+    "ur": [
+     "زکام",
+     "نزلہ"
+    ],
+    "ne": [
+     "रुघा"
+    ]
+   },
+   "minor": true
+  },
+  "sore_throat": {
+   "category": "respiratory",
+   "label": {
+    "en": "sore throat",
+    "hi": "गले में दर्द",
+    "ta": "தொண்டை வலி",
+    "bn": "গলা ব্যথা",
+    "te": "గొంతు నొప్పి",
+    "mr": "घसा दुखणे",
+    "gu": "ગળામાં દુખાવો",
+    "kn": "ಗಂಟಲು ನೋವು",
+    "ml": "തൊണ്ടവേദന",
+    "pa": "ਗਲੇ ਵਿੱਚ ਦਰਦ",
+    "or": "ଗଳା ବିନ୍ଧା",
+    "ur": "گلے میں درد",
+    "as": "ডিঙিৰ বিষ",
+    "ne": "घाँटी दुख्ने"
+   },
+   "patterns": {
+    "en": [
+     "sore throat",
+     "throat pain"
+    ],
+    "hi": [
+     "gale mein dard",
+     "gale me dard",
+     "gala kharab",
+     "गले में दर्द",
+     "गला खराब"
+    ],
+    "ta": [
+     "தொண்டை வலி",
+     "thondai vali",
+     "thondai kattu"
+    ]
+   },
+   "minor": true
+  },
+  "headache": {
+   "category": "general",
+   "label": {
+    "en": "headache",
+    "hi": "सिर दर्द",
+    "ta": "தலைவலி",
+    "bn": "মাথাব্যথা",
+    "as": "মূৰৰ বিষ",
+    "te": "తలనొప్పి",
+    "mr": "डोकेदुखी",
+    "gu": "માથાનો દુખાવો",
+    "kn": "ತಲೆನೋವು",
+    "ml": "തലവേദന",
+    "pa": "ਸਿਰ ਦਰਦ",
+    "or": "ମୁଣ୍ଡବିନ୍ଧା",
+    "ur": "سر درد",
+    "ne": "टाउको दुख"
+   },
+   "patterns": {
+    "en": [
+     "headache",
+     "head ache",
+     "head pain"
+    ],
+    "hi": [
+     "sir dard",
+     "sar dard",
+     "sir me dard",
+     "sir mein dard",
+     "सिर दर्द",
+     "सिरदर्द",
+     "सिर में दर्द"
+    ],
+    "ta": [
+     "தலைவலி",
+     "தலை வலி",
+     "thalaivali",
+     "thalai vali",
+     "thala vali"
+    ],
+    "bn": [
+     "মাথাব্যথা",
+     "মাথা ব্যথা"
+    ],
+    "as": [
+     "মূৰৰ বিষ",
+     "মূৰ বিষ"
+    ],
+    "te": [
+     "తలనొప్పి"
+    ],
+    "mr": [
+     "डोकेदुखी",
+     "डोके दुखत"
+    ],
+    "gu": [
+     "માથાનો દુખાવો",
+     "માથું દુખે"
+    ],
+    "kn": [
+     "ತಲೆನೋವು"
+    ],
+    "ml": [
+     "തലവേദന"
+    ],
+    "pa": [
+     "ਸਿਰ ਦਰਦ",
+     "ਸਿਰਦਰਦ"
+    ],
+    "or": [
+     "ମୁଣ୍ଡବିନ୍ଧା",
+     "ମୁଣ୍ଡ ବିନ୍ଧା"
+    ],
+    "ur": [
+     "سر درد",
+     "سر میں درد"
+    ],
+    "ne": [
+     "टाउको दुख"
+    ]
+   },
+   "minor": true
+  },
+  "body_ache": {
+   "category": "general",
+   "label": {
+    "en": "body ache",
+    "hi": "बदन दर्द",
+    "ta": "உடம்பு வலி",
+    "bn": "গা ব্যথা",
+    "te": "ఒళ్ళు నొప్పులు",
+    "mr": "अंगदुखी",
+    "gu": "શરીર દુખે",
+    "kn": "ಮೈ ಕೈ ನೋವು",
+    "ml": "ശരീരവേദന",
+    "pa": "ਸਰੀਰ ਦਰਦ",
+    "or": "ଦେହ ବିନ୍ଧା",
+    "ur": "جسم میں درد",
+    "ne": "जिउ दुख"
+   },
+   "patterns": {
+    "en": [
+     "body ache",
+     "body pain",
+     "aches"
+    ],
+    "hi": [
+     "badan dard",
+     "sharir me dard",
+     "बदन दर्द",
+     "शरीर में दर्द"
+    ],
+    "ta": [
+     "உடம்பு வலி",
+     "udambu vali",
+     "odambu vali",
+     "kai kaal vali"
+    ],
+    "bn": [
+     "গা ব্যথা"
+    ],
+    "te": [
+     "ఒళ్ళు నొప్పులు"
+    ],
+    "mr": [
+     "अंगदुखी"
+    ],
+    "gu": [
+     "શરીર દુખે"
+    ],
+    "kn": [
+     "ಮೈ ಕೈ ನೋವು"
+    ],
+    "ml": [
+     "ശരീരവേദന"
+    ],
+    "pa": [
+     "ਸਰੀਰ ਦਰਦ"
+    ],
+    "or": [
+     "ଦେହ ବିନ୍ଧା"
+    ],
+    "ur": [
+     "جسم میں درد"
+    ],
+    "ne": [
+     "जिउ दुख"
+    ]
+   },
+   "minor": true
+  },
+  "stomach_pain": {
+   "category": "digestive",
+   "label": {
+    "en": "stomach pain",
+    "hi": "पेट दर्द",
+    "ta": "வயிற்று வலி",
+    "bn": "পেটে ব্যথা",
+    "as": "পেটৰ বিষ",
+    "te": "కడుపు నొప్పి",
+    "mr": "पोटदुखी",
+    "gu": "પેટમાં દુખાવો",
+    "kn": "ಹೊಟ್ಟೆ ನೋವು",
+    "ml": "വയറുവേദന",
+    "pa": "ਪੇਟ ਦਰਦ",
+    "or": "ପେଟ ବିନ୍ଧା",
+    "ur": "پیٹ میں درد",
+    "ne": "पेट दुख"
+   },
+   "patterns": {
+    "en": [
+     "stomach pain",
+     "abdominal pain",
+     "stomach ache",
+     "tummy ache",
+     "belly pain"
+    ],
+    "hi": [
+     "pet dard",
+     "pet me dard",
+     "pet mein dard",
+     "पेट दर्द",
+     "पेट में दर्द"
+    ],
+    "ta": [
+     "வயிற்று வலி",
+     "வயிறு வலி",
+     "vayiru vali",
+     "vayitru vali",
+     "vairu vali"
+    ],
+    "bn": [
+     "পেটে ব্যথা",
+     "পেট ব্যথা"
+    ],
+    "as": [
+     "পেটৰ বিষ"
+    ],
+    "te": [
+     "కడుపు నొప్పి"
+    ],
+    "mr": [
+     "पोटदुखी",
+     "पोटात दुखत"
+    ],
+    "gu": [
+     "પેટમાં દુખાવો",
+     "પેટ દુખે"
+    ],
+    "kn": [
+     "ಹೊಟ್ಟೆ ನೋವು"
+    ],
+    "ml": [
+     "വയറുവേദന",
+     "വയറ് വേദന"
+    ],
+    "pa": [
+     "ਪੇਟ ਦਰਦ",
+     "ਢਿੱਡ ਦਰਦ"
+    ],
+    "or": [
+     "ପେଟ ବିନ୍ଧା",
+     "ପେଟ ଯନ୍ତ୍ରଣା"
+    ],
+    "ur": [
+     "پیٹ میں درد",
+     "پیٹ درد"
+    ],
+    "ne": [
+     "पेट दुख"
+    ]
+   }
+  },
+  "diarrhoea": {
+   "category": "digestive",
+   "label": {
+    "en": "loose motions / diarrhoea",
+    "hi": "दस्त",
+    "ta": "வயிற்றுப்போக்கு",
+    "bn": "ডায়রিয়া",
+    "as": "পাতল শৌচ",
+    "te": "విరేచనాలు",
+    "mr": "जुलाब",
+    "gu": "ઝાડા",
+    "kn": "ಭೇದಿ",
+    "ml": "വയറിളക്കം",
+    "pa": "ਦਸਤ",
+    "or": "ତରଳ ଝାଡ଼ା",
+    "ur": "دست",
+    "ne": "पखाला"
+   },
+   "patterns": {
+    "en": [
+     "diarrhoea",
+     "diarrhea",
+     "loose motion",
+     "loose motions",
+     "watery stool"
+    ],
+    "hi": [
+     "dast",
+     "dust lag",
+     "pet kharab",
+     "दस्त",
+     "पतले दस्त"
+    ],
+    "ta": [
+     "வயிற்றுப்போக்கு",
+     "பேதி",
+     "vayitru pokku",
+     "bedhi",
+     "loose motion"
+    ],
+    "bn": [
+     "ডায়রিয়া",
+     "পাতলা পায়খানা"
+    ],
+    "as": [
+     "পাতল শৌচ",
+     "ডায়েৰিয়া"
+    ],
+    "te": [
+     "విరేచనాలు"
+    ],
+    "mr": [
+     "जुलाब",
+     "अतिसार"
+    ],
+    "gu": [
+     "ઝાડા"
+    ],
+    "kn": [
+     "ಭೇದಿ",
+     "ಅತಿಸಾರ"
+    ],
+    "ml": [
+     "വയറിളക്കം"
+    ],
+    "pa": [
+     "ਦਸਤ"
+    ],
+    "or": [
+     "ତରଳ ଝାଡ଼ା",
+     "ଝାଡ଼ା"
+    ],
+    "ur": [
+     "دست",
+     "اسہال"
+    ],
+    "ne": [
+     "पखाला",
+     "झाडापखाला"
+    ]
+   }
+  },
+  "vomiting": {
+   "category": "digestive",
+   "label": {
+    "en": "vomiting",
+    "hi": "उल्टी",
+    "ta": "வாந்தி",
+    "bn": "বমি",
+    "as": "বমি",
+    "te": "వాంతులు",
+    "mr": "उलटी",
+    "gu": "ઉલટી",
+    "kn": "ವಾಂತಿ",
+    "ml": "ഛർദ്ദി",
+    "pa": "ਉਲਟੀ",
+    "or": "ବାନ୍ତି",
+    "ur": "الٹی",
+    "ne": "बान्ता"
+   },
+   "patterns": {
+    "en": [
+     "vomiting",
+     "vomit",
+     "throwing up",
+     "nausea"
+    ],
+    "hi": [
+     "ulti",
+     "ultiyan",
+     "jee machal",
+     "उल्टी",
+     "जी मचल"
+    ],
+    "ta": [
+     "வாந்தி",
+     "vanthi",
+     "vaandhi",
+     "kumattal"
+    ],
+    "bn": [
+     "বমি"
+    ],
+    "as": [
+     "বমি"
+    ],
+    "te": [
+     "వాంతులు",
+     "వాంతి"
+    ],
+    "mr": [
+     "उलटी",
+     "उलट्या"
+    ],
+    "gu": [
+     "ઉલટી"
+    ],
+    "kn": [
+     "ವಾಂತಿ"
+    ],
+    "ml": [
+     "ഛർദ്ദി"
+    ],
+    "pa": [
+     "ਉਲਟੀ",
+     "ਉਲਟੀਆਂ"
+    ],
+    "or": [
+     "ବାନ୍ତି"
+    ],
+    "ur": [
+     "الٹی",
+     "قے"
+    ],
+    "ne": [
+     "बान्ता"
+    ]
+   }
+  },
+  "rash": {
+   "category": "skin",
+   "label": {
+    "en": "skin rash / itching",
+    "hi": "दाने / खुजली",
+    "ta": "தோல் அரிப்பு / சொறி",
+    "bn": "চুলকানি",
+    "as": "খজুৱতি",
+    "te": "దద్దుర్లు",
+    "mr": "खाज",
+    "gu": "ખંજવાળ",
+    "kn": "ತುರಿಕೆ",
+    "ml": "ചൊറിച്ചിൽ",
+    "pa": "ਖੁਜਲੀ",
+    "or": "କୁଣ୍ଡେଇ",
+    "ur": "خارش",
+    "ne": "चिलाउने"
+   },
+   "patterns": {
+    "en": [
+     "rash",
+     "itching",
+     "itchy",
+     "skin problem",
+     "spots on skin"
+    ],
+    "hi": [
+     "khujli",
+     "daane",
+     "chakatte",
+     "खुजली",
+     "दाने",
+     "चकत्ते"
+    ],
+    "ta": [
+     "தோல் அரிப்பு",
+     "அரிப்பு",
+     "சொறி",
+     "arippu",
+     "sori",
+     "thol arippu",
+     "thadippu"
+    ],
+    "bn": [
+     "চুলকানি",
+     "ফুসকুড়ি"
+    ],
+    "as": [
+     "খজুৱতি"
+    ],
+    "te": [
+     "దద్దుర్లు",
+     "దురద"
+    ],
+    "mr": [
+     "खाज",
+     "पुरळ"
+    ],
+    "gu": [
+     "ખંજવાળ",
+     "ફોલ્લીઓ"
+    ],
+    "kn": [
+     "ತುರಿಕೆ",
+     "ದದ್ದು"
+    ],
+    "ml": [
+     "ചൊറിച്ചിൽ"
+    ],
+    "pa": [
+     "ਖੁਜਲੀ",
+     "ਧੱਫੜ"
+    ],
+    "or": [
+     "କୁଣ୍ଡେଇ"
+    ],
+    "ur": [
+     "خارش",
+     "دانے"
+    ],
+    "ne": [
+     "चिलाउने",
+     "डाबर"
+    ]
+   }
+  },
+  "joint_pain": {
+   "category": "musculoskeletal",
+   "label": {
+    "en": "joint pain",
+    "hi": "जोड़ों में दर्द",
+    "ta": "மூட்டு வலி",
+    "bn": "গাঁটে ব্যথা",
+    "te": "కీళ్ల నొప్పి",
+    "mr": "सांधेदुखी",
+    "gu": "સાંધાનો દુખાવો",
+    "kn": "ಕೀಲು ನೋವು",
+    "ml": "സന്ധിവേദന",
+    "pa": "ਜੋੜਾਂ ਦਾ ਦਰਦ",
+    "or": "ଗଣ୍ଠି ବିନ୍ଧା",
+    "ur": "جوڑوں کا درد",
+    "as": "গাঁঠিৰ বিষ",
+    "ne": "जोर्नी दुखाइ"
+   },
+   "patterns": {
+    "en": [
+     "joint pain",
+     "knee pain",
+     "back pain",
+     "joints hurt"
+    ],
+    "hi": [
+     "jodon mein dard",
+     "jodo me dard",
+     "ghutne me dard",
+     "kamar dard",
+     "जोड़ों में दर्द",
+     "घुटने में दर्द",
+     "कमर दर्द"
+    ],
+    "ta": [
+     "மூட்டு வலி",
+     "முதுகு வலி",
+     "moottu vali",
+     "muttu vali",
+     "mudhugu vali"
+    ]
+   }
+  },
+  "dizziness": {
+   "category": "general",
+   "label": {
+    "en": "dizziness",
+    "hi": "चक्कर",
+    "ta": "தலைசுற்றல்"
+   },
+   "patterns": {
+    "en": [
+     "dizzy",
+     "dizziness",
+     "giddiness",
+     "light headed"
+    ],
+    "hi": [
+     "chakkar",
+     "चक्कर"
+    ],
+    "ta": [
+     "தலைசுற்றல்",
+     "மயக்கம்",
+     "thalai suthuthu",
+     "thalai sutruthu",
+     "mayakkam"
+    ]
+   }
+  },
+  "weakness": {
+   "category": "general",
+   "label": {
+    "en": "weakness / tiredness",
+    "hi": "कमजोरी / थकान",
+    "ta": "சோர்வு"
+   },
+   "patterns": {
+    "en": [
+     "weakness",
+     "weak",
+     "tired",
+     "fatigue",
+     "no energy"
+    ],
+    "hi": [
+     "kamzori",
+     "kamjori",
+     "thakan",
+     "कमजोरी",
+     "कमज़ोरी",
+     "थकान"
+    ],
+    "ta": [
+     "சோர்வு",
+     "பலவீனம்",
+     "sorvu",
+     "balaveenam",
+     "tired-a irukku"
+    ]
+   }
+  },
+  "toothache": {
+   "category": "dental",
+   "label": {
+    "en": "toothache",
+    "hi": "दांत दर्द",
+    "ta": "பல் வலி",
+    "bn": "দাঁতে ব্যথা",
+    "te": "పంటి నొప్పి",
+    "mr": "दातदुखी",
+    "gu": "દાંતનો દુખાવો",
+    "kn": "ಹಲ್ಲು ನೋವು",
+    "ml": "പല്ലുവേദന",
+    "pa": "ਦੰਦ ਦਰਦ",
+    "or": "ଦାନ୍ତ ବିନ୍ଧା",
+    "ur": "دانت میں درد",
+    "as": "দাঁতৰ বিষ",
+    "ne": "दाँत दुखाइ"
+   },
+   "patterns": {
+    "en": [
+     "toothache",
+     "tooth pain"
+    ],
+    "hi": [
+     "daant dard",
+     "dant dard",
+     "दांत दर्द",
+     "दाँत दर्द"
+    ],
+    "ta": [
+     "பல் வலி",
+     "pal vali",
+     "pall vali"
+    ]
+   }
+  },
+  "ear_pain": {
+   "category": "ent",
+   "label": {
+    "en": "ear pain",
+    "hi": "कान दर्द",
+    "ta": "காது வலி"
+   },
+   "patterns": {
+    "en": [
+     "ear pain",
+     "earache",
+     "ear ache"
+    ],
+    "hi": [
+     "kaan dard",
+     "kan dard",
+     "कान दर्द",
+     "कान में दर्द"
+    ],
+    "ta": [
+     "காது வலி",
+     "kaathu vali",
+     "kadhu vali"
+    ]
+   },
+   "minor": true
+  },
+  "dog_bite": {
+   "category": "bite",
+   "label": {
+    "en": "dog or animal bite",
+    "hi": "कुत्ते/जानवर का काटना",
+    "ta": "நாய் / விலங்கு கடி",
+    "bn": "কুকুর কামড়",
+    "as": "কুকুৰে কামোৰ",
+    "te": "కుక్క కాటు",
+    "mr": "कुत्रा चावला",
+    "gu": "કૂતરું કરડ્યું",
+    "kn": "ನಾಯಿ ಕಚ್ಚಿದೆ",
+    "ml": "പട്ടി കടിച്ചു",
+    "pa": "ਕੁੱਤੇ ਨੇ ਵੱਢ",
+    "or": "କୁକୁର କାମୁଡ଼ି",
+    "ur": "کتے نے کاٹ",
+    "ne": "कुकुरले टोक"
+   },
+   "patterns": {
+    "en": [
+     "dog bite",
+     "dog bit",
+     "bitten by a dog",
+     "monkey bite",
+     "cat bite",
+     "animal bite"
+    ],
+    "hi": [
+     "kutte ne kata",
+     "kutte ne kaata",
+     "kutta kaat",
+     "bandar ne kata",
+     "कुत्ते ने काटा",
+     "कुत्ते का काटना",
+     "बंदर ने काटा"
+    ],
+    "ta": [
+     "நாய் கடி",
+     "நாய் கடித்தது",
+     "naai kadi",
+     "nai kadi",
+     "naai kadichiruchu",
+     "kurangu kadi"
+    ],
+    "bn": [
+     "কুকুর কামড়",
+     "কুকুরে কামড়"
+    ],
+    "as": [
+     "কুকুৰে কামোৰ"
+    ],
+    "te": [
+     "కుక్క కాటు",
+     "కుక్క కరిచింది"
+    ],
+    "mr": [
+     "कुत्रा चावला"
+    ],
+    "gu": [
+     "કૂતરું કરડ્યું",
+     "કૂતરા કરડ"
+    ],
+    "kn": [
+     "ನಾಯಿ ಕಚ್ಚಿದೆ",
+     "ನಾಯಿ ಕಡಿತ"
+    ],
+    "ml": [
+     "പട്ടി കടിച്ചു",
+     "നായ കടി"
+    ],
+    "pa": [
+     "ਕੁੱਤੇ ਨੇ ਵੱਢ",
+     "ਕੁੱਤੇ ਨੇ ਕੱਟ"
+    ],
+    "or": [
+     "କୁକୁର କାମୁଡ଼ି"
+    ],
+    "ur": [
+     "کتے نے کاٹ"
+    ],
+    "ne": [
+     "कुकुरले टोक"
+    ]
+   },
+   "urgent": true
+  },
+  "burning_urination": {
+   "category": "urinary",
+   "label": {
+    "en": "burning while passing urine",
+    "hi": "पेशाब में जलन",
+    "ta": "சிறுநீர் எரிச்சல்",
+    "bn": "প্রস্রাবে জ্বালা",
+    "te": "మూత్రంలో మంట",
+    "mr": "लघवीला जळजळ",
+    "gu": "પેશાબમાં બળતરા",
+    "kn": "ಮೂತ್ರದಲ್ಲಿ ಉರಿ",
+    "ml": "മൂത്രത്തിൽ പുകച്ചിൽ",
+    "pa": "ਪਿਸ਼ਾਬ ਵਿੱਚ ਜਲਨ",
+    "or": "ପରିସ୍ରାରେ ଜ୍ୱଳନ",
+    "ur": "پیشاب میں جلن",
+    "as": "প্ৰস্ৰাৱত জ্বলা",
+    "ne": "पिसाबमा पोलाइ"
+   },
+   "patterns": {
+    "en": [
+     "burning urine",
+     "burning while urinating",
+     "painful urination",
+     "burning when i pee"
+    ],
+    "hi": [
+     "peshab mein jalan",
+     "peshab me jalan",
+     "पेशाब में जलन"
+    ],
+    "ta": [
+     "சிறுநீர் எரிச்சல்",
+     "siruneer erichal",
+     "urine erichal",
+     "moothiram erichal"
+    ]
+   }
+  },
+  "blood_in_stool_urine": {
+   "category": "digestive",
+   "label": {
+    "en": "blood in stool or urine",
+    "hi": "मल/पेशाब में खून",
+    "ta": "மலம்/சிறுநீரில் ரத்தம்"
+   },
+   "patterns": {
+    "en": [
+     "blood in stool",
+     "blood in urine",
+     "blood in my stool",
+     "blood in my urine",
+     "black stool"
+    ],
+    "hi": [
+     "potty mein khoon",
+     "mal mein khoon",
+     "peshab mein khoon",
+     "मल में खून",
+     "पेशाब में खून"
+    ],
+    "ta": [
+     "மலத்தில் ரத்தம்",
+     "சிறுநீரில் ரத்தம்",
+     "malathil ratham",
+     "siruneeril ratham",
+     "urine-la ratham"
+    ]
+   },
+   "urgent": true
+  },
+  "low_mood": {
+   "category": "mental",
+   "label": {
+    "en": "low mood / stress",
+    "hi": "उदासी / तनाव",
+    "ta": "மன அழுத்தம்",
+    "bn": "মন খারাপ / দুশ্চিন্তা",
+    "te": "మనసు బాగోలేదు / ఒత్తిడి",
+    "mr": "उदासी / ताण",
+    "gu": "ઉદાસી / તણાવ",
+    "kn": "ಬೇಸರ / ಒತ್ತಡ",
+    "ml": "വിഷാദം / സമ്മർദ്ദം",
+    "pa": "ਉਦਾਸੀ / ਤਣਾਅ",
+    "or": "ଦୁଃଖ / ଚାପ",
+    "ur": "اداسی / تناؤ",
+    "as": "মন বেয়া / চিন্তা",
+    "ne": "उदासी / तनाव"
+   },
+   "patterns": {
+    "en": [
+     "sad",
+     "depressed",
+     "stress",
+     "anxious",
+     "anxiety",
+     "hopeless",
+     "low mood"
+    ],
+    "hi": [
+     "udaas",
+     "udasi",
+     "tanav",
+     "tension",
+     "ghabrahat",
+     "उदास",
+     "तनाव",
+     "घबराहट"
+    ],
+    "ta": [
+     "மன அழுத்தம்",
+     "கவலை",
+     "mana azhutham",
+     "kavalai",
+     "bayama irukku"
+    ]
+   }
+  },
+  "sleep_problem": {
+   "category": "mental",
+   "label": {
+    "en": "trouble sleeping",
+    "hi": "नींद नहीं आना",
+    "ta": "தூக்கமின்மை"
+   },
+   "patterns": {
+    "en": [
+     "can't sleep",
+     "cannot sleep",
+     "no sleep",
+     "insomnia"
+    ],
+    "hi": [
+     "neend nahi",
+     "nind nahi",
+     "नींद नहीं"
+    ],
+    "ta": [
+     "தூக்கம் வரவில்லை",
+     "தூக்கமின்மை",
+     "thookam varala",
+     "thookam illa"
+    ]
+   },
+   "minor": true
+  },
+  "pregnancy_checkup": {
+   "category": "maternal",
+   "label": {
+    "en": "pregnancy check-up",
+    "hi": "गर्भावस्था जांच",
+    "ta": "கர்ப்ப பரிசோதனை"
+   },
+   "patterns": {
+    "en": [
+     "pregnancy checkup",
+     "antenatal checkup",
+     "anc visit",
+     "pregnancy check-up"
+    ],
+    "hi": [
+     "garbh jaanch",
+     "pregnancy jaanch",
+     "गर्भ जांच",
+     "गर्भावस्था जांच"
+    ],
+    "ta": [
+     "கர்ப்ப பரிசோதனை",
+     "karppa parisodhanai"
+    ]
+   }
+  },
+  "diabetes": {
+   "category": "comorbidity",
+   "label": {
+    "en": "diabetes",
+    "hi": "शुगर",
+    "ta": "சர்க்கரை நோய்"
+   },
+   "patterns": {
+    "en": [
+     "diabetes",
+     "diabetic",
+     "sugar patient",
+     "high sugar"
+    ],
+    "hi": [
+     "sugar ki bimari",
+     "sugar hai",
+     "madhumeh",
+     "शुगर",
+     "मधुमेह"
+    ],
+    "ta": [
+     "சர்க்கரை நோய்",
+     "சர்க்கரை",
+     "sakkarai",
+     "sugar irukku"
+    ]
+   },
+   "comorbidity": true
+  },
+  "heart_disease": {
+   "category": "comorbidity",
+   "label": {
+    "en": "heart disease",
+    "hi": "दिल की बीमारी",
+    "ta": "இதய நோய்"
+   },
+   "patterns": {
+    "en": [
+     "heart disease",
+     "heart patient",
+     "heart problem",
+     "heart attack before"
+    ],
+    "hi": [
+     "dil ki bimari",
+     "heart ki bimari",
+     "दिल की बीमारी",
+     "हृदय रोग"
+    ],
+    "ta": [
+     "இதய நோய்",
+     "heart problem irukku",
+     "idhaya noi"
+    ]
+   },
+   "comorbidity": true
+  },
+  "hypertension": {
+   "category": "comorbidity",
+   "label": {
+    "en": "high blood pressure",
+    "hi": "हाई बीपी",
+    "ta": "ரத்த அழுத்தம்"
+   },
+   "patterns": {
+    "en": [
+     "high blood pressure",
+     "hypertension",
+     "bp patient",
+     "high bp"
+    ],
+    "hi": [
+     "high bp",
+     "bp ki bimari",
+     "bp hai",
+     "हाई बीपी",
+     "बीपी"
+    ],
+    "ta": [
+     "ரத்த அழுத்தம்",
+     "bp irukku",
+     "bp pressure"
+    ]
+   },
+   "comorbidity": true
+  },
+  "kidney_disease": {
+   "category": "comorbidity",
+   "label": {
+    "en": "kidney disease",
+    "hi": "किडनी की बीमारी",
+    "ta": "சிறுநீரக நோய்"
+   },
+   "patterns": {
+    "en": [
+     "kidney disease",
+     "kidney problem",
+     "dialysis"
+    ],
+    "hi": [
+     "kidney ki bimari",
+     "गुर्दे",
+     "किडनी"
+    ],
+    "ta": [
+     "சிறுநீரக நோய்",
+     "kidney problem irukku"
+    ]
+   },
+   "comorbidity": true
+  },
+  "lung_disease": {
+   "category": "comorbidity",
+   "label": {
+    "en": "asthma / lung disease",
+    "hi": "दमा",
+    "ta": "ஆஸ்துமா"
+   },
+   "patterns": {
+    "en": [
+     "asthma",
+     "copd",
+     "lung disease"
+    ],
+    "hi": [
+     "dama",
+     "दमा"
+    ],
+    "ta": [
+     "ஆஸ்துமா",
+     "இளைப்பு",
+     "asthma irukku",
+     "ilaippu"
+    ]
+   },
+   "comorbidity": true
+  },
+  "immunocompromised": {
+   "category": "comorbidity",
+   "label": {
+    "en": "cancer / HIV / on chemotherapy",
+    "hi": "कैंसर / एचआईवी",
+    "ta": "புற்றுநோய் / எச்ஐவி"
+   },
+   "patterns": {
+    "en": [
+     "cancer",
+     "hiv",
+     "chemotherapy",
+     "chemo"
+    ],
+    "hi": [
+     "कैंसर",
+     "एचआईवी"
+    ],
+    "ta": [
+     "புற்றுநோய்",
+     "puttru noi"
+    ]
+   },
+   "comorbidity": true
+  }
+ },
+ "red_flags": [
+  {
+   "id": "RF-CHEST",
+   "requires": [
+    [
+     "chest_pain"
+    ]
+   ],
+   "category": "cardiac",
+   "label": "Chest pain or pressure",
+   "action": "CALL_108",
+   "service": [
+    "emergency",
+    "cardiology"
+   ]
+  },
+  {
+   "id": "RF-BREATH",
+   "requires": [
+    [
+     "breathing_difficulty"
+    ]
+   ],
+   "category": "respiratory",
+   "label": "Difficulty breathing",
+   "action": "CALL_108",
+   "service": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-UNCONSCIOUS",
+   "requires": [
+    [
+     "unconscious"
+    ]
+   ],
+   "category": "neuro",
+   "label": "Unconscious, fainted or not responding",
+   "action": "CALL_108",
+   "service": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-SEIZURE",
+   "requires": [
+    [
+     "seizure"
+    ]
+   ],
+   "category": "neuro",
+   "label": "Fits / seizure",
+   "action": "CALL_108",
+   "service": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-STROKE",
+   "requires": [
+    [
+     "stroke_signs"
+    ]
+   ],
+   "category": "neuro",
+   "label": "Possible stroke signs (face droop, one-side weakness, speech)",
+   "action": "CALL_108",
+   "service": [
+    "emergency",
+    "neurology"
+   ]
+  },
+  {
+   "id": "RF-BLEED",
+   "requires": [
+    [
+     "severe_bleeding"
+    ]
+   ],
+   "category": "injury",
+   "label": "Heavy bleeding",
+   "action": "CALL_108",
+   "service": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-HAEMATEMESIS",
+   "requires": [
+    [
+     "vomiting_blood"
+    ]
+   ],
+   "category": "digestive",
+   "label": "Vomiting or coughing blood",
+   "action": "CALL_108",
+   "service": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-SNAKE",
+   "requires": [
+    [
+     "snake_bite"
+    ]
+   ],
+   "category": "bite",
+   "label": "Snake bite",
+   "action": "CALL_108",
+   "service": [
+    "antivenom",
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-POISON",
+   "requires": [
+    [
+     "poisoning"
+    ]
+   ],
+   "category": "toxic",
+   "label": "Poisoning or pesticide ingestion",
+   "action": "CALL_108",
+   "service": [
+    "poison_care",
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-SELFHARM",
+   "requires": [
+    [
+     "suicidal"
+    ]
+   ],
+   "category": "mental",
+   "label": "Thoughts of self-harm or suicide",
+   "action": "MENTAL_HEALTH_CRISIS",
+   "service": [
+    "mental_health",
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-BURN",
+   "requires": [
+    [
+     "severe_burn"
+    ]
+   ],
+   "category": "injury",
+   "label": "Serious burn",
+   "action": "CALL_108",
+   "service": [
+    "burns",
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-PREG-DANGER",
+   "requires": [
+    [
+     "pregnancy"
+    ],
+    [
+     "bleeding",
+     "severe_bleeding",
+     "stomach_pain",
+     "no_fetal_movement",
+     "seizure",
+     "headache"
+    ]
+   ],
+   "category": "maternal",
+   "label": "Pregnancy danger sign (bleeding, abdominal pain, severe headache, fits or reduced baby movement)",
+   "action": "CALL_108",
+   "service": [
+    "obstetrics",
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-FETAL-MOVE",
+   "requires": [
+    [
+     "no_fetal_movement"
+    ]
+   ],
+   "category": "maternal",
+   "label": "Reduced or no baby movement",
+   "action": "CALL_108",
+   "service": [
+    "obstetrics",
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-HEAD-INJURY",
+   "requires": [
+    [
+     "head_injury"
+    ],
+    [
+     "vomiting",
+     "confusion",
+     "unconscious",
+     "seizure"
+    ]
+   ],
+   "category": "injury",
+   "label": "Head injury with vomiting, confusion or fits",
+   "action": "CALL_108",
+   "service": [
+    "emergency",
+    "trauma"
+   ]
+  },
+  {
+   "id": "RF-NEWBORN-FEVER",
+   "requires": [
+    [
+     "newborn"
+    ],
+    [
+     "fever"
+    ]
+   ],
+   "category": "pediatric",
+   "label": "Fever in a newborn",
+   "action": "CALL_108",
+   "service": [
+    "newborn_care",
+    "pediatrics",
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-CONFUSION",
+   "requires": [
+    [
+     "confusion"
+    ]
+   ],
+   "category": "neuro",
+   "label": "New confusion",
+   "action": "CALL_108",
+   "service": [
+    "emergency"
+   ]
+  }
+ ],
+ "numeric_red_flags": [
+  {
+   "id": "RF-INFANT-FEVER",
+   "label": "Fever in a baby under 3 months",
+   "when": {
+    "concept": "fever",
+    "age_years_lt": 0.25
+   },
+   "action": "CALL_108",
+   "category": "pediatric",
+   "service": [
+    "pediatrics",
+    "newborn_care",
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-SPO2-LOW",
+   "label": "Oxygen saturation below 90% (ASHA vitals)",
+   "when": {
+    "vital": "spo2",
+    "lt": 90
+   },
+   "action": "CALL_108",
+   "category": "respiratory",
+   "service": [
+    "emergency"
+   ]
+  },
+  {
+   "id": "RF-SCREEN-YES",
+   "label": "Danger sign reported in the screening question",
+   "when": {
+    "answer": "redflag_screen",
+    "eq": "yes"
+   },
+   "action": "CALL_108",
+   "category": "general",
+   "service": [
+    "emergency"
+   ]
+  }
+ ],
+ "severity_words": {
+  "high": {
+   "value": 8,
+   "patterns": [
+    "severe",
+    "unbearable",
+    "very bad",
+    "extreme",
+    "worst",
+    "bahut tez",
+    "bahut zyada",
+    "bahut jyada",
+    "asahniya",
+    "असहनीय",
+    "बहुत तेज",
+    "बहुत ज़्यादा",
+    "बहुत ज्यादा",
+    "kadumaiyana",
+    "கடுமையான",
+    "thanga mudiyala",
+    "தாங்க முடியவில்லை",
+    "romba athigama"
+   ]
+  },
+  "low": {
+   "value": 3,
+   "patterns": [
+    "mild",
+    "slight",
+    "a little",
+    "halka",
+    "halki",
+    "हल्का",
+    "हल्की",
+    "thoda",
+    "थोड़ा",
+    "lesana",
+    "லேசான",
+    "லேசாக",
+    "konjam",
+    "கொஞ்சம்"
+   ]
+  }
+ },
+ "duration": {
+  "units": {
+   "day": [
+    "days",
+    "day",
+    "din",
+    "dino",
+    "दिनों",
+    "दिन",
+    "naatkalaga",
+    "naatkal",
+    "naala",
+    "naal",
+    "நாட்களாக",
+    "நாட்கள்",
+    "நாளாக",
+    "நாள்",
+    "দিনের",
+    "দিন",
+    "రోజులుగా",
+    "రోజులు",
+    "రోజుల",
+    "दिवसांपासून",
+    "दिवस",
+    "દિવસથી",
+    "દિવસ",
+    "ದಿನಗಳಿಂದ",
+    "ದಿನ",
+    "ദിവസമായി",
+    "ദിവസം",
+    "ਦਿਨਾਂ",
+    "ਦਿਨ",
+    "ଦିନରୁ",
+    "ଦିନ",
+    "دنوں",
+    "دن",
+    "দিনৰ",
+    "दिनदेखि"
+   ],
+   "week": [
+    "weeks",
+    "week",
+    "hafton",
+    "hafte",
+    "hafta",
+    "हफ्तों",
+    "हफ्ते",
+    "हफ़्ते",
+    "हफ्ता",
+    "vaarangalaga",
+    "vaaram",
+    "வாரங்களாக",
+    "வாரமாக",
+    "வாரம்",
+    "সপ্তাহ",
+    "వారం",
+    "आठवड्यांपासून",
+    "आठवडा",
+    "અઠવાડિયાથી",
+    "અઠવાડિયું",
+    "ವಾರದಿಂದ",
+    "ವಾರ",
+    "ആഴ്ചയായി",
+    "ആഴ്ച",
+    "ਹਫ਼ਤੇ",
+    "ਹਫ਼ਤਾ",
+    "ସପ୍ତାହ",
+    "ہفتے",
+    "ہفتہ",
+    "हप्तादेखि",
+    "हप्ता"
+   ],
+   "month": [
+    "months",
+    "month",
+    "mahino",
+    "mahine",
+    "mahina",
+    "महीनों",
+    "महीने",
+    "महीना",
+    "maasangalaga",
+    "maasam",
+    "மாதங்களாக",
+    "மாதமாக",
+    "மாதம்",
+    "মাস",
+    "నెలలుగా",
+    "నెల",
+    "महिन्यांपासून",
+    "महिना",
+    "મહિનાથી",
+    "મહિના",
+    "ತಿಂಗಳಿಂದ",
+    "ತಿಂಗಳು",
+    "മാസമായി",
+    "മാസം",
+    "ਮਹੀਨੇ",
+    "ਮਹੀਨਾ",
+    "ମାସ",
+    "مہینے",
+    "مہینہ",
+    "महिनादेखि"
+   ]
+  },
+  "multipliers": {
+   "day": 1,
+   "week": 7,
+   "month": 30
+  },
+  "number_words": {
+   "a": 1,
+   "an": 1,
+   "one": 1,
+   "two": 2,
+   "three": 3,
+   "four": 4,
+   "five": 5,
+   "six": 6,
+   "seven": 7,
+   "eight": 8,
+   "nine": 9,
+   "ten": 10,
+   "fifteen": 15,
+   "few": 3,
+   "couple of": 2,
+   "ek": 1,
+   "do": 2,
+   "teen": 3,
+   "char": 4,
+   "chaar": 4,
+   "paanch": 5,
+   "panch": 5,
+   "chhe": 6,
+   "saat": 7,
+   "aath": 8,
+   "nau": 9,
+   "das": 10,
+   "pandrah": 15,
+   "एक": 1,
+   "दो": 2,
+   "तीन": 3,
+   "चार": 4,
+   "पांच": 5,
+   "पाँच": 5,
+   "छह": 6,
+   "सात": 7,
+   "आठ": 8,
+   "नौ": 9,
+   "दस": 10,
+   "oru": 1,
+   "onnu": 1,
+   "rendu": 2,
+   "irandu": 2,
+   "moonu": 3,
+   "moondru": 3,
+   "naalu": 4,
+   "anju": 5,
+   "ainthu": 5,
+   "aaru": 6,
+   "ezhu": 7,
+   "ettu": 8,
+   "pathu": 10,
+   "ஒரு": 1,
+   "இரண்டு": 2,
+   "ரெண்டு": 2,
+   "மூன்று": 3,
+   "மூணு": 3,
+   "நான்கு": 4,
+   "நாலு": 4,
+   "ஐந்து": 5,
+   "அஞ்சு": 5,
+   "ஆறு": 6,
+   "ஏழு": 7,
+   "எட்டு": 8,
+   "பத்து": 10,
+   "दोन": 2,
+   "पाच": 5,
+   "सहा": 6,
+   "नऊ": 9,
+   "दहा": 10,
+   "दुई": 2,
+   "छ": 6,
+   "এক": 1,
+   "দুই": 2,
+   "তিন": 3,
+   "চার": 4,
+   "পাঁচ": 5,
+   "ছয়": 6,
+   "সাত": 7,
+   "আট": 8,
+   "নয়": 9,
+   "দশ": 10,
+   "তিনি": 3,
+   "চাৰি": 4,
+   "আঠ": 8,
+   "ন": 9,
+   "দহ": 10,
+   "ఒక": 1,
+   "రెండు": 2,
+   "మూడు": 3,
+   "నాలుగు": 4,
+   "ఐదు": 5,
+   "ఆరు": 6,
+   "ఏడు": 7,
+   "ఎనిమిది": 8,
+   "తొమ్మిది": 9,
+   "పది": 10,
+   "ಒಂದು": 1,
+   "ಎರಡು": 2,
+   "ಮೂರು": 3,
+   "ನಾಲ್ಕು": 4,
+   "ಐದು": 5,
+   "ಆರು": 6,
+   "ಏಳು": 7,
+   "ಎಂಟು": 8,
+   "ಒಂಬತ್ತು": 9,
+   "ಹತ್ತು": 10,
+   "ഒരു": 1,
+   "രണ്ട്": 2,
+   "മൂന്ന്": 3,
+   "നാല്": 4,
+   "അഞ്ച്": 5,
+   "ആറ്": 6,
+   "ഏഴ്": 7,
+   "എട്ട്": 8,
+   "ഒമ്പത്": 9,
+   "പത്ത്": 10,
+   "એક": 1,
+   "બે": 2,
+   "ત્રણ": 3,
+   "ચાર": 4,
+   "પાંચ": 5,
+   "છ": 6,
+   "સાત": 7,
+   "આઠ": 8,
+   "નવ": 9,
+   "દસ": 10,
+   "ਇੱਕ": 1,
+   "ਦੋ": 2,
+   "ਤਿੰਨ": 3,
+   "ਚਾਰ": 4,
+   "ਪੰਜ": 5,
+   "ਛੇ": 6,
+   "ਸੱਤ": 7,
+   "ਅੱਠ": 8,
+   "ਨੌਂ": 9,
+   "ਦਸ": 10,
+   "ଏକ": 1,
+   "ଦୁଇ": 2,
+   "ତିନି": 3,
+   "ଚାରି": 4,
+   "ପାଞ୍ଚ": 5,
+   "ଛଅ": 6,
+   "ସାତ": 7,
+   "ଆଠ": 8,
+   "ନଅ": 9,
+   "ଦଶ": 10,
+   "ایک": 1,
+   "دو": 2,
+   "تین": 3,
+   "چار": 4,
+   "پانچ": 5,
+   "چھ": 6,
+   "سات": 7,
+   "آٹھ": 8,
+   "نو": 9,
+   "دس": 10
+  },
+  "since_phrases": {
+   "since yesterday": 1,
+   "from yesterday": 1,
+   "yesterday": 1,
+   "kal se": 1,
+   "कल से": 1,
+   "nethu": 1,
+   "nethula irundhu": 1,
+   "நேற்று": 1,
+   "since morning": 0,
+   "since today": 0,
+   "today": 0,
+   "aaj se": 0,
+   "subah se": 0,
+   "आज से": 0,
+   "सुबह से": 0,
+   "inniki": 0,
+   "indru": 0,
+   "இன்று": 0,
+   "காலையில் இருந்து": 0,
+   "kaalaila irundhu": 0
+  }
+ },
+ "age": {
+  "year_units": [
+   "years old",
+   "year old",
+   "years",
+   "year",
+   "yrs",
+   "yr",
+   "saal",
+   "sal",
+   "varsh",
+   "साल",
+   "वर्ष",
+   "varusham",
+   "vayasu",
+   "vayathu",
+   "வயது",
+   "வருடம்",
+   "বছর",
+   "বছৰ",
+   "సంవత్సరాలు",
+   "ఏళ్ళు",
+   "ఏళ్ల",
+   "वर्षे",
+   "वर्षांचा",
+   "वर्षांची",
+   "વર્ષ",
+   "ವರ್ಷ",
+   "വയസ്സ്",
+   "വയസ്",
+   "ਸਾਲ",
+   "ବର୍ଷ",
+   "سال",
+   "वर्षको"
+  ],
+  "month_units_with_marker": [
+   "month old",
+   "months old",
+   "mahine ka",
+   "mahine ki",
+   "mahine ke",
+   "महीने का",
+   "महीने की",
+   "maasa kuzhandhai",
+   "மாத குழந்தை"
+  ],
+  "prefix": [
+   "age",
+   "aged",
+   "i am",
+   "i'm",
+   "im",
+   "umar",
+   "umr",
+   "उम्र",
+   "vayadhu",
+   "vayasu",
+   "வயது",
+   "বয়স",
+   "বয়স",
+   "বয়স",
+   "వయస్సు",
+   "वय",
+   "ઉંમર",
+   "ವಯಸ್ಸು",
+   "പ്രായം",
+   "ਉਮਰ",
+   "ବୟସ",
+   "عمر",
+   "उमेर"
+  ]
+ },
+ "medication_dose": {
+  "en": [
+   "how many tablets",
+   "how much medicine",
+   "what dose",
+   "dosage",
+   "how many pills",
+   "how much paracetamol",
+   "dose of"
+  ],
+  "hi": [
+   "kitni goli",
+   "kitni dawai",
+   "kitna dawa",
+   "kitni dawa",
+   "कितनी गोली",
+   "कितनी दवा",
+   "dose kitna"
+  ],
+  "ta": [
+   "எத்தனை மாத்திரை",
+   "எவ்வளவு மருந்து",
+   "ethana mathirai",
+   "evvalavu marundhu",
+   "ethanai maathirai"
+  ]
+ },
+ "injection_patterns": [
+  "ignore previous",
+  "ignore all previous",
+  "ignore the above",
+  "ignore your instructions",
+  "system prompt",
+  "you are now",
+  "act as a doctor",
+  "say it is not an emergency",
+  "classify as low",
+  "classify this as",
+  "mark it as routine",
+  "disregard the rules",
+  "developer mode"
+ ],
+ "levels": [
+  "INFO_SELF_CARE",
+  "PROMPT_ROUTINE",
+  "URGENT_SAME_DAY",
+  "EMERGENCY"
+ ],
+ "rules": [
+  {
+   "id": "R-EM-RF",
+   "level": "EMERGENCY",
+   "desc": "Any red flag (rule table) overrides every other rule and bypasses the language model."
+  },
+  {
+   "id": "R-AB-NOSYM",
+   "level": "CANNOT_DETERMINE",
+   "desc": "No recognisable symptom: abstain rather than guess."
+  },
+  {
+   "id": "R-AB-MISSING",
+   "level": "CANNOT_DETERMINE",
+   "desc": "Required inputs (age, duration) still unknown after clarification."
+  },
+  {
+   "id": "R-AB-MED",
+   "level": "CANNOT_DETERMINE",
+   "desc": "Medication dose questions are never answered; route to pharmacist/doctor/104."
+  },
+  {
+   "id": "R-UR-FLAGGED",
+   "level": "URGENT_SAME_DAY",
+   "desc": "Symptom on the same-day list (animal bite, bleeding, blood in stool/urine, head injury)."
+  },
+  {
+   "id": "R-UR-SEV",
+   "level": "URGENT_SAME_DAY",
+   "desc": "Patient-rated severity 7/10 or more."
+  },
+  {
+   "id": "R-UR-FEVER3",
+   "level": "URGENT_SAME_DAY",
+   "desc": "Fever for 3 days or more."
+  },
+  {
+   "id": "R-UR-CHILD-GI",
+   "level": "URGENT_SAME_DAY",
+   "desc": "Child under 5 with diarrhoea, vomiting or fever."
+  },
+  {
+   "id": "R-UR-SPO2",
+   "level": "URGENT_SAME_DAY",
+   "desc": "Oxygen saturation 90-93% (ASHA vitals)."
+  },
+  {
+   "id": "R-UR-TEMP",
+   "level": "URGENT_SAME_DAY",
+   "desc": "Temperature 39.5 C or higher (ASHA vitals)."
+  },
+  {
+   "id": "R-UR-PREG",
+   "level": "URGENT_SAME_DAY",
+   "desc": "Any new symptom during pregnancy is seen the same day."
+  },
+  {
+   "id": "R-RT-ANC",
+   "level": "PROMPT_ROUTINE",
+   "desc": "Routine pregnancy check-up with no new symptom: antenatal visit at the nearest AAM/PHC."
+  },
+  {
+   "id": "R-RT-COUGH14",
+   "level": "PROMPT_ROUTINE",
+   "desc": "Cough for 2 weeks or more: TB screening under the national programme."
+  },
+  {
+   "id": "R-RT-LONG",
+   "level": "PROMPT_ROUTINE",
+   "desc": "Symptoms lasting 7 days or more."
+  },
+  {
+   "id": "R-RT-MENTAL",
+   "level": "PROMPT_ROUTINE",
+   "desc": "Low mood or sleep problems without crisis signs: counselling + Tele-MANAS."
+  },
+  {
+   "id": "R-IN-MINOR",
+   "level": "INFO_SELF_CARE",
+   "desc": "Only minor symptoms, under 3 days, severity 3/10 or less (risk factors then raise it one level)."
+  },
+  {
+   "id": "R-RT-DEFAULT",
+   "level": "PROMPT_ROUTINE",
+   "desc": "Default when no other rule applies."
+  },
+  {
+   "id": "R-MOD-RISK",
+   "level": "+1",
+   "desc": "High-risk group (under 5, 65+, pregnant, chronic illness) raises the level by one and requests human review."
+  },
+  {
+   "id": "R-LANG-ESC",
+   "level": "note",
+   "desc": "Unvalidated language can only escalate, never reassure."
+  },
+  {
+   "id": "R-AB-LANG",
+   "level": "CANNOT_DETERMINE",
+   "desc": "Language not understood offline (assisted-tier language without the AI layer, or unrecognised script) and no red flag found: abstain and route to a human."
+  },
+  {
+   "id": "R-LANG-DRAFT",
+   "level": "note",
+   "desc": "Core-tier language: offline lexicon is a draft pending native-speaker review, so a human should review the result."
+  }
+ ],
+ "category_services": {
+  "cardiac": {
+   "required": [
+    "emergency"
+   ],
+   "preferred": [
+    "cardiology"
+   ]
+  },
+  "respiratory": {
+   "required": [
+    "general_medicine"
+   ],
+   "preferred": [
+    "pulmonology"
+   ]
+  },
+  "general": {
+   "required": [
+    "general_medicine"
+   ],
+   "preferred": []
+  },
+  "digestive": {
+   "required": [
+    "general_medicine"
+   ],
+   "preferred": []
+  },
+  "skin": {
+   "required": [
+    "dermatology",
+    "general_medicine"
+   ],
+   "preferred": [
+    "dermatology"
+   ]
+  },
+  "musculoskeletal": {
+   "required": [
+    "general_medicine"
+   ],
+   "preferred": [
+    "orthopedics"
+   ]
+  },
+  "dental": {
+   "required": [
+    "dental",
+    "general_medicine"
+   ],
+   "preferred": [
+    "dental"
+   ]
+  },
+  "ent": {
+   "required": [
+    "general_medicine"
+   ],
+   "preferred": [
+    "ent"
+   ]
+  },
+  "urinary": {
+   "required": [
+    "general_medicine"
+   ],
+   "preferred": [
+    "lab"
+   ]
+  },
+  "mental": {
+   "required": [
+    "mental_health",
+    "general_medicine"
+   ],
+   "preferred": [
+    "mental_health"
+   ]
+  },
+  "bite": {
+   "required": [
+    "anti_rabies"
+   ],
+   "preferred": []
+  },
+  "injury": {
+   "required": [
+    "emergency",
+    "general_medicine"
+   ],
+   "preferred": [
+    "trauma",
+    "xray"
+   ]
+  },
+  "maternal": {
+   "required": [
+    "antenatal_care",
+    "obstetrics"
+   ],
+   "preferred": [
+    "antenatal_care"
+   ]
+  },
+  "pediatric": {
+   "required": [
+    "pediatrics",
+    "general_medicine"
+   ],
+   "preferred": [
+    "pediatrics"
+   ]
+  },
+  "tb": {
+   "required": [
+    "tb_screening"
+   ],
+   "preferred": [
+    "pulmonology"
+   ]
+  },
+  "neuro": {
+   "required": [
+    "emergency"
+   ],
+   "preferred": [
+    "neurology"
+   ]
+  },
+  "toxic": {
+   "required": [
+    "emergency"
+   ],
+   "preferred": [
+    "poison_care"
+   ]
+  }
+ },
+ "messages": {
+  "levels": {
+   "EMERGENCY": {
+    "title": {
+     "en": "Emergency: get help now",
+     "hi": "आपातकाल: अभी मदद लें",
+     "ta": "அவசரம்: உடனே உதவி பெறுங்கள்",
+     "bn": "জরুরি অবস্থা: এখনই সাহায্য নিন",
+     "as": "জৰুৰীকালীন: এতিয়াই সহায় লওক",
+     "te": "అత్యవసరం: వెంటనే సహాయం పొందండి",
+     "kn": "ತುರ್ತು: ಈಗಲೇ ಸಹಾಯ ಪಡೆಯಿರಿ",
+     "mr": "आणीबाणी: आत्ताच मदत घ्या",
+     "gu": "કટોકટી: હમણાં જ મદદ મેળવો",
+     "ml": "അടിയന്തരം: ഉടൻ സഹായം തേടുക",
+     "pa": "ਐਮਰਜੈਂਸੀ: ਹੁਣੇ ਮਦਦ ਲਓ",
+     "or": "ଜରୁରୀକାଳୀନ: ଏବେ ସାହାଯ୍ୟ ନିଅନ୍ତୁ",
+     "ur": "ایمرجنسی: ابھی مدد لیں",
+     "ne": "आपतकाल: अहिले नै मद्दत लिनुहोस्"
+    },
+    "action": {
+     "en": "Call 108 for an ambulance now. Do not wait and do not travel alone. If the person is unconscious and breathing, lay them on their side.",
+     "hi": "अभी 108 पर एम्बुलेंस के लिए कॉल करें। इंतज़ार न करें और अकेले यात्रा न करें। व्यक्ति बेहोश हो पर सांस ले रहा हो तो उसे करवट पर लिटाएं।",
+     "ta": "உடனே 108 அழைத்து ஆம்புலன்ஸ் வரவழையுங்கள். காத்திருக்க வேண்டாம், தனியாகப் பயணிக்க வேண்டாம். சுயநினைவு இல்லாமல் மூச்சு விட்டால், ஒரு பக்கமாகப் படுக்க வையுங்கள்.",
+     "bn": "এখনই অ্যাম্বুলেন্সের জন্য 108 নম্বরে ফোন করুন। অপেক্ষা করবেন না, একা যাবেন না। অজ্ঞান কিন্তু শ্বাস চলছে হলে এক পাশে শুইয়ে দিন।",
+     "as": "এতিয়াই এম্বুলেন্সৰ বাবে 108 নম্বৰত ফোন কৰক। অপেক্ষা নকৰিব, অকলে নাযাব। অজ্ঞান কিন্তু উশাহ লৈ আছে যদি এফালে শুৱাই দিয়ক।",
+     "te": "వెంటనే అంబులెన్స్ కోసం 108కి కాల్ చేయండి. ఆలస్యం చేయకండి, ఒంటరిగా వెళ్లకండి. స్పృహ లేకపోయినా ఊపిరి ఉంటే ఒక పక్కకు పడుకోబెట్టండి.",
+     "kn": "ಈಗಲೇ ಆಂಬ್ಯುಲೆನ್ಸ್‌ಗಾಗಿ 108ಕ್ಕೆ ಕರೆ ಮಾಡಿ. ಕಾಯಬೇಡಿ, ಒಬ್ಬರೇ ಹೋಗಬೇಡಿ. ಪ್ರಜ್ಞೆ ಇಲ್ಲದೆ ಉಸಿರಾಡುತ್ತಿದ್ದರೆ ಒಂದು ಬದಿಗೆ ಮಲಗಿಸಿ.",
+     "mr": "आत्ताच रुग्णवाहिकेसाठी 108 वर फोन करा. थांबू नका, एकटे जाऊ नका. बेशुद्ध पण श्वास चालू असल्यास कुशीवर झोपवा.",
+     "gu": "હમણાં જ એમ્બ્યુલન્સ માટે 108 પર ફોન કરો. રાહ ન જુઓ, એકલા ન જાઓ. બેભાન પણ શ્વાસ ચાલુ હોય તો પડખે સુવડાવો.",
+     "ml": "ഉടൻ ആംബുലൻസിനായി 108-ൽ വിളിക്കുക. കാത്തിരിക്കരുത്, ഒറ്റയ്ക്ക് പോകരുത്. ബോധമില്ലെങ്കിലും ശ്വസിക്കുന്നുണ്ടെങ്കിൽ ഒരു വശത്തേക്ക് കിടത്തുക.",
+     "pa": "ਹੁਣੇ ਐਂਬੂਲੈਂਸ ਲਈ 108 'ਤੇ ਫ਼ੋਨ ਕਰੋ। ਉਡੀਕ ਨਾ ਕਰੋ, ਇਕੱਲੇ ਨਾ ਜਾਓ। ਬੇਹੋਸ਼ ਪਰ ਸਾਹ ਚੱਲ ਰਿਹਾ ਹੋਵੇ ਤਾਂ ਕਰਵਟ 'ਤੇ ਲਿਟਾਓ।",
+     "or": "ଏବେ ଆମ୍ବୁଲାନ୍ସ ପାଇଁ 108 କୁ ଫୋନ କରନ୍ତୁ। ଅପେକ୍ଷା କରନ୍ତୁ ନାହିଁ, ଏକୁଟିଆ ଯାଆନ୍ତୁ ନାହିଁ। ଚେତା ନାହିଁ କିନ୍ତୁ ନିଶ୍ୱାସ ଚାଲିଛି ତେବେ ଗୋଟିଏ ପାଖକୁ ଶୁଆନ୍ତୁ।",
+     "ur": "ابھی ایمبولینس کے لیے 108 پر فون کریں۔ انتظار نہ کریں، اکیلے نہ جائیں۔ بے ہوش مگر سانس لے رہا ہو تو کروٹ پر لٹائیں۔",
+     "ne": "अहिले नै एम्बुलेन्सका लागि 108 मा फोन गर्नुहोस्। नपर्खनुहोस्, एक्लै नजानुहोस्। बेहोस तर सास फेरिरहेको भए कोल्टे पारेर सुताउनुहोस्।"
+    }
+   },
+   "MENTAL_HEALTH_CRISIS": {
+    "title": {
+     "en": "Please talk to someone right now",
+     "hi": "कृपया अभी किसी से बात करें",
+     "ta": "தயவுசெய்து இப்போதே ஒருவரிடம் பேசுங்கள்",
+     "bn": "দয়া করে এখনই কারও সাথে কথা বলুন",
+     "as": "অনুগ্ৰহ কৰি এতিয়াই কাৰোবাৰ সৈতে কথা পাতক",
+     "te": "దయచేసి ఇప్పుడే ఎవరితోనైనా మాట్లాడండి",
+     "kn": "ದಯವಿಟ್ಟು ಈಗಲೇ ಯಾರೊಂದಿಗಾದರೂ ಮಾತನಾಡಿ",
+     "mr": "कृपया आत्ताच कोणाशी तरी बोला",
+     "gu": "કૃપા કરીને હમણાં જ કોઈની સાથે વાત કરો",
+     "ml": "ദയവായി ഇപ്പോൾ തന്നെ ആരോടെങ്കിലും സംസാരിക്കുക",
+     "pa": "ਕਿਰਪਾ ਕਰਕੇ ਹੁਣੇ ਕਿਸੇ ਨਾਲ ਗੱਲ ਕਰੋ",
+     "or": "ଦୟାକରି ଏବେ କାହା ସହ କଥା ହୁଅନ୍ତୁ",
+     "ur": "براہ کرم ابھی کسی سے بات کریں",
+     "ne": "कृपया अहिले नै कसैसँग कुरा गर्नुहोस्"
+    },
+    "action": {
+     "en": "Call Tele-MANAS on 14416 (free, any time). If there is immediate danger, call 112. Stay with someone you trust and keep anything harmful away.",
+     "hi": "टेली-मानस 14416 पर कॉल करें (निःशुल्क, कभी भी)। तुरंत खतरा हो तो 112 पर कॉल करें। किसी भरोसेमंद व्यक्ति के साथ रहें और नुकसान पहुंचाने वाली चीज़ें दूर रखें।",
+     "ta": "டெலி-மானஸ் 14416 ஐ அழையுங்கள் (இலவசம், எப்போதும்). உடனடி ஆபத்து இருந்தால் 112 அழையுங்கள். நம்பகமான ஒருவருடன் இருங்கள், தீங்கு தரும் பொருட்களை அகற்றுங்கள்.",
+     "bn": "টেলি-মানস 14416 নম্বরে ফোন করুন (বিনামূল্যে, যেকোনো সময়)। বিপদ থাকলে 112 নম্বরে ফোন করুন। বিশ্বস্ত কারও সাথে থাকুন।",
+     "as": "টেলি-মানছ 14416 নম্বৰত ফোন কৰক (বিনামূলীয়া)। বিপদ থাকিলে 112 নম্বৰত ফোন কৰক। বিশ্বাসী কাৰোবাৰ লগত থাকক।",
+     "te": "టెలి-మానస్ 14416కి కాల్ చేయండి (ఉచితం, ఎప్పుడైనా). ప్రమాదం ఉంటే 112కి కాల్ చేయండి. నమ్మకమైన వ్యక్తితో ఉండండి.",
+     "kn": "ಟೆಲಿ-ಮಾನಸ್ 14416ಕ್ಕೆ ಕರೆ ಮಾಡಿ (ಉಚಿತ, ಯಾವಾಗ ಬೇಕಾದರೂ). ಅಪಾಯವಿದ್ದರೆ 112ಕ್ಕೆ ಕರೆ ಮಾಡಿ. ನಂಬಿಕಸ್ಥರ ಜೊತೆ ಇರಿ.",
+     "mr": "टेली-मानस 14416 वर फोन करा (मोफत, कधीही). धोका असल्यास 112 वर फोन करा. विश्वासू व्यक्तीसोबत रहा.",
+     "gu": "ટેલી-માનસ 14416 પર ફોન કરો (મફત, ગમે ત્યારે). જોખમ હોય તો 112 પર ફોન કરો. વિશ્વાસુ વ્યક્તિ સાથે રહો.",
+     "ml": "ടെലി-മാനസ് 14416-ൽ വിളിക്കുക (സൗജന്യം, എപ്പോഴും). അപകടമുണ്ടെങ്കിൽ 112-ൽ വിളിക്കുക. വിശ്വസ്തരുടെ കൂടെ ഇരിക്കുക.",
+     "pa": "ਟੈਲੀ-ਮਾਨਸ 14416 'ਤੇ ਫ਼ੋਨ ਕਰੋ (ਮੁਫ਼ਤ, ਕਦੇ ਵੀ)। ਖ਼ਤਰਾ ਹੋਵੇ ਤਾਂ 112 'ਤੇ ਫ਼ੋਨ ਕਰੋ। ਕਿਸੇ ਭਰੋਸੇਮੰਦ ਨਾਲ ਰਹੋ।",
+     "or": "ଟେଲି-ମାନସ 14416 କୁ ଫୋନ କରନ୍ତୁ (ମାଗଣା, ଯେକୌଣସି ସମୟରେ)। ବିପଦ ଥିଲେ 112 କୁ ଫୋନ କରନ୍ତୁ। ବିଶ୍ୱସ୍ତ କାହା ସହ ରୁହନ୍ତୁ।",
+     "ur": "ٹیلی مانس 14416 پر فون کریں (مفت، کسی بھی وقت)۔ خطرہ ہو تو 112 پر فون کریں۔ کسی بھروسے مند کے ساتھ رہیں۔",
+     "ne": "टेली-मानस 14416 मा फोन गर्नुहोस् (निःशुल्क, जुनसुकै बेला)। खतरा भए 112 मा फोन गर्नुहोस्। भरपर्दो व्यक्तिसँग बस्नुहोस्।"
+    }
+   },
+   "URGENT_SAME_DAY": {
+    "title": {
+     "en": "See a doctor today",
+     "hi": "आज ही डॉक्टर को दिखाएं",
+     "ta": "இன்றே மருத்துவரைப் பாருங்கள்",
+     "bn": "আজই ডাক্তার দেখান",
+     "as": "আজিয়েই চিকিৎসক দেখুৱাওক",
+     "te": "ఈరోజే డాక్టర్‌ను చూడండి",
+     "kn": "ಇಂದೇ ವೈದ್ಯರನ್ನು ಕಾಣಿರಿ",
+     "mr": "आजच डॉक्टरांना दाखवा",
+     "gu": "આજે જ ડૉક્ટરને બતાવો",
+     "ml": "ഇന്നുതന്നെ ഡോക്ടറെ കാണുക",
+     "pa": "ਅੱਜ ਹੀ ਡਾਕਟਰ ਨੂੰ ਦਿਖਾਓ",
+     "or": "ଆଜି ହିଁ ଡାକ୍ତର ଦେଖାନ୍ତୁ",
+     "ur": "آج ہی ڈاکٹر کو دکھائیں",
+     "ne": "आजै डाक्टरलाई देखाउनुहोस्"
+    },
+    "action": {
+     "en": "Get checked at a health facility today. If it gets worse on the way, call 108.",
+     "hi": "आज ही किसी स्वास्थ्य केंद्र में जांच करवाएं। रास्ते में हालत बिगड़े तो 108 पर कॉल करें।",
+     "ta": "இன்றே சுகாதார நிலையத்தில் பரிசோதனை செய்யுங்கள். நிலைமை மோசமானால் 108 அழையுங்கள்.",
+     "bn": "আজই কোনো স্বাস্থ্যকেন্দ্রে দেখান। পথে খারাপ হলে 108 নম্বরে ফোন করুন।",
+     "as": "আজিয়েই স্বাস্থ্য কেন্দ্ৰত দেখুৱাওক। বাটত বেয়া হ'লে 108 নম্বৰত ফোন কৰক।",
+     "te": "ఈరోజే ఆరోగ్య కేంద్రంలో చూపించుకోండి. దారిలో ఎక్కువైతే 108కి కాల్ చేయండి.",
+     "kn": "ಇಂದೇ ಆರೋಗ್ಯ ಕೇಂದ್ರದಲ್ಲಿ ತೋರಿಸಿ. ದಾರಿಯಲ್ಲಿ ಹೆಚ್ಚಾದರೆ 108ಕ್ಕೆ ಕರೆ ಮಾಡಿ.",
+     "mr": "आजच आरोग्य केंद्रात तपासणी करा. वाटेत त्रास वाढल्यास 108 वर फोन करा.",
+     "gu": "આજે જ આરોગ્ય કેન્દ્રમાં તપાસ કરાવો. રસ્તામાં તબિયત બગડે તો 108 પર ફોન કરો.",
+     "ml": "ഇന്നുതന്നെ ആരോഗ്യ കേന്ദ്രത്തിൽ പരിശോധിക്കുക. വഴിയിൽ വഷളായാൽ 108-ൽ വിളിക്കുക.",
+     "pa": "ਅੱਜ ਹੀ ਸਿਹਤ ਕੇਂਦਰ ਵਿੱਚ ਜਾਂਚ ਕਰਵਾਓ। ਰਸਤੇ ਵਿੱਚ ਹਾਲਤ ਵਿਗੜੇ ਤਾਂ 108 'ਤੇ ਫ਼ੋਨ ਕਰੋ।",
+     "or": "ଆଜି ହିଁ ସ୍ୱାସ୍ଥ୍ୟ କେନ୍ଦ୍ରରେ ଦେଖାନ୍ତୁ। ବାଟରେ ଖରାପ ହେଲେ 108 କୁ ଫୋନ କରନ୍ତୁ।",
+     "ur": "آج ہی کسی صحت مرکز میں معائنہ کروائیں۔ راستے میں حالت بگڑے تو 108 پر فون کریں۔",
+     "ne": "आजै स्वास्थ्य केन्द्रमा जाँच गराउनुहोस्। बाटोमा बिग्रिए 108 मा फोन गर्नुहोस्।"
+    }
+   },
+   "PROMPT_ROUTINE": {
+    "title": {
+     "en": "Get checked in the next 2-3 days",
+     "hi": "अगले 2-3 दिनों में जांच करवाएं",
+     "ta": "அடுத்த 2-3 நாட்களில் பரிசோதனை செய்யுங்கள்",
+     "bn": "২-৩ দিনের মধ্যে দেখান",
+     "as": "২-৩ দিনৰ ভিতৰত দেখুৱাওক",
+     "te": "2-3 రోజుల్లో చూపించుకోండి",
+     "kn": "2-3 ದಿನಗಳಲ್ಲಿ ತೋರಿಸಿ",
+     "mr": "2-3 दिवसांत तपासणी करा",
+     "gu": "2-3 દિવસમાં તપાસ કરાવો",
+     "ml": "2-3 ദിവസത്തിനുള്ളിൽ കാണിക്കുക",
+     "pa": "2-3 ਦਿਨਾਂ ਵਿੱਚ ਜਾਂਚ ਕਰਵਾਓ",
+     "or": "2-3 ଦିନ ମଧ୍ୟରେ ଦେଖାନ୍ତୁ",
+     "ur": "2-3 دن میں معائنہ کروائیں",
+     "ne": "2-3 दिनभित्र जाँच गराउनुहोस्"
+    },
+    "action": {
+     "en": "Visit your nearest health centre, or book an eSanjeevani teleconsultation, within 2-3 days. Go sooner if it gets worse.",
+     "hi": "2-3 दिनों में नज़दीकी स्वास्थ्य केंद्र जाएं या ई-संजीवनी टेली-परामर्श लें। तबीयत बिगड़े तो पहले जाएं।",
+     "ta": "2-3 நாட்களுக்குள் அருகிலுள்ள சுகாதார நிலையத்திற்குச் செல்லுங்கள் அல்லது இ-சஞ்சீவனி தொலை ஆலோசனை பெறுங்கள். மோசமானால் முன்பே செல்லுங்கள்.",
+     "bn": "২-৩ দিনের মধ্যে কাছের স্বাস্থ্যকেন্দ্রে যান বা ই-সঞ্জীবনী টেলি-পরামর্শ নিন। খারাপ হলে আগেই যান।",
+     "as": "২-৩ দিনৰ ভিতৰত ওচৰৰ স্বাস্থ্য কেন্দ্ৰলৈ যাওক বা ই-সঞ্জীৱনী টেলি-পৰামৰ্শ লওক। বেয়া হ'লে আগতেই যাওক।",
+     "te": "2-3 రోజుల్లో దగ్గరలోని ఆరోగ్య కేంద్రానికి వెళ్లండి లేదా ఇ-సంజీవని టెలి-సంప్రదింపు తీసుకోండి. ఎక్కువైతే ముందే వెళ్లండి.",
+     "kn": "2-3 ದಿನಗಳಲ್ಲಿ ಹತ್ತಿರದ ಆರೋಗ್ಯ ಕೇಂದ್ರಕ್ಕೆ ಹೋಗಿ ಅಥವಾ ಇ-ಸಂಜೀವನಿ ಟೆಲಿ-ಸಮಾಲೋಚನೆ ಪಡೆಯಿರಿ. ಹೆಚ್ಚಾದರೆ ಬೇಗ ಹೋಗಿ.",
+     "mr": "2-3 दिवसांत जवळच्या आरोग्य केंद्रात जा किंवा ई-संजीवनी टेली-सल्ला घ्या. त्रास वाढल्यास लवकर जा.",
+     "gu": "2-3 દિવસમાં નજીકના આરોગ્ય કેન્દ્રમાં જાઓ અથવા ઈ-સંજીવની ટેલી-સલાહ લો. તબિયત બગડે તો વહેલા જાઓ.",
+     "ml": "2-3 ദിവസത്തിനുള്ളിൽ അടുത്തുള്ള ആരോഗ്യ കേന്ദ്രത്തിൽ പോകുക അല്ലെങ്കിൽ ഇ-സഞ്ജീവനി ടെലി-കൺസൾട്ടേഷൻ എടുക്കുക. വഷളായാൽ നേരത്തെ പോകുക.",
+     "pa": "2-3 ਦਿਨਾਂ ਵਿੱਚ ਨੇੜਲੇ ਸਿਹਤ ਕੇਂਦਰ ਜਾਓ ਜਾਂ ਈ-ਸੰਜੀਵਨੀ ਟੈਲੀ-ਸਲਾਹ ਲਓ। ਵਿਗੜੇ ਤਾਂ ਪਹਿਲਾਂ ਜਾਓ।",
+     "or": "2-3 ଦିନ ମଧ୍ୟରେ ନିକଟସ୍ଥ ସ୍ୱାସ୍ଥ୍ୟ କେନ୍ଦ୍ରକୁ ଯାଆନ୍ତୁ କିମ୍ବା ଇ-ସଞ୍ଜୀବନୀ ଟେଲି-ପରାମର୍ଶ ନିଅନ୍ତୁ। ଖରାପ ହେଲେ ଶୀଘ୍ର ଯାଆନ୍ତୁ।",
+     "ur": "2-3 دن میں قریبی صحت مرکز جائیں یا ای سنجیونی ٹیلی مشورہ لیں۔ بگڑے تو پہلے جائیں۔",
+     "ne": "2-3 दिनभित्र नजिकको स्वास्थ्य केन्द्र जानुहोस् वा ई-सञ्जीवनी टेली-परामर्श लिनुहोस्। बिग्रिए चाँडै जानुहोस्।"
+    }
+   },
+   "INFO_SELF_CARE": {
+    "title": {
+     "en": "Rest and watch at home",
+     "hi": "घर पर आराम करें और ध्यान रखें",
+     "ta": "வீட்டில் ஓய்வெடுத்து கவனியுங்கள்",
+     "bn": "বাড়িতে বিশ্রাম নিন ও নজর রাখুন",
+     "as": "ঘৰত জিৰণি লওক আৰু লক্ষ্য ৰাখক",
+     "te": "ఇంట్లో విశ్రాంతి తీసుకుని గమనించండి",
+     "kn": "ಮನೆಯಲ್ಲಿ ವಿಶ್ರಾಂತಿ ಪಡೆದು ಗಮನಿಸಿ",
+     "mr": "घरी विश्रांती घ्या आणि लक्ष ठेवा",
+     "gu": "ઘરે આરામ કરો અને ધ્યાન રાખો",
+     "ml": "വീട്ടിൽ വിശ്രമിച്ച് ശ്രദ്ധിക്കുക",
+     "pa": "ਘਰ ਆਰਾਮ ਕਰੋ ਅਤੇ ਧਿਆਨ ਰੱਖੋ",
+     "or": "ଘରେ ବିଶ୍ରାମ ନିଅନ୍ତୁ ଓ ନଜର ରଖନ୍ତୁ",
+     "ur": "گھر پر آرام کریں اور خیال رکھیں",
+     "ne": "घरमै आराम गर्नुहोस् र ध्यान दिनुहोस्"
+    },
+    "action": {
+     "en": "This sounds mild. Rest and drink fluids. Ask your ASHA worker or Ayushman Arogya Mandir if you are unsure. See a doctor if it lasts more than 3 days or gets worse.",
+     "hi": "यह हल्का लगता है। आराम करें और पानी पिएं। शंका हो तो आशा दीदी या आयुष्मान आरोग्य मंदिर से पूछें। 3 दिन से ज़्यादा रहे या बिगड़े तो डॉक्टर को दिखाएं।",
+     "ta": "இது லேசானதாகத் தெரிகிறது. ஓய்வெடுங்கள், நீர் அருந்துங்கள். சந்தேகம் இருந்தால் ஆஷா பணியாளர் அல்லது ஆயுஷ்மான் ஆரோக்கிய மந்திரில் கேளுங்கள். 3 நாட்களுக்கு மேல் நீடித்தால் அல்லது மோசமானால் மருத்துவரைப் பாருங்கள்.",
+     "bn": "এটি হালকা মনে হচ্ছে। বিশ্রাম নিন, জল পান করুন। সন্দেহ হলে আশা কর্মীকে জিজ্ঞাসা করুন। ৩ দিনের বেশি থাকলে বা বাড়লে ডাক্তার দেখান।",
+     "as": "এইটো সামান্য যেন লাগিছে। জিৰণি লওক, পানী খাওক। সন্দেহ হ'লে আশা কৰ্মীক সোধক। ৩ দিনতকৈ বেছি থাকিলে বা বাঢ়িলে চিকিৎসক দেখুৱাওক।",
+     "te": "ఇది తేలికపాటిగా ఉంది. విశ్రాంతి తీసుకోండి, నీళ్లు తాగండి. అనుమానం ఉంటే ఆశా కార్యకర్తను అడగండి. 3 రోజులకు మించితే లేదా ఎక్కువైతే డాక్టర్‌ను చూడండి.",
+     "kn": "ಇದು ಸೌಮ್ಯವಾಗಿದೆ. ವಿಶ್ರಾಂತಿ ಪಡೆಯಿರಿ, ನೀರು ಕುಡಿಯಿರಿ. ಸಂದೇಹವಿದ್ದರೆ ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯನ್ನು ಕೇಳಿ. 3 ದಿನಕ್ಕಿಂತ ಹೆಚ್ಚು ಇದ್ದರೆ ಅಥವಾ ಹೆಚ್ಚಾದರೆ ವೈದ್ಯರನ್ನು ಕಾಣಿರಿ.",
+     "mr": "हे सौम्य वाटते. विश्रांती घ्या, पाणी प्या. शंका असल्यास आशा सेविकेला विचारा. 3 दिवसांपेक्षा जास्त राहिल्यास किंवा वाढल्यास डॉक्टरांना दाखवा.",
+     "gu": "આ હળવું લાગે છે. આરામ કરો, પાણી પીઓ. શંકા હોય તો આશા કાર્યકરને પૂછો. 3 દિવસથી વધુ રહે અથવા વધે તો ડૉક્ટરને બતાવો.",
+     "ml": "ഇത് ലഘുവായി തോന്നുന്നു. വിശ്രമിക്കുക, വെള്ളം കുടിക്കുക. സംശയമുണ്ടെങ്കിൽ ആശാ പ്രവർത്തകയോട് ചോദിക്കുക. 3 ദിവസത്തിൽ കൂടുതൽ നീണ്ടാലോ വഷളായാലോ ഡോക്ടറെ കാണുക.",
+     "pa": "ਇਹ ਹਲਕਾ ਲੱਗਦਾ ਹੈ। ਆਰਾਮ ਕਰੋ, ਪਾਣੀ ਪੀਓ। ਸ਼ੱਕ ਹੋਵੇ ਤਾਂ ਆਸ਼ਾ ਵਰਕਰ ਨੂੰ ਪੁੱਛੋ। 3 ਦਿਨਾਂ ਤੋਂ ਵੱਧ ਰਹੇ ਜਾਂ ਵਿਗੜੇ ਤਾਂ ਡਾਕਟਰ ਨੂੰ ਦਿਖਾਓ।",
+     "or": "ଏହା ସାମାନ୍ୟ ଲାଗୁଛି। ବିଶ୍ରାମ ନିଅନ୍ତୁ, ପାଣି ପିଅନ୍ତୁ। ସନ୍ଦେହ ହେଲେ ଆଶା କର୍ମୀଙ୍କୁ ପଚାରନ୍ତୁ। 3 ଦିନରୁ ଅଧିକ ରହିଲେ କିମ୍ବା ବଢ଼ିଲେ ଡାକ୍ତର ଦେଖାନ୍ତୁ।",
+     "ur": "یہ ہلکا لگتا ہے۔ آرام کریں، پانی پئیں۔ شک ہو تو آشا کارکن سے پوچھیں۔ 3 دن سے زیادہ رہے یا بگڑے تو ڈاکٹر کو دکھائیں۔",
+     "ne": "यो सामान्य देखिन्छ। आराम गर्नुहोस्, पानी पिउनुहोस्। शंका भए आशा कार्यकर्तालाई सोध्नुहोस्। 3 दिनभन्दा बढी रहे वा बिग्रिए डाक्टरलाई देखाउनुहोस्।"
+    }
+   },
+   "CANNOT_DETERMINE": {
+    "title": {
+     "en": "I can't safely decide this",
+     "hi": "मैं इसे सुरक्षित रूप से तय नहीं कर सकता",
+     "ta": "இதை என்னால் பாதுகாப்பாக முடிவு செய்ய முடியாது",
+     "bn": "আমি নিরাপদে এটি ঠিক করতে পারছি না",
+     "as": "মই এইটো সুৰক্ষিতভাৱে থিৰ কৰিব নোৱাৰো",
+     "te": "నేను దీన్ని సురక్షితంగా నిర్ణయించలేను",
+     "kn": "ನಾನು ಇದನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ನಿರ್ಧರಿಸಲಾರೆ",
+     "mr": "मी हे सुरक्षितपणे ठरवू शकत नाही",
+     "gu": "હું આ સુરક્ષિત રીતે નક્કી કરી શકતો નથી",
+     "ml": "എനിക്ക് ഇത് സുരക്ഷിതമായി തീരുമാനിക്കാൻ കഴിയില്ല",
+     "pa": "ਮੈਂ ਇਹ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਤੈਅ ਨਹੀਂ ਕਰ ਸਕਦਾ",
+     "or": "ମୁଁ ଏହା ସୁରକ୍ଷିତ ଭାବେ ସ୍ଥିର କରିପାରିବି ନାହିଁ",
+     "ur": "میں یہ محفوظ طریقے سے طے نہیں کر سکتا",
+     "ne": "म यो सुरक्षित रूपमा तय गर्न सक्दिनँ"
+    },
+    "action": {
+     "en": "Please talk to your ASHA worker or call the 104 health helpline. If there is chest pain, trouble breathing, fainting, fits or heavy bleeding, call 108 now.",
+     "hi": "कृपया अपनी आशा कार्यकर्ता से बात करें या 104 हेल्पलाइन पर कॉल करें। सीने में दर्द, सांस की तकलीफ, बेहोशी, दौरे या ज़्यादा खून बहे तो तुरंत 108 पर कॉल करें।",
+     "ta": "உங்கள் ஆஷா பணியாளரிடம் பேசுங்கள் அல்லது 104 சுகாதார உதவி எண்ணை அழையுங்கள். நெஞ்சு வலி, மூச்சுத் திணறல், மயக்கம், வலிப்பு அல்லது அதிக ரத்தப்போக்கு இருந்தால் உடனே 108 அழையுங்கள்.",
+     "bn": "আপনার আশা কর্মীর সাথে কথা বলুন বা 104 নম্বরে ফোন করুন। বুকে ব্যথা, শ্বাসকষ্ট, অজ্ঞান, খিঁচুনি বা বেশি রক্তপাত হলে এখনই 108 নম্বরে ফোন করুন।",
+     "as": "আপোনাৰ আশা কৰ্মীৰ সৈতে কথা পাতক বা 104 নম্বৰত ফোন কৰক। বুকুৰ বিষ, উশাহত কষ্ট, অজ্ঞান, মৃগী বা বেছি তেজ ওলালে এতিয়াই 108 নম্বৰত ফোন কৰক।",
+     "te": "మీ ఆశా కార్యకర్తతో మాట్లాడండి లేదా 104కి కాల్ చేయండి. ఛాతీ నొప్పి, ఊపిరి ఆడకపోవడం, స్పృహ తప్పడం, ఫిట్స్ లేదా ఎక్కువ రక్తస్రావం ఉంటే వెంటనే 108కి కాల్ చేయండి.",
+     "kn": "ನಿಮ್ಮ ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯೊಂದಿಗೆ ಮಾತನಾಡಿ ಅಥವಾ 104ಕ್ಕೆ ಕರೆ ಮಾಡಿ. ಎದೆ ನೋವು, ಉಸಿರಾಟದ ತೊಂದರೆ, ಪ್ರಜ್ಞೆ ತಪ್ಪುವುದು, ಫಿಟ್ಸ್ ಅಥವಾ ಹೆಚ್ಚು ರಕ್ತಸ್ರಾವವಿದ್ದರೆ ಈಗಲೇ 108ಕ್ಕೆ ಕರೆ ಮಾಡಿ.",
+     "mr": "तुमच्या आशा सेविकेशी बोला किंवा 104 वर फोन करा. छातीत दुखणे, श्वास घेण्यास त्रास, बेशुद्धी, आकडी किंवा जास्त रक्तस्राव असल्यास आत्ताच 108 वर फोन करा.",
+     "gu": "તમારી આશા કાર્યકર સાથે વાત કરો અથવા 104 પર ફોન કરો. છાતીમાં દુખાવો, શ્વાસમાં તકલીફ, બેભાન, આંચકી કે વધુ લોહી વહે તો હમણાં જ 108 પર ફોન કરો.",
+     "ml": "നിങ്ങളുടെ ആശാ പ്രവർത്തകയോട് സംസാരിക്കുക അല്ലെങ്കിൽ 104-ൽ വിളിക്കുക. നെഞ്ചുവേദന, ശ്വാസംമുട്ടൽ, ബോധക്ഷയം, അപസ്മാരം അല്ലെങ്കിൽ കൂടുതൽ രക്തസ്രാവം ഉണ്ടെങ്കിൽ ഉടൻ 108-ൽ വിളിക്കുക.",
+     "pa": "ਆਪਣੀ ਆਸ਼ਾ ਵਰਕਰ ਨਾਲ ਗੱਲ ਕਰੋ ਜਾਂ 104 'ਤੇ ਫ਼ੋਨ ਕਰੋ। ਛਾਤੀ ਦਰਦ, ਸਾਹ ਦੀ ਤਕਲੀਫ਼, ਬੇਹੋਸ਼ੀ, ਦੌਰਾ ਜਾਂ ਬਹੁਤ ਖ਼ੂਨ ਵਹੇ ਤਾਂ ਹੁਣੇ 108 'ਤੇ ਫ਼ੋਨ ਕਰੋ।",
+     "or": "ଆପଣଙ୍କ ଆଶା କର୍ମୀଙ୍କ ସହ କଥା ହୁଅନ୍ତୁ କିମ୍ବା 104 କୁ ଫୋନ କରନ୍ତୁ। ଛାତି ଯନ୍ତ୍ରଣା, ଶ୍ୱାସ କଷ୍ଟ, ଚେତା ହରାଇବା, ମୃଗୀ କିମ୍ବା ଅଧିକ ରକ୍ତସ୍ରାବ ହେଲେ ଏବେ 108 କୁ ଫୋନ କରନ୍ତୁ।",
+     "ur": "اپنی آشا کارکن سے بات کریں یا 104 پر فون کریں۔ سینے میں درد، سانس کی تکلیف، بے ہوشی، دورہ یا زیادہ خون بہے تو ابھی 108 پر فون کریں۔",
+     "ne": "आफ्नो आशा कार्यकर्तासँग कुरा गर्नुहोस् वा 104 मा फोन गर्नुहोस्। छाती दुखेमा, सास फेर्न गाह्रो भएमा, बेहोस, छारे रोग वा धेरै रगत बगेमा अहिले नै 108 मा फोन गर्नुहोस्।"
+    }
+   }
+  },
+  "abstain_reasons": {
+   "LANG_UNSUPPORTED": {
+    "en": "This language has not been tested with RuralPulse yet, so I might misunderstand you.",
+    "hi": "इस भाषा की अभी जांच नहीं हुई है, इसलिए मैं गलत समझ सकता हूं।",
+    "ta": "இந்த மொழி இன்னும் சோதிக்கப்படவில்லை, அதனால் நான் தவறாகப் புரிந்துகொள்ளலாம்.",
+    "bn": "এই ভাষা এখনও যাচাই হয়নি, তাই আমি ভুল বুঝতে পারি।",
+    "as": "এই ভাষা এতিয়াও পৰীক্ষা কৰা হোৱা নাই, গতিকে মই ভুল বুজিব পাৰো।",
+    "te": "ఈ భాషను ఇంకా పరీక్షించలేదు, కాబట్టి నేను తప్పుగా అర్థం చేసుకోవచ్చు.",
+    "kn": "ಈ ಭಾಷೆಯನ್ನು ಇನ್ನೂ ಪರೀಕ್ಷಿಸಿಲ್ಲ, ಹಾಗಾಗಿ ನಾನು ತಪ್ಪಾಗಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಬಹುದು.",
+    "mr": "ही भाषा अजून तपासलेली नाही, त्यामुळे माझा गैरसमज होऊ शकतो.",
+    "gu": "આ ભાષા હજુ ચકાસાઈ નથી, તેથી હું ખોટું સમજી શકું.",
+    "ml": "ഈ ഭാഷ ഇതുവരെ പരീക്ഷിച്ചിട്ടില്ല, അതിനാൽ എനിക്ക് തെറ്റിദ്ധാരണ ഉണ്ടാകാം.",
+    "pa": "ਇਹ ਭਾਸ਼ਾ ਅਜੇ ਜਾਂਚੀ ਨਹੀਂ ਗਈ, ਇਸ ਲਈ ਮੈਂ ਗ਼ਲਤ ਸਮਝ ਸਕਦਾ ਹਾਂ।",
+    "or": "ଏହି ଭାଷା ଏପର୍ଯ୍ୟନ୍ତ ଯାଞ୍ଚ ହୋଇନାହିଁ, ତେଣୁ ମୁଁ ଭୁଲ ବୁଝିପାରେ।",
+    "ur": "یہ زبان ابھی جانچی نہیں گئی، اس لیے میں غلط سمجھ سکتا ہوں۔",
+    "ne": "यो भाषा अहिलेसम्म जाँचिएको छैन, त्यसैले म गलत बुझ्न सक्छु।"
+   },
+   "NO_SYMPTOMS": {
+    "en": "I could not recognise a symptom in what you wrote.",
+    "hi": "आपने जो लिखा उसमें मैं कोई लक्षण नहीं पहचान सका।",
+    "ta": "நீங்கள் எழுதியதில் எந்த அறிகுறியையும் என்னால் அடையாளம் காண முடியவில்லை.",
+    "bn": "আপনার লেখায় কোনো উপসর্গ চিনতে পারিনি।",
+    "as": "আপোনাৰ লিখাত কোনো লক্ষণ চিনিব নোৱাৰিলো।",
+    "te": "మీరు రాసిన దానిలో నాకు లక్షణం కనిపించలేదు.",
+    "kn": "ನೀವು ಬರೆದದ್ದರಲ್ಲಿ ಯಾವುದೇ ಲಕ್ಷಣ ಗುರುತಿಸಲಾಗಲಿಲ್ಲ.",
+    "mr": "तुम्ही लिहिलेल्यात मला कोणतेही लक्षण ओळखता आले नाही.",
+    "gu": "તમે લખ્યું તેમાં મને કોઈ લક્ષણ ઓળખાયું નહીં.",
+    "ml": "നിങ്ങൾ എഴുതിയതിൽ ഒരു ലക്ഷണവും എനിക്ക് തിരിച്ചറിയാനായില്ല.",
+    "pa": "ਤੁਹਾਡੇ ਲਿਖੇ ਵਿੱਚ ਮੈਨੂੰ ਕੋਈ ਲੱਛਣ ਸਮਝ ਨਹੀਂ ਆਇਆ।",
+    "or": "ଆପଣ ଯାହା ଲେଖିଲେ ସେଥିରେ କୌଣସି ଲକ୍ଷଣ ଚିହ୍ନିପାରିଲି ନାହିଁ।",
+    "ur": "آپ کے لکھے میں مجھے کوئی علامت سمجھ نہیں آئی۔",
+    "ne": "तपाईंले लेखेकोमा कुनै लक्षण चिन्न सकिनँ।"
+   },
+   "MISSING_INFO": {
+    "en": "I still need the patient's age and how long this has been going on.",
+    "hi": "मुझे अभी भी मरीज़ की उम्र और यह कितने दिनों से है, यह जानना है।",
+    "ta": "நோயாளியின் வயதும், இது எத்தனை நாட்களாக உள்ளது என்பதும் இன்னும் தேவை.",
+    "bn": "রোগীর বয়স আর কতদিন ধরে হচ্ছে তা এখনও জানা দরকার।",
+    "as": "ৰোগীৰ বয়স আৰু কিমান দিনৰ পৰা হৈছে জানিব লাগিব।",
+    "te": "రోగి వయస్సు, ఎన్ని రోజులుగా ఉందో ఇంకా తెలియాలి.",
+    "kn": "ರೋಗಿಯ ವಯಸ್ಸು ಮತ್ತು ಎಷ್ಟು ದಿನಗಳಿಂದ ಇದೆ ಎಂಬುದು ಇನ್ನೂ ಬೇಕು.",
+    "mr": "रुग्णाचे वय आणि हे किती दिवसांपासून आहे हे अजून हवे.",
+    "gu": "દર્દીની ઉંમર અને કેટલા દિવસથી છે તે હજુ જોઈએ.",
+    "ml": "രോഗിയുടെ പ്രായവും എത്ര ദിവസമായി എന്നതും ഇനിയും അറിയണം.",
+    "pa": "ਮਰੀਜ਼ ਦੀ ਉਮਰ ਅਤੇ ਕਿੰਨੇ ਦਿਨਾਂ ਤੋਂ ਹੈ, ਇਹ ਅਜੇ ਚਾਹੀਦਾ ਹੈ।",
+    "or": "ରୋଗୀଙ୍କ ବୟସ ଓ କେତେ ଦିନରୁ ହେଉଛି ଜାଣିବା ଦରକାର।",
+    "ur": "مریض کی عمر اور کتنے دن سے ہے، یہ ابھی چاہیے۔",
+    "ne": "बिरामीको उमेर र कति दिनदेखि भयो भन्ने अझै चाहिन्छ।"
+   },
+   "MED_DOSE": {
+    "en": "I don't give medicine doses. Please ask a doctor, pharmacist or call 104.",
+    "hi": "मैं दवा की खुराक नहीं बताता। कृपया डॉक्टर, फार्मासिस्ट से पूछें या 104 पर कॉल करें।",
+    "ta": "நான் மருந்து அளவைச் சொல்வதில்லை. மருத்துவர், மருந்தாளர் அல்லது 104 இடம் கேளுங்கள்.",
+    "bn": "আমি ওষুধের মাত্রা বলি না। ডাক্তার, ফার্মাসিস্টকে জিজ্ঞাসা করুন বা 104 নম্বরে ফোন করুন।",
+    "as": "মই ঔষধৰ মাত্ৰা নকওঁ। চিকিৎসক বা ফাৰ্মাচিষ্টক সোধক বা 104 নম্বৰত ফোন কৰক।",
+    "te": "నేను మందుల మోతాదు చెప్పను. డాక్టర్, ఫార్మసిస్ట్‌ను అడగండి లేదా 104కి కాల్ చేయండి.",
+    "kn": "ನಾನು ಔಷಧದ ಪ್ರಮಾಣ ಹೇಳುವುದಿಲ್ಲ. ವೈದ್ಯರು, ಔಷಧಿಕಾರರನ್ನು ಕೇಳಿ ಅಥವಾ 104ಕ್ಕೆ ಕರೆ ಮಾಡಿ.",
+    "mr": "मी औषधाची मात्रा सांगत नाही. डॉक्टर, फार्मासिस्टला विचारा किंवा 104 वर फोन करा.",
+    "gu": "હું દવાની માત્રા કહેતો નથી. ડૉક્ટર, ફાર્માસિસ્ટને પૂછો અથવા 104 પર ફોન કરો.",
+    "ml": "ഞാൻ മരുന്നിന്റെ അളവ് പറയില്ല. ഡോക്ടറോടോ ഫാർമസിസ്റ്റിനോടോ ചോദിക്കുക അല്ലെങ്കിൽ 104-ൽ വിളിക്കുക.",
+    "pa": "ਮੈਂ ਦਵਾਈ ਦੀ ਖ਼ੁਰਾਕ ਨਹੀਂ ਦੱਸਦਾ। ਡਾਕਟਰ, ਫਾਰਮਾਸਿਸਟ ਨੂੰ ਪੁੱਛੋ ਜਾਂ 104 'ਤੇ ਫ਼ੋਨ ਕਰੋ।",
+    "or": "ମୁଁ ଔଷଧ ମାତ୍ରା କହେ ନାହିଁ। ଡାକ୍ତର, ଫାର୍ମାସିଷ୍ଟଙ୍କୁ ପଚାରନ୍ତୁ କିମ୍ବା 104 କୁ ଫୋନ କରନ୍ତୁ।",
+    "ur": "میں دوا کی خوراک نہیں بتاتا۔ ڈاکٹر یا فارماسسٹ سے پوچھیں یا 104 پر فون کریں۔",
+    "ne": "म औषधिको मात्रा भन्दिनँ। डाक्टर वा फार्मासिस्टलाई सोध्नुहोस् वा 104 मा फोन गर्नुहोस्।"
+   }
+  },
+  "questions": {
+   "age": {
+    "en": "How old is the patient?",
+    "hi": "मरीज़ की उम्र कितनी है?",
+    "ta": "நோயாளியின் வயது என்ன?",
+    "bn": "রোগীর বয়স কত?",
+    "as": "ৰোগীৰ বয়স কিমান?",
+    "te": "రోగి వయస్సు ఎంత?",
+    "kn": "ರೋಗಿಯ ವಯಸ್ಸು ಎಷ್ಟು?",
+    "mr": "रुग्णाचे वय किती?",
+    "gu": "દર્દીની ઉંમર કેટલી છે?",
+    "ml": "രോഗിയുടെ പ്രായം എത്ര?",
+    "pa": "ਮਰੀਜ਼ ਦੀ ਉਮਰ ਕਿੰਨੀ ਹੈ?",
+    "or": "ରୋଗୀଙ୍କ ବୟସ କେତେ?",
+    "ur": "مریض کی عمر کتنی ہے؟",
+    "ne": "बिरामीको उमेर कति हो?"
+   },
+   "duration_days": {
+    "en": "How many days has this been going on?",
+    "hi": "यह कितने दिनों से हो रहा है?",
+    "ta": "இது எத்தனை நாட்களாக இருக்கிறது?",
+    "bn": "কত দিন ধরে এটা হচ্ছে?",
+    "as": "কিমান দিনৰ পৰা এইটো হৈছে?",
+    "te": "ఇది ఎన్ని రోజులుగా ఉంది?",
+    "kn": "ಇದು ಎಷ್ಟು ದಿನಗಳಿಂದ ಇದೆ?",
+    "mr": "हे किती दिवसांपासून होत आहे?",
+    "gu": "આ કેટલા દિવસથી છે?",
+    "ml": "ഇത് എത്ര ദിവസമായി?",
+    "pa": "ਇਹ ਕਿੰਨੇ ਦਿਨਾਂ ਤੋਂ ਹੈ?",
+    "or": "ଏହା କେତେ ଦିନ ହେଲା ହେଉଛି?",
+    "ur": "یہ کتنے دن سے ہے؟",
+    "ne": "यो कति दिनदेखि भइरहेको छ?"
+   },
+   "severity": {
+    "en": "How bad is it, from 1 (mild) to 10 (worst)?",
+    "hi": "1 (हल्का) से 10 (सबसे ज़्यादा) में कितना तेज़ है?",
+    "ta": "1 (லேசானது) முதல் 10 (மிக மோசம்) வரை எவ்வளவு கடுமை?",
+    "bn": "১ (হালকা) থেকে ১০ (সবচেয়ে বেশি) এর মধ্যে কতটা কষ্ট?",
+    "as": "১ (সামান্য) ৰ পৰা ১০ (আটাইতকৈ বেছি) ৰ ভিতৰত কিমান কষ্ট?",
+    "te": "1 (తేలిక) నుంచి 10 (చాలా ఎక్కువ) వరకు ఎంత బాధ?",
+    "kn": "1 (ಸೌಮ್ಯ) ರಿಂದ 10 (ಅತಿ ಹೆಚ್ಚು) ರವರೆಗೆ ಎಷ್ಟು ತೊಂದರೆ?",
+    "mr": "1 (सौम्य) ते 10 (सर्वात जास्त) यात किती त्रास?",
+    "gu": "1 (હળવું) થી 10 (સૌથી વધુ) માં કેટલી તકલીફ?",
+    "ml": "1 (ലഘു) മുതൽ 10 (ഏറ്റവും കൂടുതൽ) വരെ എത്ര ബുദ്ധിമുട്ട്?",
+    "pa": "1 (ਹਲਕਾ) ਤੋਂ 10 (ਸਭ ਤੋਂ ਵੱਧ) ਵਿੱਚ ਕਿੰਨੀ ਤਕਲੀਫ਼?",
+    "or": "1 (ସାମାନ୍ୟ) ରୁ 10 (ସବୁଠୁ ଅଧିକ) ମଧ୍ୟରେ କେତେ କଷ୍ଟ?",
+    "ur": "1 (ہلکا) سے 10 (سب سے زیادہ) میں کتنی تکلیف؟",
+    "ne": "1 (हल्का) देखि 10 (सबैभन्दा धेरै) मा कति गाह्रो?"
+   },
+   "pregnant": {
+    "en": "Is the patient pregnant, or could she be?",
+    "hi": "क्या मरीज़ गर्भवती है या हो सकती है?",
+    "ta": "நோயாளி கர்ப்பமாக இருக்கிறாரா அல்லது இருக்க வாய்ப்பு உள்ளதா?",
+    "bn": "রোগী কি গর্ভবতী বা হতে পারেন?",
+    "as": "ৰোগী গৰ্ভৱতী নে হ'ব পাৰে?",
+    "te": "రోగి గర్భవతా లేదా అయ్యే అవకాశం ఉందా?",
+    "kn": "ರೋಗಿ ಗರ್ಭಿಣಿಯೇ ಅಥವಾ ಆಗಿರಬಹುದೇ?",
+    "mr": "रुग्ण गरोदर आहे का किंवा असू शकते का?",
+    "gu": "દર્દી ગર્ભવતી છે કે હોઈ શકે?",
+    "ml": "രോഗി ഗർഭിണിയാണോ, ആകാൻ സാധ്യതയുണ്ടോ?",
+    "pa": "ਕੀ ਮਰੀਜ਼ ਗਰਭਵਤੀ ਹੈ ਜਾਂ ਹੋ ਸਕਦੀ ਹੈ?",
+    "or": "ରୋଗୀ ଗର୍ଭବତୀ କି ହୋଇପାରନ୍ତି?",
+    "ur": "کیا مریضہ حاملہ ہے یا ہو سکتی ہے؟",
+    "ne": "के बिरामी गर्भवती हुनुहुन्छ वा हुन सक्नुहुन्छ?"
+   },
+   "redflag_screen": {
+    "en": "Right now, is there any chest pain, trouble breathing, fainting, fits, heavy bleeding or confusion?",
+    "hi": "क्या अभी सीने में दर्द, सांस में तकलीफ, बेहोशी, दौरे, ज़्यादा खून बहना या उलझन है?",
+    "ta": "இப்போது நெஞ்சு வலி, மூச்சுத் திணறல், மயக்கம், வலிப்பு, அதிக ரத்தப்போக்கு அல்லது குழப்பம் ஏதாவது உள்ளதா?",
+    "bn": "এখন কি বুকে ব্যথা, শ্বাসকষ্ট, অজ্ঞান হওয়া, খিঁচুনি, বেশি রক্তপাত বা বিভ্রান্তি আছে?",
+    "as": "এতিয়া বুকুৰ বিষ, উশাহত কষ্ট, অজ্ঞান, মৃগী, বেছি তেজ বা বিভ্ৰান্তি আছে নেকি?",
+    "te": "ఇప్పుడు ఛాతీ నొప్పి, ఊపిరి ఆడకపోవడం, స్పృహ తప్పడం, ఫిట్స్, ఎక్కువ రక్తస్రావం లేదా అయోమయం ఉందా?",
+    "kn": "ಈಗ ಎದೆ ನೋವು, ಉಸಿರಾಟದ ತೊಂದರೆ, ಪ್ರಜ್ಞೆ ತಪ್ಪುವುದು, ಫಿಟ್ಸ್, ಹೆಚ್ಚು ರಕ್ತಸ್ರಾವ ಅಥವಾ ಗೊಂದಲ ಇದೆಯೇ?",
+    "mr": "आत्ता छातीत दुखणे, श्वास घेण्यास त्रास, बेशुद्धी, आकडी, जास्त रक्तस्राव किंवा गोंधळ आहे का?",
+    "gu": "હમણાં છાતીમાં દુખાવો, શ્વાસમાં તકલીફ, બેભાન, આંચકી, વધુ લોહી વહેવું કે ગૂંચવણ છે?",
+    "ml": "ഇപ്പോൾ നെഞ്ചുവേദന, ശ്വാസംമുട്ടൽ, ബോധക്ഷയം, അപസ്മാരം, കൂടുതൽ രക്തസ്രാവം അല്ലെങ്കിൽ ആശയക്കുഴപ്പം ഉണ്ടോ?",
+    "pa": "ਕੀ ਹੁਣ ਛਾਤੀ ਦਰਦ, ਸਾਹ ਦੀ ਤਕਲੀਫ਼, ਬੇਹੋਸ਼ੀ, ਦੌਰਾ, ਬਹੁਤ ਖ਼ੂਨ ਵਹਿਣਾ ਜਾਂ ਉਲਝਣ ਹੈ?",
+    "or": "ଏବେ ଛାତି ଯନ୍ତ୍ରଣା, ଶ୍ୱାସ କଷ୍ଟ, ଚେତା ହରାଇବା, ମୃଗୀ, ଅଧିକ ରକ୍ତସ୍ରାବ କିମ୍ବା ଦ୍ୱିଧା ଅଛି କି?",
+    "ur": "کیا ابھی سینے میں درد، سانس کی تکلیف، بے ہوشی، دورہ، زیادہ خون بہنا یا الجھن ہے؟",
+    "ne": "के अहिले छाती दुखेको, सास फेर्न गाह्रो, बेहोस, छारे रोग, धेरै रगत बगेको वा अलमल छ?"
+   },
+   "chronic": {
+    "en": "Does the patient have diabetes, or heart, kidney or lung disease?",
+    "hi": "क्या मरीज़ को शुगर, दिल, किडनी या फेफड़ों की बीमारी है?",
+    "ta": "நோயாளிக்கு சர்க்கரை, இதயம், சிறுநீரகம் அல்லது நுரையீரல் நோய் உள்ளதா?",
+    "bn": "রোগীর কি ডায়াবেটিস, হৃদরোগ, কিডনি বা ফুসফুসের রোগ আছে?",
+    "as": "ৰোগীৰ মধুমেহ, হৃদৰোগ, কিডনী বা হাওঁফাওঁৰ ৰোগ আছে নেকি?",
+    "te": "రోగికి షుగర్, గుండె, కిడ్నీ లేదా ఊపిరితిత్తుల వ్యాధి ఉందా?",
+    "kn": "ರೋಗಿಗೆ ಸಕ್ಕರೆ ಕಾಯಿಲೆ, ಹೃದಯ, ಕಿಡ್ನಿ ಅಥವಾ ಶ್ವಾಸಕೋಶದ ಕಾಯಿಲೆ ಇದೆಯೇ?",
+    "mr": "रुग्णाला मधुमेह, हृदय, किडनी किंवा फुफ्फुसाचा आजार आहे का?",
+    "gu": "દર્દીને ડાયાબિટીસ, હૃદય, કિડની કે ફેફસાંનો રોગ છે?",
+    "ml": "രോഗിക്ക് പ്രമേഹം, ഹൃദയം, വൃക്ക അല്ലെങ്കിൽ ശ്വാസകോശ രോഗം ഉണ്ടോ?",
+    "pa": "ਕੀ ਮਰੀਜ਼ ਨੂੰ ਸ਼ੂਗਰ, ਦਿਲ, ਗੁਰਦੇ ਜਾਂ ਫੇਫੜਿਆਂ ਦੀ ਬਿਮਾਰੀ ਹੈ?",
+    "or": "ରୋଗୀଙ୍କର ମଧୁମେହ, ହୃଦରୋଗ, କିଡନୀ କିମ୍ବା ଫୁସଫୁସ ରୋଗ ଅଛି କି?",
+    "ur": "کیا مریض کو شوگر، دل، گردے یا پھیپھڑوں کی بیماری ہے؟",
+    "ne": "के बिरामीलाई मधुमेह, मुटु, मिर्गौला वा फोक्सोको रोग छ?"
+   }
+  },
+  "readback": {
+   "you_said": {
+    "en": "You said",
+    "hi": "आपने कहा",
+    "ta": "நீங்கள் சொன்னது",
+    "bn": "আপনি বলেছেন",
+    "as": "আপুনি ক'লে",
+    "te": "మీరు చెప్పింది",
+    "kn": "ನೀವು ಹೇಳಿದ್ದು",
+    "mr": "तुम्ही सांगितले",
+    "gu": "તમે કહ્યું",
+    "ml": "നിങ്ങൾ പറഞ്ഞത്",
+    "pa": "ਤੁਸੀਂ ਕਿਹਾ",
+    "or": "ଆପଣ କହିଲେ",
+    "ur": "آپ نے کہا",
+    "ne": "तपाईंले भन्नुभयो"
+   },
+   "understood": {
+    "en": "I understood",
+    "hi": "मैंने समझा",
+    "ta": "நான் புரிந்துகொண்டது",
+    "bn": "আমি বুঝেছি",
+    "as": "মই বুজিলো",
+    "te": "నాకు అర్థమైంది",
+    "kn": "ನನಗೆ ಅರ್ಥವಾಗಿದ್ದು",
+    "mr": "मला समजले",
+    "gu": "મેં સમજ્યું",
+    "ml": "ഞാൻ മനസ്സിലാക്കിയത്",
+    "pa": "ਮੈਂ ਸਮਝਿਆ",
+    "or": "ମୁଁ ବୁଝିଲି",
+    "ur": "میں نے سمجھا",
+    "ne": "मैले बुझें"
+   },
+   "for_days": {
+    "en": "for {n} day(s)",
+    "hi": "{n} दिन से",
+    "ta": "{n} நாட்களாக",
+    "bn": "{n} দিন ধরে",
+    "as": "{n} দিনৰ পৰা",
+    "te": "{n} రోజులుగా",
+    "kn": "{n} ದಿನಗಳಿಂದ",
+    "mr": "{n} दिवसांपासून",
+    "gu": "{n} દિવસથી",
+    "ml": "{n} ദിവസമായി",
+    "pa": "{n} ਦਿਨਾਂ ਤੋਂ",
+    "or": "{n} ଦିନରୁ",
+    "ur": "{n} دن سے",
+    "ne": "{n} दिनदेखि"
+   },
+   "age": {
+    "en": "age {n}",
+    "hi": "उम्र {n}",
+    "ta": "வயது {n}",
+    "bn": "বয়স {n}",
+    "as": "বয়স {n}",
+    "te": "వయస్సు {n}",
+    "kn": "ವಯಸ್ಸು {n}",
+    "mr": "वय {n}",
+    "gu": "ઉંમર {n}",
+    "ml": "പ്രായം {n}",
+    "pa": "ਉਮਰ {n}",
+    "or": "ବୟସ {n}",
+    "ur": "عمر {n}",
+    "ne": "उमेर {n}"
+   },
+   "correct": {
+    "en": "Is this right?",
+    "hi": "क्या यह सही है?",
+    "ta": "இது சரியா?",
+    "bn": "এটা কি ঠিক?",
+    "as": "এইটো শুদ্ধ নে?",
+    "te": "ఇది సరైనదేనా?",
+    "kn": "ಇದು ಸರಿಯೇ?",
+    "mr": "हे बरोबर आहे का?",
+    "gu": "શું આ સાચું છે?",
+    "ml": "ഇത് ശരിയാണോ?",
+    "pa": "ਕੀ ਇਹ ਸਹੀ ਹੈ?",
+    "or": "ଏହା ଠିକ୍ କି?",
+    "ur": "کیا یہ درست ہے؟",
+    "ne": "के यो सही हो?"
+   },
+   "nothing": {
+    "en": "nothing I could recognise",
+    "hi": "कुछ भी पहचान में नहीं आया",
+    "ta": "எதையும் அடையாளம் காண முடியவில்லை",
+    "bn": "কিছুই চিনতে পারিনি",
+    "as": "একো চিনিব নোৱাৰিলো",
+    "te": "ఏమీ గుర్తించలేకపోయాను",
+    "kn": "ಏನನ್ನೂ ಗುರುತಿಸಲಾಗಲಿಲ್ಲ",
+    "mr": "काहीही ओळखता आले नाही",
+    "gu": "કંઈ ઓળખાયું નહીં",
+    "ml": "ഒന്നും തിരിച്ചറിയാനായില്ല",
+    "pa": "ਕੁਝ ਵੀ ਸਮਝ ਨਹੀਂ ਆਇਆ",
+    "or": "କିଛି ଚିହ୍ନିପାରିଲି ନାହିଁ",
+    "ur": "کچھ سمجھ نہیں آیا",
+    "ne": "केही चिन्न सकिनँ"
+   }
+  },
+  "checklist": {
+   "medicines": {
+    "en": "Old prescriptions and the medicines you are taking",
+    "hi": "पुराने पर्चे और जो दवाइयां ले रहे हैं",
+    "ta": "பழைய மருந்துச் சீட்டுகள், தற்போது எடுக்கும் மருந்துகள்",
+    "bn": "পুরনো প্রেসক্রিপশন ও এখনকার ওষুধ",
+    "as": "পুৰণি প্ৰেছক্ৰিপচন আৰু এতিয়া খোৱা ঔষধ",
+    "te": "పాత ప్రిస్క్రిప్షన్లు, ఇప్పుడు వేసుకుంటున్న మందులు",
+    "kn": "ಹಳೆಯ ಔಷಧ ಚೀಟಿಗಳು ಮತ್ತು ಈಗ ತೆಗೆದುಕೊಳ್ಳುತ್ತಿರುವ ಔಷಧಗಳು",
+    "mr": "जुन्या औषधांच्या चिठ्ठ्या आणि सध्याची औषधे",
+    "gu": "જૂની દવાની ચિઠ્ઠીઓ અને હાલની દવાઓ",
+    "ml": "പഴയ മരുന്ന് കുറിപ്പുകളും ഇപ്പോൾ കഴിക്കുന്ന മരുന്നുകളും",
+    "pa": "ਪੁਰਾਣੀਆਂ ਪਰਚੀਆਂ ਅਤੇ ਹੁਣ ਦੀਆਂ ਦਵਾਈਆਂ",
+    "or": "ପୁରୁଣା ପ୍ରେସକ୍ରିପସନ ଓ ଏବେ ଖାଉଥିବା ଔଷଧ",
+    "ur": "پرانے نسخے اور ابھی کی دوائیں",
+    "ne": "पुराना पर्चा र अहिले खाइरहेका औषधि"
+   },
+   "id": {
+    "en": "ABHA health ID or Aadhaar card, if you have one",
+    "hi": "ABHA हेल्थ आईडी या आधार कार्ड, अगर हो",
+    "ta": "ABHA சுகாதார அடையாள அட்டை அல்லது ஆதார், இருந்தால்",
+    "bn": "ABHA স্বাস্থ্য আইডি বা আধার কার্ড, থাকলে",
+    "as": "ABHA স্বাস্থ্য আইডি বা আধাৰ কাৰ্ড, থাকিলে",
+    "te": "ABHA హెల్త్ ఐడీ లేదా ఆధార్ కార్డు, ఉంటే",
+    "kn": "ABHA ಆರೋಗ್ಯ ಐಡಿ ಅಥವಾ ಆಧಾರ್ ಕಾರ್ಡ್, ಇದ್ದರೆ",
+    "mr": "ABHA आरोग्य आयडी किंवा आधार कार्ड, असल्यास",
+    "gu": "ABHA હેલ્થ આઈડી અથવા આધાર કાર્ડ, હોય તો",
+    "ml": "ABHA ആരോഗ്യ ഐഡി അല്ലെങ്കിൽ ആധാർ കാർഡ്, ഉണ്ടെങ്കിൽ",
+    "pa": "ABHA ਹੈਲਥ ਆਈਡੀ ਜਾਂ ਆਧਾਰ ਕਾਰਡ, ਜੇ ਹੋਵੇ",
+    "or": "ABHA ସ୍ୱାସ୍ଥ୍ୟ ଆଇଡି କିମ୍ବା ଆଧାର କାର୍ଡ, ଥିଲେ",
+    "ur": "ABHA ہیلتھ آئی ڈی یا آدھار کارڈ، اگر ہو",
+    "ne": "ABHA स्वास्थ्य आईडी वा आधार कार्ड, भए"
+   },
+   "companion": {
+    "en": "A family member to come with you",
+    "hi": "साथ आने के लिए परिवार का कोई सदस्य",
+    "ta": "உடன் வர ஒரு குடும்ப உறுப்பினர்",
+    "bn": "সঙ্গে যাওয়ার জন্য পরিবারের একজন",
+    "as": "লগত যাবলৈ পৰিয়ালৰ এজন",
+    "te": "వెంట రావడానికి కుటుంబ సభ్యుడు",
+    "kn": "ಜೊತೆ ಬರಲು ಕುಟುಂಬದ ಒಬ್ಬರು",
+    "mr": "सोबत येण्यासाठी कुटुंबातील एक व्यक्ती",
+    "gu": "સાથે આવવા પરિવારનો એક સભ્ય",
+    "ml": "കൂടെ വരാൻ ഒരു കുടുംബാംഗം",
+    "pa": "ਨਾਲ ਆਉਣ ਲਈ ਪਰਿਵਾਰ ਦਾ ਇੱਕ ਮੈਂਬਰ",
+    "or": "ସାଙ୍ଗରେ ଯିବାକୁ ପରିବାରର ଜଣେ",
+    "ur": "ساتھ آنے کے لیے خاندان کا ایک فرد",
+    "ne": "साथमा आउन परिवारको एक जना"
+   },
+   "phone": {
+    "en": "A charged phone and money for travel",
+    "hi": "चार्ज फोन और किराए के पैसे",
+    "ta": "சார்ஜ் செய்த போன், பயணப் பணம்",
+    "bn": "চার্জ দেওয়া ফোন ও যাতায়াতের টাকা",
+    "as": "চাৰ্জ থকা ফোন আৰু যাতায়াতৰ টকা",
+    "te": "ఛార్జ్ ఉన్న ఫోన్, ప్రయాణానికి డబ్బు",
+    "kn": "ಚಾರ್ಜ್ ಆದ ಫೋನ್ ಮತ್ತು ಪ್ರಯಾಣದ ಹಣ",
+    "mr": "चार्ज केलेला फोन आणि प्रवासाचे पैसे",
+    "gu": "ચાર્જ થયેલો ફોન અને મુસાફરીના પૈસા",
+    "ml": "ചാർജുള്ള ഫോണും യാത്രയ്ക്കുള്ള പണവും",
+    "pa": "ਚਾਰਜ ਫ਼ੋਨ ਅਤੇ ਕਿਰਾਏ ਦੇ ਪੈਸੇ",
+    "or": "ଚାର୍ଜ ଥିବା ଫୋନ ଓ ଯାତାୟାତ ଟଙ୍କା",
+    "ur": "چارج فون اور کرایے کے پیسے",
+    "ne": "चार्ज भएको फोन र भाडाको पैसा"
+   },
+   "mcp_card": {
+    "en": "Mother and Child Protection (MCP) card",
+    "hi": "मातृ एवं शिशु सुरक्षा (MCP) कार्ड",
+    "ta": "தாய் சேய் பாதுகாப்பு (MCP) அட்டை",
+    "bn": "মা ও শিশু সুরক্ষা (MCP) কার্ড",
+    "as": "মাতৃ আৰু শিশু সুৰক্ষা (MCP) কাৰ্ড",
+    "te": "తల్లీ బిడ్డ రక్షణ (MCP) కార్డు",
+    "kn": "ತಾಯಿ ಮಗು ರಕ್ಷಣೆ (MCP) ಕಾರ್ಡ್",
+    "mr": "माता व बाल संरक्षण (MCP) कार्ड",
+    "gu": "માતા અને બાળ સુરક્ષા (MCP) કાર્ડ",
+    "ml": "അമ്മയും കുഞ്ഞും സംരക്ഷണ (MCP) കാർഡ്",
+    "pa": "ਮਾਂ ਅਤੇ ਬੱਚਾ ਸੁਰੱਖਿਆ (MCP) ਕਾਰਡ",
+    "or": "ମାଆ ଓ ଶିଶୁ ସୁରକ୍ଷା (MCP) କାର୍ଡ",
+    "ur": "ماں اور بچہ تحفظ (MCP) کارڈ",
+    "ne": "आमा र शिशु सुरक्षा (MCP) कार्ड"
+   },
+   "vaccination_card": {
+    "en": "Child's vaccination card",
+    "hi": "बच्चे का टीकाकरण कार्ड",
+    "ta": "குழந்தையின் தடுப்பூசி அட்டை",
+    "bn": "শিশুর টিকাকরণ কার্ড",
+    "as": "শিশুৰ টীকাকৰণ কাৰ্ড",
+    "te": "పిల్లల టీకా కార్డు",
+    "kn": "ಮಗುವಿನ ಲಸಿಕೆ ಕಾರ್ಡ್",
+    "mr": "मुलाचे लसीकरण कार्ड",
+    "gu": "બાળકનું રસીકરણ કાર્ડ",
+    "ml": "കുട്ടിയുടെ വാക്സിനേഷൻ കാർഡ്",
+    "pa": "ਬੱਚੇ ਦਾ ਟੀਕਾਕਰਨ ਕਾਰਡ",
+    "or": "ଶିଶୁର ଟୀକାକରଣ କାର୍ଡ",
+    "ur": "بچے کا ٹیکہ کارڈ",
+    "ne": "बच्चाको खोप कार्ड"
+   },
+   "wound_wash": {
+    "en": "Wash the bite wound with soap and running water for 15 minutes before you leave",
+    "hi": "निकलने से पहले घाव को साबुन और बहते पानी से 15 मिनट धोएं",
+    "ta": "புறப்படும் முன் காயத்தை சோப்பு, ஓடும் நீரில் 15 நிமிடம் கழுவுங்கள்",
+    "bn": "বেরোনোর আগে কামড়ের ক্ষত সাবান ও চলমান জলে ১৫ মিনিট ধুয়ে নিন",
+    "as": "ওলোৱাৰ আগতে কামোৰৰ ঘাঁ চাবোন আৰু বৈ থকা পানীৰে ১৫ মিনিট ধুই লওক",
+    "te": "బయలుదేరే ముందు కాటు గాయాన్ని సబ్బు, పారే నీటితో 15 నిమిషాలు కడగండి",
+    "kn": "ಹೊರಡುವ ಮೊದಲು ಕಚ್ಚಿದ ಗಾಯವನ್ನು ಸೋಪು ಮತ್ತು ಹರಿಯುವ ನೀರಿನಿಂದ 15 ನಿಮಿಷ ತೊಳೆಯಿರಿ",
+    "mr": "निघण्यापूर्वी चाव्याची जखम साबण व वाहत्या पाण्याने 15 मिनिटे धुवा",
+    "gu": "નીકળતા પહેલાં કરડેલો ઘા સાબુ અને વહેતા પાણીથી 15 મિનિટ ધોઈ લો",
+    "ml": "പുറപ്പെടും മുമ്പ് കടിയേറ്റ മുറിവ് സോപ്പും ഒഴുകുന്ന വെള്ളവും ഉപയോഗിച്ച് 15 മിനിറ്റ് കഴുകുക",
+    "pa": "ਨਿਕਲਣ ਤੋਂ ਪਹਿਲਾਂ ਵੱਢਣ ਵਾਲਾ ਜ਼ਖ਼ਮ ਸਾਬਣ ਅਤੇ ਵਗਦੇ ਪਾਣੀ ਨਾਲ 15 ਮਿੰਟ ਧੋਵੋ",
+    "or": "ବାହାରିବା ପୂର୍ବରୁ କାମୁଡ଼ା ଘାକୁ ସାବୁନ ଓ ବହୁଥିବା ପାଣିରେ 15 ମିନିଟ୍ ଧୁଅନ୍ତୁ",
+    "ur": "نکلنے سے پہلے کاٹنے کا زخم صابن اور بہتے پانی سے 15 منٹ دھوئیں",
+    "ne": "निस्कनुअघि टोकेको घाउ साबुन र बगिरहेको पानीले 15 मिनेट धुनुहोस्"
+   },
+   "old_reports": {
+    "en": "Any old test reports or X-rays",
+    "hi": "पुरानी जांच रिपोर्ट या एक्स-रे",
+    "ta": "பழைய பரிசோதனை அறிக்கைகள் அல்லது எக்ஸ்-ரே",
+    "bn": "পুরনো পরীক্ষার রিপোর্ট বা এক্স-রে",
+    "as": "পুৰণি পৰীক্ষাৰ ৰিপৰ্ট বা এক্স-ৰে",
+    "te": "పాత పరీక్షల రిపోర్టులు లేదా ఎక్స్-రే",
+    "kn": "ಹಳೆಯ ಪರೀಕ್ಷಾ ವರದಿಗಳು ಅಥವಾ ಎಕ್ಸ್-ರೇ",
+    "mr": "जुने तपासणी अहवाल किंवा एक्स-रे",
+    "gu": "જૂના રિપોર્ટ કે એક્સ-રે",
+    "ml": "പഴയ പരിശോധനാ റിപ്പോർട്ടുകൾ അല്ലെങ്കിൽ എക്സ്-റേ",
+    "pa": "ਪੁਰਾਣੀਆਂ ਰਿਪੋਰਟਾਂ ਜਾਂ ਐਕਸ-ਰੇ",
+    "or": "ପୁରୁଣା ପରୀକ୍ଷା ରିପୋର୍ଟ କିମ୍ବା ଏକ୍ସ-ରେ",
+    "ur": "پرانی رپورٹیں یا ایکس رے",
+    "ne": "पुराना रिपोर्ट वा एक्स-रे"
+   },
+   "sugar_records": {
+    "en": "Your sugar / BP readings, if you keep them",
+    "hi": "शुगर/बीपी की रीडिंग, अगर रखते हैं",
+    "ta": "சர்க்கரை / BP அளவுகள், இருந்தால்",
+    "bn": "সুগার / প্রেশারের মাপ, থাকলে",
+    "as": "চেনি / ৰক্তচাপৰ মাপ, থাকিলে",
+    "te": "షుగర్ / బీపీ రీడింగ్‌లు, ఉంటే",
+    "kn": "ಸಕ್ಕರೆ / ಬಿಪಿ ಅಳತೆಗಳು, ಇದ್ದರೆ",
+    "mr": "साखर / बीपीची नोंद, असल्यास",
+    "gu": "સુગર / બીપીનાં માપ, હોય તો",
+    "ml": "ഷുഗർ / ബിപി അളവുകൾ, ഉണ്ടെങ്കിൽ",
+    "pa": "ਸ਼ੂਗਰ / ਬੀਪੀ ਦੀ ਰੀਡਿੰਗ, ਜੇ ਹੋਵੇ",
+    "or": "ସୁଗାର / ବିପି ମାପ, ଥିଲେ",
+    "ur": "شوگر / بی پی کی ریڈنگ، اگر ہو",
+    "ne": "सुगर / प्रेसरको नाप, भए"
+   }
+  },
+  "doctor_questions": {
+   "cause": {
+    "en": "What could be causing this?",
+    "hi": "यह किस वजह से हो सकता है?",
+    "ta": "இதற்கு என்ன காரணமாக இருக்கலாம்?",
+    "bn": "এটা কী কারণে হতে পারে?",
+    "as": "এইটো কিহৰ বাবে হ'ব পাৰে?",
+    "te": "దీనికి కారణం ఏమై ఉండవచ్చు?",
+    "kn": "ಇದಕ್ಕೆ ಕಾರಣ ಏನಿರಬಹುದು?",
+    "mr": "हे कशामुळे होत असेल?",
+    "gu": "આ શાના કારણે હોઈ શકે?",
+    "ml": "ഇതിന് കാരണം എന്തായിരിക്കാം?",
+    "pa": "ਇਹ ਕਿਸ ਕਾਰਨ ਹੋ ਸਕਦਾ ਹੈ?",
+    "or": "ଏହା କାହିଁକି ହୋଇପାରେ?",
+    "ur": "یہ کس وجہ سے ہو سکتا ہے؟",
+    "ne": "यो केका कारणले हुन सक्छ?"
+   },
+   "warning": {
+    "en": "Which warning signs mean I should come back immediately?",
+    "hi": "कौन से लक्षण दिखें तो तुरंत वापस आऊं?",
+    "ta": "எந்த அறிகுறிகள் தெரிந்தால் உடனே திரும்ப வர வேண்டும்?",
+    "bn": "কোন লক্ষণ দেখলে সঙ্গে সঙ্গে ফিরে আসব?",
+    "as": "কোনবোৰ লক্ষণ দেখিলে লগে লগে ঘূৰি আহিব লাগিব?",
+    "te": "ఏ లక్షణాలు కనిపిస్తే వెంటనే తిరిగి రావాలి?",
+    "kn": "ಯಾವ ಲಕ್ಷಣ ಕಂಡರೆ ತಕ್ಷಣ ಹಿಂತಿರುಗಬೇಕು?",
+    "mr": "कोणती लक्षणे दिसल्यास लगेच परत यावे?",
+    "gu": "કયાં લક્ષણો દેખાય તો તરત પાછા આવવું?",
+    "ml": "ഏതൊക്കെ ലക്ഷണങ്ങൾ കണ്ടാൽ ഉടൻ തിരികെ വരണം?",
+    "pa": "ਕਿਹੜੇ ਲੱਛਣ ਦਿਖਣ ਤਾਂ ਤੁਰੰਤ ਵਾਪਸ ਆਵਾਂ?",
+    "or": "କେଉଁ ଲକ୍ଷଣ ଦେଖିଲେ ତୁରନ୍ତ ଫେରି ଆସିବି?",
+    "ur": "کون سی علامات دکھیں تو فوراً واپس آؤں؟",
+    "ne": "कुन लक्षण देखिए तुरुन्तै फर्किनुपर्छ?"
+   },
+   "followup": {
+    "en": "Do I need a follow-up, and can it be a teleconsultation?",
+    "hi": "क्या दोबारा दिखाना होगा, और क्या वह टेली-परामर्श से हो सकता है?",
+    "ta": "மீண்டும் வர வேண்டுமா, அது தொலை ஆலோசனையாக இருக்கலாமா?",
+    "bn": "আবার দেখাতে হবে কি, টেলি-পরামর্শে হবে কি?",
+    "as": "আকৌ দেখুৱাব লাগিব নেকি, টেলি-পৰামৰ্শত হ'ব নে?",
+    "te": "మళ్లీ చూపించుకోవాలా, టెలి-సంప్రదింపు సరిపోతుందా?",
+    "kn": "ಮತ್ತೆ ತೋರಿಸಬೇಕೇ, ಟೆಲಿ-ಸಮಾಲೋಚನೆ ಸಾಕೇ?",
+    "mr": "पुन्हा दाखवावे लागेल का, टेली-सल्ला चालेल का?",
+    "gu": "ફરી બતાવવું પડશે, ટેલી-સલાહથી ચાલશે?",
+    "ml": "വീണ്ടും കാണിക്കണോ, ടെലി-കൺസൾട്ടേഷൻ മതിയോ?",
+    "pa": "ਕੀ ਦੁਬਾਰਾ ਦਿਖਾਉਣਾ ਪਵੇਗਾ, ਟੈਲੀ-ਸਲਾਹ ਨਾਲ ਹੋ ਸਕਦਾ ਹੈ?",
+    "or": "ପୁଣି ଦେଖାଇବାକୁ ପଡ଼ିବ କି, ଟେଲି-ପରାମର୍ଶରେ ହେବ କି?",
+    "ur": "کیا دوبارہ دکھانا ہوگا، کیا ٹیلی مشورہ کافی ہے؟",
+    "ne": "फेरि देखाउनुपर्छ? टेली-परामर्शले हुन्छ?"
+   },
+   "medicines": {
+    "en": "How should I take the medicines you prescribe, and for how long?",
+    "hi": "आपकी दी दवाइयां कैसे और कितने दिन लेनी हैं?",
+    "ta": "நீங்கள் தரும் மருந்துகளை எப்படி, எத்தனை நாள் எடுக்க வேண்டும்?",
+    "bn": "আপনার দেওয়া ওষুধ কীভাবে ও কতদিন খাব?",
+    "as": "আপুনি দিয়া ঔষধ কেনেকৈ আৰু কিমান দিন খাম?",
+    "te": "మీరు ఇచ్చే మందులు ఎలా, ఎన్ని రోజులు వేసుకోవాలి?",
+    "kn": "ನೀವು ಕೊಡುವ ಔಷಧಗಳನ್ನು ಹೇಗೆ, ಎಷ್ಟು ದಿನ ತೆಗೆದುಕೊಳ್ಳಬೇಕು?",
+    "mr": "तुम्ही दिलेली औषधे कशी आणि किती दिवस घ्यावी?",
+    "gu": "તમે આપેલી દવાઓ કેવી રીતે અને કેટલા દિવસ લેવી?",
+    "ml": "നിങ്ങൾ തരുന്ന മരുന്നുകൾ എങ്ങനെ, എത്ര ദിവസം കഴിക്കണം?",
+    "pa": "ਤੁਹਾਡੀਆਂ ਦਿੱਤੀਆਂ ਦਵਾਈਆਂ ਕਿਵੇਂ ਅਤੇ ਕਿੰਨੇ ਦਿਨ ਲੈਣੀਆਂ ਹਨ?",
+    "or": "ଆପଣ ଦେଇଥିବା ଔଷଧ କିପରି ଓ କେତେ ଦିନ ଖାଇବି?",
+    "ur": "آپ کی دی ہوئی دوائیں کیسے اور کتنے دن لینی ہیں؟",
+    "ne": "तपाईंले दिएको औषधि कसरी र कति दिन खाने?"
+   }
+  },
+  "ui": {
+   "go_to": {
+    "en": "Go to",
+    "hi": "यहां जाएं",
+    "ta": "இங்கே செல்லுங்கள்",
+    "bn": "এখানে যান",
+    "as": "ইয়ালৈ যাওক",
+    "te": "ఇక్కడికి వెళ్లండి",
+    "kn": "ಇಲ್ಲಿಗೆ ಹೋಗಿ",
+    "mr": "इथे जा",
+    "gu": "અહીં જાઓ",
+    "ml": "ഇവിടെ പോകുക",
+    "pa": "ਇੱਥੇ ਜਾਓ",
+    "or": "ଏଠାକୁ ଯାଆନ୍ତୁ",
+    "ur": "یہاں جائیں",
+    "ne": "यहाँ जानुहोस्"
+   },
+   "call": {
+    "en": "Call",
+    "hi": "कॉल करें",
+    "ta": "அழையுங்கள்",
+    "bn": "ফোন করুন",
+    "as": "ফোন কৰক",
+    "te": "కాల్ చేయండి",
+    "kn": "ಕರೆ ಮಾಡಿ",
+    "mr": "फोन करा",
+    "gu": "ફોન કરો",
+    "ml": "വിളിക്കുക",
+    "pa": "ਫ਼ੋਨ ਕਰੋ",
+    "or": "ଫୋନ କରନ୍ତୁ",
+    "ur": "فون کریں",
+    "ne": "फोन गर्नुहोस्"
+   },
+   "if_worse": {
+    "en": "If it gets worse, call 108.",
+    "hi": "हालत बिगड़े तो 108 पर कॉल करें।",
+    "ta": "மோசமானால் 108 அழையுங்கள்.",
+    "bn": "খারাপ হলে 108 নম্বরে ফোন করুন।",
+    "as": "বেয়া হ'লে 108 নম্বৰত ফোন কৰক।",
+    "te": "ఎక్కువైతే 108కి కాల్ చేయండి.",
+    "kn": "ಹೆಚ್ಚಾದರೆ 108ಕ್ಕೆ ಕರೆ ಮಾಡಿ.",
+    "mr": "त्रास वाढल्यास 108 वर फोन करा.",
+    "gu": "તબિયત બગડે તો 108 પર ફોન કરો.",
+    "ml": "വഷളായാൽ 108-ൽ വിളിക്കുക.",
+    "pa": "ਵਿਗੜੇ ਤਾਂ 108 'ਤੇ ਫ਼ੋਨ ਕਰੋ।",
+    "or": "ଖରାପ ହେଲେ 108 କୁ ଫୋନ କରନ୍ତୁ।",
+    "ur": "بگڑے تو 108 پر فون کریں۔",
+    "ne": "बिग्रिए 108 मा फोन गर्नुहोस्।"
+   },
+   "not_verified": {
+    "en": "Details not recently verified: call before you travel.",
+    "hi": "जानकारी हाल में सत्यापित नहीं: जाने से पहले फोन करें।",
+    "ta": "விவரங்கள் சமீபத்தில் சரிபார்க்கப்படவில்லை: பயணத்திற்கு முன் அழையுங்கள்.",
+    "bn": "তথ্য সম্প্রতি যাচাই হয়নি: যাওয়ার আগে ফোন করুন।",
+    "as": "তথ্য শেহতীয়াকৈ পৰীক্ষিত নহয়: যোৱাৰ আগতে ফোন কৰক।",
+    "te": "వివరాలు ఇటీవల ధృవీకరించలేదు: వెళ్లే ముందు కాల్ చేయండి.",
+    "kn": "ವಿವರಗಳನ್ನು ಇತ್ತೀಚೆಗೆ ಪರಿಶೀಲಿಸಿಲ್ಲ: ಹೋಗುವ ಮೊದಲು ಕರೆ ಮಾಡಿ.",
+    "mr": "माहिती अलीकडे पडताळलेली नाही: जाण्यापूर्वी फोन करा.",
+    "gu": "માહિતી તાજેતરમાં ચકાસાઈ નથી: જતા પહેલાં ફોન કરો.",
+    "ml": "വിവരങ്ങൾ അടുത്തിടെ സ്ഥിരീകരിച്ചിട്ടില്ല: പോകുന്നതിന് മുമ്പ് വിളിക്കുക.",
+    "pa": "ਜਾਣਕਾਰੀ ਹਾਲ ਹੀ ਵਿੱਚ ਜਾਂਚੀ ਨਹੀਂ ਗਈ: ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਫ਼ੋਨ ਕਰੋ।",
+    "or": "ତଥ୍ୟ ନିକଟରେ ଯାଞ୍ଚ ହୋଇନାହିଁ: ଯିବା ପୂର୍ବରୁ ଫୋନ କରନ୍ତୁ।",
+    "ur": "معلومات حال ہی میں تصدیق شدہ نہیں: جانے سے پہلے فون کریں۔",
+    "ne": "विवरण हालै प्रमाणित भएको छैन: जानुअघि फोन गर्नुहोस्।"
+   },
+   "teleconsult": {
+    "en": "Teleconsultation option",
+    "hi": "टेली-परामर्श विकल्प",
+    "ta": "தொலை ஆலோசனை வசதி",
+    "bn": "টেলি-পরামর্শ",
+    "as": "টেলি-পৰামৰ্শ",
+    "te": "టెలి-సంప్రదింపు",
+    "kn": "ಟೆಲಿ-ಸಮಾಲೋಚನೆ",
+    "mr": "टेली-सल्ला",
+    "gu": "ટેલી-સલાહ",
+    "ml": "ടെലി-കൺസൾട്ടേഷൻ",
+    "pa": "ਟੈਲੀ-ਸਲਾਹ",
+    "or": "ଟେଲି-ପରାମର୍ଶ",
+    "ur": "ٹیلی مشورہ",
+    "ne": "टेली-परामर्श"
+   }
+  }
+ },
+ "script_hints": {
+  "hi": [
+   "है",
+   "हैं",
+   "में",
+   "से",
+   "का",
+   "की",
+   "को",
+   "नहीं",
+   "मुझे",
+   "मेरा",
+   "मेरी",
+   "रहा",
+   "रही",
+   "दर्द",
+   "बुखार"
+  ],
+  "mr": [
+   "आहे",
+   "आहेत",
+   "मला",
+   "माझा",
+   "माझी",
+   "माझे",
+   "दुखत",
+   "होत",
+   "नाही",
+   "खूप",
+   "झाला",
+   "झाली",
+   "पासून",
+   "आणि",
+   "ताप"
+  ],
+  "ne": [
+   "छ",
+   "छन्",
+   "मलाई",
+   "मेरो",
+   "भयो",
+   "भएको",
+   "दुख्यो",
+   "दुखेको",
+   "छैन",
+   "धेरै",
+   "देखि",
+   "र",
+   "ज्वरो"
+  ],
+  "mai": [
+   "अछि",
+   "हमरा",
+   "हमर",
+   "भ'",
+   "छी",
+   "छैक"
+  ],
+  "kok": [
+   "आसा",
+   "म्हाका",
+   "म्हजो",
+   "जाल्लां",
+   "ना",
+   "खूब"
+  ],
+  "doi": [
+   "ऐ",
+   "मिगी",
+   "मेरा",
+   "होआ",
+   "नेईं"
+  ],
+  "sa": [
+   "अस्ति",
+   "मम",
+   "अहम्",
+   "वेदना",
+   "ज्वरः",
+   "भवति"
+  ],
+  "brx": [
+   "आं",
+   "नोंथां",
+   "जायो",
+   "दं",
+   "नङा"
+  ],
+  "bn": [
+   "আমার",
+   "আমি",
+   "হয়েছে",
+   "হচ্ছে",
+   "দিন",
+   "ব্যথা",
+   "জ্বর",
+   "না"
+  ],
+  "as": [
+   "মোৰ",
+   "মই",
+   "হৈছে",
+   "বিষ",
+   "জ্বৰ",
+   "নাই"
+  ],
+  "ur": [
+   "ہے",
+   "ہیں",
+   "میں",
+   "سے",
+   "کا",
+   "کی",
+   "مجھے",
+   "میرا",
+   "نہیں",
+   "درد"
+  ],
+  "sd": [
+   "آهي",
+   "مون",
+   "منهنجو",
+   "ڏينهن",
+   "سور",
+   "آهن"
+  ],
+  "ks": [
+   "چھُ",
+   "چھے",
+   "مےٚ",
+   "میون",
+   "دۄد"
+  ]
+ },
+ "unique_chars": {
+  "as": "ৰৱ",
+  "sd": "ڄڃڳٻڀٽڦڙڱڏڌڊڪ",
+  "ks": "ٲٳۆۄٕ"
+ },
+ "native_digit_zeros": [
+  "0660",
+  "06F0",
+  "0966",
+  "09E6",
+  "0A66",
+  "0AE6",
+  "0B66",
+  "0BE6",
+  "0C66",
+  "0CE6",
+  "0D66",
+  "1C50",
+  "ABF0"
+ ],
+ "script_families": {
+  "hi": [
+   "hi",
+   "mr",
+   "ne",
+   "mai",
+   "kok",
+   "doi",
+   "sa",
+   "brx"
+  ],
+  "bn": [
+   "bn",
+   "as",
+   "mni"
+  ],
+  "ur": [
+   "ur",
+   "sd",
+   "ks"
+  ]
+ }
+}

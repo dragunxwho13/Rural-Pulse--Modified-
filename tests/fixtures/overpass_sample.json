@@ -1,0 +1,120 @@
+{
+ "elements": [
+  {
+   "type": "way",
+   "id": 1001,
+   "tags": {
+    "amenity": "hospital",
+    "name": "Christian Medical College Hospital",
+    "emergency": "yes",
+    "opening_hours": "24/7",
+    "healthcare": "hospital",
+    "healthcare:speciality": "general;cardiology;paediatrics"
+   },
+   "center": {
+    "lat": 12.9249,
+    "lon": 79.1353
+   }
+  },
+  {
+   "type": "way",
+   "id": 1002,
+   "tags": {
+    "amenity": "hospital",
+    "name": "Government Vellore Medical College Hospital",
+    "emergency": "yes",
+    "operator:type": "government"
+   },
+   "center": {
+    "lat": 12.934,
+    "lon": 79.17
+   }
+  },
+  {
+   "type": "node",
+   "id": 1003,
+   "tags": {
+    "amenity": "clinic",
+    "name": "Katpadi Primary Health Centre",
+    "healthcare": "clinic"
+   },
+   "lat": 12.97,
+   "lon": 79.14
+  },
+  {
+   "type": "node",
+   "id": 1004,
+   "tags": {
+    "amenity": "doctors",
+    "name": "Sri Ram Clinic",
+    "phone": "+91 416 000 0000"
+   },
+   "lat": 12.969,
+   "lon": 79.146
+  },
+  {
+   "type": "node",
+   "id": 1005,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "Jan Aushadhi Kendra"
+   },
+   "lat": 12.972,
+   "lon": 79.145
+  },
+  {
+   "type": "node",
+   "id": 1006,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "Apollo Pharmacy"
+   },
+   "lat": 12.971,
+   "lon": 79.142
+  },
+  {
+   "type": "node",
+   "id": 1007,
+   "tags": {
+    "amenity": "dentist",
+    "name": "Smile Dental Care"
+   },
+   "lat": 12.968,
+   "lon": 79.139
+  },
+  {
+   "type": "way",
+   "id": 1008,
+   "tags": {
+    "amenity": "hospital",
+    "name": "Private Nursing Home",
+    "emergency": "no"
+   },
+   "center": {
+    "lat": 12.96,
+    "lon": 79.13
+   }
+  },
+  {
+   "type": "node",
+   "id": 1009,
+   "tags": {
+    "amenity": "clinic"
+   },
+   "lat": 12.98,
+   "lon": 79.15
+  },
+  {
+   "type": "node",
+   "id": 1010,
+   "tags": {
+    "amenity": "clinic",
+    "name": "Ma Women and Child Clinic",
+    "healthcare:speciality": "gynaecology;obstetrics"
+   },
+   "lat": 12.95,
+   "lon": 79.155
+  }
+ ],
+ "note": "Synthetic test fixture in Overpass API format. Not real facility data."
+}

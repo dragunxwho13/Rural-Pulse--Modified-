@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RuralPulse for doctors and pharmacies</title>
+<meta name="theme-color" content="#0F2A2E">
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Tamil:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body class="dash-body">
+<header class="dash-top">
+  <a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M6 38h13l5-12 7 22 6-16 4 6h17" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>RuralPulse</span></a>
+  <span class="dash-where" id="whoami">Clinician dashboard</span>
+  <div class="top-actions">
+    <span class="live-dot" id="liveDot" title="Live connection">● <span id="liveText">Connecting…</span></span>
+    <button class="btn btn-quiet btn-sm" type="button" id="alertsBtn">🔔 Turn on alerts</button>
+    <button class="btn btn-quiet btn-sm" type="button" id="logoutBtn" hidden>Log out</button>
+  </div>
+</header>
+
+<main class="dash">
+  <!-- login -->
+  <section class="card login" id="loginCard">
+    <h1>Log in with your phone</h1>
+    <p class="hint">No passwords. A one-time code is sent by SMS. In demo mode (no SMS gateway) the code is shown here.</p>
+    <form id="loginForm">
+      <label>Role
+        <div class="seg" role="radiogroup"><button type="button" role="radio" aria-checked="true" data-role="doctor">🩺 Doctor / CHO</button><button type="button" role="radio" aria-checked="false" data-role="pharmacy">💊 Pharmacy</button></div>
+      </label>
+      <label>Your name<input id="lgName" autocomplete="name" maxlength="60" placeholder="Dr. Meera Iyer"></label>
+      <label>Facility<select id="lgFacility"></select></label>
+      <label>Mobile number<input id="lgPhone" type="tel" inputmode="tel" maxlength="14" placeholder="98xxxxxxxx"></label>
+      <div class="otp-row"><button class="btn btn-quiet" type="button" id="lgOtpBtn">Send code</button><input id="lgOtp" inputmode="numeric" maxlength="6" placeholder="6-digit code" aria-label="Code"></div>
+      <p class="hint" id="lgHint"></p>
+      <button class="btn btn-ink btn-block btn-lg" type="submit">Log in</button>
+    </form>
+    <p class="hint" id="offlineNote" hidden>The dashboard needs the RuralPulse server (it is not available on the static, offline-only deployment).</p>
+  </section>
+
+  <!-- live demo toolbar (shown after login) -->
+  <section class="card demo-bar" id="demoBar" hidden>
+    <div class="stats" id="stats"></div>
+    <div class="demo-actions">
+      <button class="btn btn-ink btn-sm" type="button" id="simBtn">▶ Simulate incoming patient</button>
+      <label class="auto-sim"><input type="checkbox" id="autoSim"> Auto every 45 s</label>
+      <button class="btn btn-quiet btn-sm" type="button" id="resetBtn" title="Delete everything and load the sample reports again">↺ Reset demo data</button>
+    </div>
+    <p class="hint" id="previewNote" hidden></p>
+  </section>
+
+  <!-- doctor -->
+  <section id="doctorView" class="dash-grid" hidden>
+    <aside class="card inbox">
+      <div class="inbox-head"><h2>Incoming patients</h2><span class="badge" id="caseCount">0</span></div>
+      <div class="inbox-list" id="inbox"><p class="hint">Waiting for patients. When an ASHA or patient notifies this facility, they appear here instantly.</p></div>
+    </aside>
+    <section class="card detail" id="detail"><p class="hint">Select a patient.</p></section>
+  </section>
+
+  <!-- pharmacy -->
+  <section id="pharmacyView" hidden>
+    <div class="card"><div class="inbox-head"><h2>Medicine reservations</h2><span class="badge" id="rxCount">0</span></div><div id="rxList" class="rx-list"><p class="hint">Prescriptions sent to this pharmacy appear here so you can keep the medicines ready.</p></div></div>
+  </section>
+
+  <details class="card outbox" id="outboxCard" hidden><summary>SMS outbox (demo: messages that would be sent)</summary><div id="outbox"></div></details>
+</main>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="assets/js/slip.js"></script>
+<script src="assets/js/doctor.js"></script>
+</body>
+</html>

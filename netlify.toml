@@ -1,0 +1,4 @@
+# Static-only deploy (no Python): the site runs on the offline browser engine.
+[build]
+  publish = "frontend"
+  command = "python3 scripts/sync_data.py"

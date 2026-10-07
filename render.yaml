@@ -1,0 +1,22 @@
+# One-click deploy on Render (https://render.com): New > Blueprint > point at this repo.
+services:
+  - type: web
+    name: ruralpulse
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: RP_PUBLIC_URL
+        sync: false
+      - key: RP_TZ
+        value: Asia/Kolkata
+      - key: RP_AUDIT_SALT
+        generateValue: true
+      - key: RP_AUTH_SECRET
+        generateValue: true
+      - key: RP_USER_AGENT
+        value: RuralPulse/3.0 (hackathon demo)

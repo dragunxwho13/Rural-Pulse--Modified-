@@ -1,0 +1,89 @@
+{
+ "code": "Ok",
+ "routes": [
+  {
+   "duration": 900,
+   "distance": 7400,
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      79.14,
+      12.97
+     ],
+     [
+      79.137,
+      12.95
+     ],
+     [
+      79.1353,
+      12.9249
+     ]
+    ]
+   },
+   "legs": [
+    {
+     "steps": [
+      {
+       "distance": 2000,
+       "name": "",
+       "ref": ""
+      },
+      {
+       "distance": 3000,
+       "name": "Village road",
+       "ref": ""
+      },
+      {
+       "distance": 2400,
+       "name": "Arcot Road",
+       "ref": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "duration": 1020,
+   "distance": 8600,
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      79.14,
+      12.97
+     ],
+     [
+      79.15,
+      12.95
+     ],
+     [
+      79.1353,
+      12.9249
+     ]
+    ]
+   },
+   "legs": [
+    {
+     "steps": [
+      {
+       "distance": 800,
+       "name": "Station Road",
+       "ref": ""
+      },
+      {
+       "distance": 7000,
+       "name": "",
+       "ref": "NH 48"
+      },
+      {
+       "distance": 800,
+       "name": "Ida Scudder Road",
+       "ref": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

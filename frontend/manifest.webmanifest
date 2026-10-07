@@ -1,0 +1,10 @@
+{
+  "name": "RuralPulse - safe first step to the right care",
+  "short_name": "RuralPulse",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0F2A2E",
+  "theme_color": "#0F2A2E",
+  "description": "Multilingual rural care navigation with red-flag rules, abstention and verified facilities. Works offline.",
+  "icons": [{ "src": "assets/img/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

@@ -1,0 +1,504 @@
+{
+ "dataset": "RuralPulse demo district (synthetic)",
+ "note": "All facilities, phone numbers and coordinates are fictional demo data. Emergency numbers (108, 112, 14416, 104) are real Indian public helplines.",
+ "village": {
+  "name": "Sundarpur village (demo)",
+  "map_xy_km": [
+   0,
+   0
+  ]
+ },
+ "facilities": [
+  {
+   "id": "AAM-021",
+   "name": "Sundarpur Ayushman Arogya Mandir",
+   "type": "Ayushman Arogya Mandir (Sub-Health Centre)",
+   "level": 1,
+   "services": [
+    "general_medicine",
+    "ncd_screening",
+    "antenatal_care",
+    "vaccination",
+    "tb_screening",
+    "teleconsultation"
+   ],
+   "hours": {
+    "open_24x7": false,
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "open": "09:00",
+    "close": "17:00"
+   },
+   "distance_km": 3,
+   "travel_time_min": 12,
+   "map_xy_km": [
+    2.1,
+    1.9
+   ],
+   "languages": [
+    "Hindi",
+    "Tamil",
+    "English"
+   ],
+   "phone": "DEMO-0021",
+   "referral_required": false,
+   "wheelchair_access": true,
+   "telemedicine": true,
+   "description": "Village sub-health centre run by a Community Health Officer. First stop for common illness, BP and sugar checks, pregnancy registration and eSanjeevani teleconsultation with a doctor.",
+   "source": "Synthetic demo record (replace with state NHM / MoHFW facility registry)",
+   "authority": "Demo: District Health Society",
+   "last_verified": "2026-09-20",
+   "verified_by": "ASHA field check"
+  },
+  {
+   "id": "ESJ-014",
+   "name": "eSanjeevani Teleconsultation (via Sundarpur AAM)",
+   "type": "Teleconsultation (eSanjeevani AB-HWC)",
+   "level": 1,
+   "services": [
+    "teleconsultation",
+    "general_medicine",
+    "dermatology",
+    "mental_health",
+    "ncd_screening"
+   ],
+   "hours": {
+    "open_24x7": false,
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "open": "09:00",
+    "close": "17:00"
+   },
+   "distance_km": 3,
+   "travel_time_min": 12,
+   "map_xy_km": [
+    2.1,
+    1.9
+   ],
+   "languages": [
+    "Hindi",
+    "Tamil",
+    "English"
+   ],
+   "phone": "DEMO-0014",
+   "referral_required": false,
+   "wheelchair_access": true,
+   "telemedicine": true,
+   "description": "Assisted video consultation with a doctor from the hub hospital, booked through the Community Health Officer. Good for skin problems, follow-ups and mild mental-health concerns without travelling.",
+   "source": "Synthetic demo record (replace with state NHM / MoHFW facility registry)",
+   "authority": "Demo: eSanjeevani hub listing",
+   "last_verified": "2026-09-28",
+   "verified_by": "CHO phone check"
+  },
+  {
+   "id": "PHC-001",
+   "name": "Sundarpur Primary Health Centre",
+   "type": "Primary Health Centre (PHC)",
+   "level": 2,
+   "services": [
+    "general_medicine",
+    "antenatal_care",
+    "vaccination",
+    "lab",
+    "anti_rabies",
+    "dental",
+    "tb_screening",
+    "pediatrics"
+   ],
+   "hours": {
+    "open_24x7": false,
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "open": "09:00",
+    "close": "16:00"
+   },
+   "distance_km": 6,
+   "travel_time_min": 20,
+   "map_xy_km": [
+    -4.2,
+    3.1
+   ],
+   "languages": [
+    "Hindi",
+    "English"
+   ],
+   "phone": "DEMO-0001",
+   "referral_required": false,
+   "wheelchair_access": true,
+   "telemedicine": true,
+   "description": "Government PHC with a medical officer, basic laboratory, anti-rabies vaccine and dental chair. Handles most common illnesses and same-day checks during OPD hours.",
+   "source": "Synthetic demo record (replace with state NHM / MoHFW facility registry)",
+   "authority": "Demo: District Health Society",
+   "last_verified": "2026-09-15",
+   "verified_by": "Medical Officer confirmation"
+  },
+  {
+   "id": "PHC-012",
+   "name": "Kalyanpur 24x7 Primary Health Centre",
+   "type": "Primary Health Centre (24x7)",
+   "level": 2,
+   "services": [
+    "general_medicine",
+    "emergency",
+    "anti_rabies",
+    "antenatal_care",
+    "obstetrics",
+    "lab",
+    "pediatrics"
+   ],
+   "hours": {
+    "open_24x7": true
+   },
+   "distance_km": 11,
+   "travel_time_min": 30,
+   "map_xy_km": [
+    7.5,
+    -6.8
+   ],
+   "languages": [
+    "Tamil",
+    "English"
+   ],
+   "phone": "DEMO-0012",
+   "referral_required": false,
+   "wheelchair_access": false,
+   "telemedicine": false,
+   "description": "Round-the-clock PHC with a delivery room and basic emergency care. Can stabilise and refer.",
+   "source": "Synthetic demo record (replace with state NHM / MoHFW facility registry)",
+   "authority": "Demo: State facility registry",
+   "last_verified": "2026-09-18",
+   "verified_by": "Registry",
+   "conflicts": [
+    "A CHW update on 2026-09-30 reported night duty may be unstaffed on Sundays; registry still lists 24x7."
+   ]
+  },
+  {
+   "id": "CHC-004",
+   "name": "Rampur Community Health Centre",
+   "type": "Community Health Centre (CHC)",
+   "level": 3,
+   "services": [
+    "general_medicine",
+    "emergency",
+    "pediatrics",
+    "obstetrics",
+    "antenatal_care",
+    "general_surgery",
+    "anti_rabies",
+    "antivenom",
+    "xray",
+    "lab",
+    "dental"
+   ],
+   "hours": {
+    "open_24x7": true
+   },
+   "distance_km": 18,
+   "travel_time_min": 40,
+   "map_xy_km": [
+    -12.0,
+    -11.5
+   ],
+   "languages": [
+    "Hindi",
+    "Tamil",
+    "English"
+   ],
+   "phone": "DEMO-0004",
+   "referral_required": false,
+   "wheelchair_access": true,
+   "telemedicine": true,
+   "description": "30-bed CHC with 24x7 emergency, specialists in medicine, paediatrics and obstetrics, X-ray and snake anti-venom.",
+   "source": "Synthetic demo record (replace with state NHM / MoHFW facility registry)",
+   "authority": "Demo: District Health Society",
+   "last_verified": "2026-08-30",
+   "verified_by": "Registry + phone"
+  },
+  {
+   "id": "MCH-003",
+   "name": "Ma-Shishu Maternal & Child Health Centre",
+   "type": "Maternal & Child Health Centre",
+   "level": 3,
+   "services": [
+    "obstetrics",
+    "antenatal_care",
+    "pediatrics",
+    "newborn_care",
+    "vaccination",
+    "emergency"
+   ],
+   "hours": {
+    "open_24x7": true
+   },
+   "distance_km": 15,
+   "travel_time_min": 35,
+   "map_xy_km": [
+    10.5,
+    9.0
+   ],
+   "languages": [
+    "Hindi",
+    "Tamil"
+   ],
+   "phone": "DEMO-0003",
+   "referral_required": false,
+   "wheelchair_access": true,
+   "telemedicine": true,
+   "description": "Dedicated centre for pregnancy, childbirth and newborn care with a 24x7 labour room and sick-newborn unit.",
+   "source": "Synthetic demo record (replace with state NHM / MoHFW facility registry)",
+   "authority": "Demo: District Health Society",
+   "last_verified": "2026-09-25",
+   "verified_by": "Nursing in-charge"
+  },
+  {
+   "id": "DH-007",
+   "name": "Sundarpur District Hospital",
+   "type": "District Hospital",
+   "level": 4,
+   "services": [
+    "emergency",
+    "trauma",
+    "icu",
+    "general_medicine",
+    "general_surgery",
+    "orthopedics",
+    "pediatrics",
+    "newborn_care",
+    "obstetrics",
+    "cardiology",
+    "neurology",
+    "mental_health",
+    "antivenom",
+    "poison_care",
+    "burns",
+    "xray",
+    "lab",
+    "ent",
+    "dermatology",
+    "dental",
+    "pulmonology"
+   ],
+   "hours": {
+    "open_24x7": true
+   },
+   "distance_km": 42,
+   "travel_time_min": 75,
+   "map_xy_km": [
+    -28.0,
+    30.0
+   ],
+   "languages": [
+    "Hindi",
+    "Tamil",
+    "English"
+   ],
+   "phone": "DEMO-0007",
+   "referral_required": false,
+   "wheelchair_access": true,
+   "telemedicine": true,
+   "description": "Multi-specialty government hospital with 24x7 casualty, ICU, blood bank and specialists. Main referral point for serious cases.",
+   "source": "Synthetic demo record (replace with state NHM / MoHFW facility registry)",
+   "authority": "Demo: State facility registry",
+   "last_verified": "2026-09-10",
+   "verified_by": "Registry"
+  },
+  {
+   "id": "EMR-009",
+   "name": "Regional Emergency & Trauma Centre",
+   "type": "Emergency & Trauma Centre",
+   "level": 4,
+   "services": [
+    "emergency",
+    "trauma",
+    "icu",
+    "burns",
+    "poison_care",
+    "antivenom",
+    "xray"
+   ],
+   "hours": {
+    "open_24x7": true
+   },
+   "distance_km": 55,
+   "travel_time_min": 90,
+   "map_xy_km": [
+    38.0,
+    -38.0
+   ],
+   "languages": [
+    "Hindi",
+    "English"
+   ],
+   "phone": "DEMO-0009",
+   "referral_required": false,
+   "wheelchair_access": true,
+   "telemedicine": false,
+   "description": "24x7 trauma and critical-care centre for accidents, severe burns, poisoning and snake bite.",
+   "source": "Synthetic demo record (replace with state NHM / MoHFW facility registry)",
+   "authority": "Demo: State facility registry",
+   "last_verified": "2026-09-01",
+   "verified_by": "Registry"
+  },
+  {
+   "id": "CARD-002",
+   "name": "Hridaya Cardiac & Multispecialty Hospital (PM-JAY empanelled)",
+   "type": "Specialty Hospital",
+   "level": 4,
+   "services": [
+    "cardiology",
+    "neurology",
+    "emergency",
+    "icu"
+   ],
+   "hours": {
+    "open_24x7": true
+   },
+   "distance_km": 95,
+   "travel_time_min": 150,
+   "map_xy_km": [
+    -65.0,
+    -68.0
+   ],
+   "languages": [
+    "Hindi",
+    "English"
+   ],
+   "phone": "DEMO-0002",
+   "referral_required": true,
+   "wheelchair_access": true,
+   "telemedicine": true,
+   "description": "Tertiary cardiac and stroke centre. Usually reached by referral from the district hospital.",
+   "source": "Synthetic demo record (replace with state NHM / MoHFW facility registry)",
+   "authority": "Demo: PM-JAY empanelment list",
+   "last_verified": "2026-06-20",
+   "verified_by": "Website"
+  },
+  {
+   "id": "TB-005",
+   "name": "Prathama Chest & TB Clinic (NTEP)",
+   "type": "Designated Microscopy & TB Centre",
+   "level": 2,
+   "services": [
+    "tb_screening",
+    "pulmonology",
+    "lab",
+    "xray"
+   ],
+   "hours": {
+    "open_24x7": false,
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "open": "09:00",
+    "close": "14:00"
+   },
+   "distance_km": 38,
+   "travel_time_min": 65,
+   "map_xy_km": [
+    30.0,
+    22.0
+   ],
+   "languages": [
+    "Hindi",
+    "Tamil"
+   ],
+   "phone": "DEMO-0005",
+   "referral_required": false,
+   "wheelchair_access": false,
+   "telemedicine": false,
+   "description": "Free sputum and molecular TB testing and treatment under the National TB Elimination Programme. For cough lasting 2 weeks or more.",
+   "source": "Synthetic demo record (replace with state NHM / MoHFW facility registry)",
+   "authority": "Demo: NTEP facility list",
+   "last_verified": "2026-08-05",
+   "verified_by": "Registry"
+  },
+  {
+   "id": "MH-011",
+   "name": "MannShanti Mental Wellness Outreach",
+   "type": "Mental Health Outreach Clinic",
+   "level": 2,
+   "services": [
+    "mental_health"
+   ],
+   "hours": {
+    "open_24x7": false,
+    "days": [
+     0,
+     2,
+     4
+    ],
+    "open": "10:00",
+    "close": "16:00"
+   },
+   "distance_km": 30,
+   "travel_time_min": 55,
+   "map_xy_km": [
+    -22.0,
+    -20.0
+   ],
+   "languages": [
+    "Hindi",
+    "Tamil",
+    "English"
+   ],
+   "phone": "DEMO-0011",
+   "referral_required": false,
+   "wheelchair_access": true,
+   "telemedicine": true,
+   "description": "Counselling and psychiatric consultation three days a week, with Tele-MANAS follow-ups.",
+   "source": "Synthetic demo record (replace with state NHM / MoHFW facility registry)",
+   "authority": "Demo: District Mental Health Programme",
+   "last_verified": "2026-03-15",
+   "verified_by": "Old registry"
+  }
+ ],
+ "pharmacies": [
+  {
+   "id": "PHARM-01",
+   "name": "Pradhan Mantri Bhartiya Janaushadhi Kendra, Sundarpur (demo)",
+   "type": "Jan Aushadhi Kendra",
+   "phone": "DEMO-0101",
+   "distance_km": 3,
+   "note": "Generic medicines at low cost"
+  },
+  {
+   "id": "PHARM-02",
+   "name": "Sundarpur PHC Dispensary (demo)",
+   "type": "Government dispensary",
+   "phone": "DEMO-0102",
+   "distance_km": 6,
+   "note": "Free medicines under the free drugs initiative"
+  },
+  {
+   "id": "PHARM-03",
+   "name": "Rampur Medical Store (demo)",
+   "type": "Private pharmacy",
+   "phone": "DEMO-0103",
+   "distance_km": 18,
+   "note": "Open 8:00-22:00"
+  }
+ ]
+}

@@ -1,0 +1,2831 @@
+{
+ "dataset": "Pan-India doctors listing (user-provided PDF)",
+ "count": 99,
+ "note": "Listings as provided. Marked 'Valid Data' by the source but NOT verified against the NMC registry. Coordinates are approximate city centres. Hospital affiliation is only shown where the source address names one; RuralPulse never invents affiliations. Call before visiting.",
+ "doctors": [
+  {
+   "id": "DOC-001",
+   "name": "Dr. Rama's Test Tubes Baby Centre",
+   "specialty": "Obstetrics & Gynaecology",
+   "categories": [
+    "maternal"
+   ],
+   "city": "Kolar",
+   "state": "Karnataka",
+   "pincode": "563101",
+   "locality": "Kolar",
+   "address": "",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "7022986300",
+   "phones": [
+    "7022986300",
+    "7022986301",
+    "7022986306"
+   ],
+   "email": "rakhi_mshr@yahoo.com",
+   "lat": 13.1362,
+   "lon": 78.129,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-002",
+   "name": "Dr Manish Bandishte",
+   "specialty": "Cardiology(Heart Specialists)",
+   "categories": [
+    "cardiac"
+   ],
+   "city": "Indore",
+   "state": "Madhya Pradesh",
+   "pincode": "452001",
+   "locality": "Indore Gpo",
+   "address": "130, Arogya Polyclinic, Jail Road",
+   "landmark": "Near Chiman Bagh",
+   "practice_or_hospital": "Arogya Polyclinic",
+   "phone": "7312431160",
+   "phones": [
+    "7312431160",
+    "7312538664",
+    "9826020141"
+   ],
+   "email": null,
+   "lat": 22.7196,
+   "lon": 75.8577,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-003",
+   "name": "Dr B P Purohit",
+   "specialty": "Spine & Joint Surgeons",
+   "categories": [
+    "musculoskeletal"
+   ],
+   "city": "Gwalior",
+   "state": "Madhya Pradesh",
+   "pincode": "474001",
+   "locality": "Lashkar",
+   "address": "315, Arogya Sadan, T",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "7512420587",
+   "phones": [
+    "7512420587",
+    "7512422585"
+   ],
+   "email": null,
+   "lat": 26.2183,
+   "lon": 78.1828,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-004",
+   "name": "Dr A Naveen",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Bhopal",
+   "state": "Madhya Pradesh",
+   "pincode": "462001",
+   "locality": "M P Nagar",
+   "address": "17, Zone I",
+   "landmark": "Near Jyoti Cenema",
+   "practice_or_hospital": null,
+   "phone": "7554271551",
+   "phones": [
+    "7554271551",
+    "7554272672"
+   ],
+   "email": "battrahospitalbpl@gmail.com",
+   "lat": 23.2599,
+   "lon": 77.4126,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-005",
+   "name": "Dr T Mohan Kumar",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Coimbatore",
+   "state": "Tamil Nadu",
+   "pincode": "641002",
+   "locality": "Rs Puram",
+   "address": "395, Raj Rathna, Maruthamalai Road",
+   "landmark": "Near Agri University Compound",
+   "practice_or_hospital": null,
+   "phone": "7598110066",
+   "phones": [
+    "7598110066",
+    "7598110077",
+    "2422200"
+   ],
+   "email": "tmkdr@hotmail.com",
+   "lat": 11.0168,
+   "lon": 76.9558,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-006",
+   "name": "Dr Pillais Sacred Heart Dental Centre",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "pincode": "400083",
+   "locality": "Vikhroli East",
+   "address": "Door No 3, Sai Shradha Building",
+   "landmark": "Near Bus Depot",
+   "practice_or_hospital": null,
+   "phone": "7666011115",
+   "phones": [
+    "7666011115",
+    "7666711115",
+    "25748613",
+    "25782211",
+    "25792211"
+   ],
+   "email": null,
+   "lat": 19.076,
+   "lon": 72.8777,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-007",
+   "name": "Dr Laxminarayan Sharma",
+   "specialty": "Neurologist",
+   "categories": [
+    "urinary"
+   ],
+   "city": "Jabalpur",
+   "state": "Madhya Pradesh",
+   "pincode": "482002",
+   "locality": "Wright Town",
+   "address": "Mohit Chamber",
+   "landmark": "Near Chanchal Bai Patel College",
+   "practice_or_hospital": null,
+   "phone": "7415167709",
+   "phones": [
+    "7415167709",
+    "7693973199",
+    "9826446839"
+   ],
+   "email": null,
+   "lat": 23.1815,
+   "lon": 79.9864,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-008",
+   "name": "Dr M Kasturi",
+   "specialty": "Obstetrics & Gynaecology",
+   "categories": [
+    "maternal"
+   ],
+   "city": "Secunderabad",
+   "state": "Andhra Pradesh",
+   "pincode": "500025",
+   "locality": "St Johns Road",
+   "address": "10-3- 167/A",
+   "landmark": "Opp Keys High School",
+   "practice_or_hospital": null,
+   "phone": "7207375534",
+   "phones": [
+    "7207375534",
+    "7702055534",
+    "27830534"
+   ],
+   "email": "kasturimedicare@gmail.com",
+   "lat": 17.4399,
+   "lon": 78.4983,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-009",
+   "name": "Dr Jaiswal Indrajit Krishnamohan",
+   "specialty": "Obstetrics & Gynaecology",
+   "categories": [
+    "maternal"
+   ],
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "pincode": "400086",
+   "locality": "Ghatkopar",
+   "address": "Disha Hospital Building, Asalfa Area",
+   "landmark": "Near Jambali Padda Bus Stop",
+   "practice_or_hospital": "Disha Hospital Building",
+   "phone": "7738539244",
+   "phones": [
+    "7738539244",
+    "7738544353",
+    "25119244"
+   ],
+   "email": null,
+   "lat": 19.076,
+   "lon": 72.8777,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-010",
+   "name": "Dr Sukant Kishore Das",
+   "specialty": "Nephrology(Kidney Specialists)",
+   "categories": [
+    "urinary"
+   ],
+   "city": "Bhubaneswar",
+   "state": "Orissa",
+   "pincode": "751015",
+   "locality": "Nayapalli",
+   "address": "C/O Gastro & Kidney C",
+   "landmark": "",
+   "practice_or_hospital": "Gastro & Kidney C (name cut off in source)",
+   "phone": "7752049719",
+   "phones": [
+    "7752049719",
+    "7752049729",
+    "8895437637"
+   ],
+   "email": null,
+   "lat": 20.2961,
+   "lon": 85.8245,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-011",
+   "name": "Dr Romesh Chawlani",
+   "specialty": "Gastroenterology",
+   "categories": [
+    "digestive"
+   ],
+   "city": "Jabalpur",
+   "state": "Madhya Pradesh",
+   "pincode": "482002",
+   "locality": "Napier Town Russel Chowk",
+   "address": "1347/1, Ist Floor, Home Science College Road, Adjacent 2, Microland Computer",
+   "landmark": "Near Ashish Hospital",
+   "practice_or_hospital": null,
+   "phone": "7746973910",
+   "phones": [
+    "7746973910",
+    "7770906514",
+    "4004900"
+   ],
+   "email": "pr_romesh4u@yahoo.co.in",
+   "lat": 23.1815,
+   "lon": 79.9864,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-012",
+   "name": "Dr Suhel A Khan",
+   "specialty": "Orthopaedics(Bone Specialists)",
+   "categories": [
+    "musculoskeletal",
+    "injury"
+   ],
+   "city": "Pune",
+   "state": "Maharashtra",
+   "pincode": "411011",
+   "locality": "Kondhwa",
+   "address": "Hidosh Sekh, Mitha Nagar, Lane No 2",
+   "landmark": "Near Western Bakery",
+   "practice_or_hospital": null,
+   "phone": "7798793456",
+   "phones": [
+    "7798793456",
+    "7798797123",
+    "60204382"
+   ],
+   "email": "suhelkhan_bj@yahoo.co.in",
+   "lat": 18.5204,
+   "lon": 73.8567,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-013",
+   "name": "Dr Sk Batra",
+   "specialty": "Dermatology(Skin Specialist)",
+   "categories": [
+    "skin"
+   ],
+   "city": "Panchkula",
+   "state": "Haryana",
+   "pincode": "134109",
+   "locality": "Sector 7",
+   "address": "H.No. 678",
+   "landmark": "Near Yoga Centre",
+   "practice_or_hospital": null,
+   "phone": "7837568989",
+   "phones": [
+    "7837568989",
+    "7891019352",
+    "9654647109"
+   ],
+   "email": "bshivam294@gmail.com",
+   "lat": 30.6942,
+   "lon": 76.8606,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-014",
+   "name": "Dr Khushboo Jaiswal",
+   "specialty": "Ophthalmologist(Eye Specialists)",
+   "categories": [
+    "eye"
+   ],
+   "city": "Kanpur",
+   "state": "Uttar Pradesh",
+   "pincode": "208024",
+   "locality": "Lakhanpur",
+   "address": "204, Panchwati, Vina",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "7897309756",
+   "phones": [
+    "7897309756",
+    "7897309847"
+   ],
+   "email": "gupta.jyoti43@gmail.com",
+   "lat": 26.4499,
+   "lon": 80.3319,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-015",
+   "name": "Dr Nidhi Khare",
+   "specialty": "Physiatrists(Physical Medicine)",
+   "categories": [
+    "musculoskeletal"
+   ],
+   "city": "Jabalpur",
+   "state": "Madhya Pradesh",
+   "pincode": "482001",
+   "locality": "Jabalpur",
+   "address": "Jamadar Hospital Pvt Ltd",
+   "landmark": "Near Golebazar",
+   "practice_or_hospital": "Jamadar Hospital Pvt Ltd",
+   "phone": "7898856378",
+   "phones": [
+    "7898856378",
+    "7898856469"
+   ],
+   "email": null,
+   "lat": 23.1815,
+   "lon": 79.9864,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-016",
+   "name": "Dr Ashesh M Desai",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Dhandhuka",
+   "state": "Gujarat",
+   "pincode": "382460",
+   "locality": "Vasna",
+   "address": "A/11, N D Shroff Market",
+   "landmark": "Near Vasna Bus Stop",
+   "practice_or_hospital": null,
+   "phone": "7926601170",
+   "phones": [
+    "7926601170",
+    "7926611483"
+   ],
+   "email": null,
+   "lat": 22.381,
+   "lon": 71.985,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-017",
+   "name": "Dr A D Khilji",
+   "specialty": "Gastroenterology",
+   "categories": [
+    "digestive"
+   ],
+   "city": "Kota",
+   "state": "Rajasthan",
+   "pincode": "324009",
+   "locality": "Dadabari",
+   "address": "801, Gastrocar e, Main Road",
+   "landmark": "Near Chambal Food Product",
+   "practice_or_hospital": null,
+   "phone": "7742763376",
+   "phones": [
+    "7742763376",
+    "8003062000"
+   ],
+   "email": null,
+   "lat": 25.2138,
+   "lon": 75.8648,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-018",
+   "name": "Dr Deepti Verma",
+   "specialty": "Obstetrics & Gynaecology",
+   "categories": [
+    "maternal"
+   ],
+   "city": "Lucknow",
+   "state": "Uttar Pradesh",
+   "pincode": "226016",
+   "locality": "Indra Nagar",
+   "address": "1, Galaxy Medical Center, Vivek Khand 2",
+   "landmark": "Near Gomati Nagar",
+   "practice_or_hospital": "Galaxy Medical Center",
+   "phone": "7755070779",
+   "phones": [
+    "7755070779",
+    "8004552277"
+   ],
+   "email": null,
+   "lat": 26.8467,
+   "lon": 80.9462,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-019",
+   "name": "Dr Ajit Rawat",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Kanpur",
+   "state": "Uttar Pradesh",
+   "pincode": "208020",
+   "locality": "Panki Industrial Estate",
+   "address": "31, E Block, Mandir L",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8009747614",
+   "phones": [
+    "8009747614",
+    "8009747705"
+   ],
+   "email": null,
+   "lat": 26.4499,
+   "lon": 80.3319,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-020",
+   "name": "Dr Amlan Jyoti Sarmah",
+   "specialty": "Urology",
+   "categories": [
+    "urinary"
+   ],
+   "city": "Guwahati",
+   "state": "Assam",
+   "pincode": "781034",
+   "locality": "Odalbakra",
+   "address": "C/O Hayat Hospital, Ka",
+   "landmark": "",
+   "practice_or_hospital": "Hayat Hospital",
+   "phone": "8011003102",
+   "phones": [
+    "8011003102",
+    "8011003109",
+    "8011003110"
+   ],
+   "email": null,
+   "lat": 26.1445,
+   "lon": 91.7362,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-021",
+   "name": "Dr D K Ghose",
+   "specialty": "Orthopaedics(Bone Specialists)",
+   "categories": [
+    "musculoskeletal",
+    "injury"
+   ],
+   "city": "Kamrup",
+   "state": "Assam",
+   "pincode": "781011",
+   "locality": "Maligaon",
+   "address": "C/O-Sanjevani Hospita",
+   "landmark": "",
+   "practice_or_hospital": "Sanjevani Hospita (name cut off in source)",
+   "phone": "8011405229",
+   "phones": [
+    "8011405229",
+    "8011408448",
+    "2674892",
+    "2674893"
+   ],
+   "email": "dilipkumarghose0@gmail.com",
+   "lat": 26.158,
+   "lon": 91.693,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-022",
+   "name": "Dr S Paul'S Modern Dental World",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Kolkata",
+   "state": "West Bengal",
+   "pincode": "700157",
+   "locality": "Hatiara",
+   "address": "21, Deepsikha Apartment, Teghoria Main Road",
+   "landmark": "Near Teghoria Vip Rd",
+   "practice_or_hospital": null,
+   "phone": "8017736515",
+   "phones": [
+    "8017736515",
+    "8017736586",
+    "9830053253"
+   ],
+   "email": "saikatworld98@yahoo.in",
+   "lat": 22.5726,
+   "lon": 88.3639,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-023",
+   "name": "Dr Monika Khanna",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Lucknow",
+   "state": "Uttar Pradesh",
+   "pincode": "226001",
+   "locality": "Kursi Road",
+   "address": "tedi pulia",
+   "landmark": "Near Rakesh National Hall",
+   "practice_or_hospital": null,
+   "phone": "7607291591",
+   "phones": [
+    "7607291591",
+    "8052405346",
+    "9415020527"
+   ],
+   "email": null,
+   "lat": 26.8467,
+   "lon": 80.9462,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-024",
+   "name": "Dr Deepika Aggarwal",
+   "specialty": "General Surgery",
+   "categories": [
+    "injury",
+    "digestive"
+   ],
+   "city": "Chandigarh",
+   "state": "Chandigarh",
+   "pincode": "160017",
+   "locality": "Chandigarh",
+   "address": "Main Market",
+   "landmark": "Near Main Road",
+   "practice_or_hospital": null,
+   "phone": "8054004404",
+   "phones": [
+    "8054004404",
+    "8054005505"
+   ],
+   "email": null,
+   "lat": 30.7333,
+   "lon": 76.7794,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-025",
+   "name": "Dr C B Bansal",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Bhopal",
+   "state": "Madhya Pradesh",
+   "pincode": "462001",
+   "locality": "Bhopal Gpo",
+   "address": "1, Taj Market, Royal Market, Sultania Road",
+   "landmark": "Opposite Hamadia Gate",
+   "practice_or_hospital": null,
+   "phone": "7552772215",
+   "phones": [
+    "7552772215",
+    "8085008888",
+    "9425338188"
+   ],
+   "email": null,
+   "lat": 23.2599,
+   "lon": 77.4126,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-026",
+   "name": "Dr Sachin Advance Dental Care",
+   "specialty": "Geriatric Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Pune",
+   "state": "Maharashtra",
+   "pincode": "411014",
+   "locality": "Viman Nagar",
+   "address": "Riddhi Enclave Society",
+   "landmark": "Near Ganpati Chowk",
+   "practice_or_hospital": null,
+   "phone": "7057987688",
+   "phones": [
+    "7057987688",
+    "8087771820"
+   ],
+   "email": "drsachinbhalerao84@gmail.com",
+   "lat": 18.5204,
+   "lon": 73.8567,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-027",
+   "name": "Dr Sridhara A",
+   "specialty": "Psychologists",
+   "categories": [
+    "mental"
+   ],
+   "city": "Bangalore",
+   "state": "Karnataka",
+   "pincode": "560011",
+   "locality": "Byrasandra",
+   "address": "Sridhara A Dr90/3, 10",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8026562562",
+   "phones": [
+    "8026562562",
+    "8095609725",
+    "22442562",
+    "26562562"
+   ],
+   "email": null,
+   "lat": 12.9716,
+   "lon": 77.5946,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-028",
+   "name": "Dr Nishkarsh Jaiswal",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Jabalpur",
+   "state": "Madhya Pradesh",
+   "pincode": "482002",
+   "locality": "Wright Town",
+   "address": "2444/1, Kshama Lodge",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8103233209",
+   "phones": [
+    "8103233209",
+    "8103233300"
+   ],
+   "email": null,
+   "lat": 23.1815,
+   "lon": 79.9864,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-029",
+   "name": "Dr Prasad K V S",
+   "specialty": "Gastroenterology",
+   "categories": [
+    "digestive"
+   ],
+   "city": "Chennai",
+   "state": "Tamil Nadu",
+   "pincode": "600084",
+   "locality": "Purasawalkam",
+   "address": "1/31, 7th Cross street",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8124033024",
+   "phones": [
+    "8124033024",
+    "8124044024",
+    "26285118",
+    "26287365"
+   ],
+   "email": null,
+   "lat": 13.0827,
+   "lon": 80.2707,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-030",
+   "name": "Dr Shilpi Tiwari",
+   "specialty": "Urology",
+   "categories": [
+    "urinary"
+   ],
+   "city": "Delhi",
+   "state": "Delhi",
+   "pincode": "110096",
+   "locality": "Vasundhara Enclave",
+   "address": "Dharamshila Cancer Hospital and Research Centre",
+   "landmark": "Near New Ashok Nagar Metro Station",
+   "practice_or_hospital": "Dharamshila Cancer Hospital and Research Centre",
+   "phone": "8010112000",
+   "phones": [
+    "8010112000",
+    "8130000120",
+    "43066353"
+   ],
+   "email": null,
+   "lat": 28.6139,
+   "lon": 77.209,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-031",
+   "name": "Dr AK Kala",
+   "specialty": "Psychiatry",
+   "categories": [
+    "mental"
+   ],
+   "city": "Ludhiana",
+   "state": "Punjab",
+   "pincode": "141002",
+   "locality": "Model Gram",
+   "address": "C/o-Mind Plus, 95-A, Malwa Khalsa School Road",
+   "landmark": "Near Kochar Market",
+   "practice_or_hospital": "Mind Plus",
+   "phone": "8146650144",
+   "phones": [
+    "8146650144",
+    "8146650145",
+    "9988888971"
+   ],
+   "email": "info@mindplus.co.in",
+   "lat": 30.901,
+   "lon": 75.8573,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-032",
+   "name": "Dr Kanwaldeep Singh Soodan",
+   "specialty": "Oral & Maxillofacial Surgeon",
+   "categories": [
+    "dental"
+   ],
+   "city": "Panchkula",
+   "state": "Haryana",
+   "pincode": "134109",
+   "locality": "Sector 25",
+   "address": "Panchkula Extension",
+   "landmark": "Near Wings Hospital",
+   "practice_or_hospital": null,
+   "phone": "8146861569",
+   "phones": [
+    "8146861569",
+    "8146861597"
+   ],
+   "email": "dr.kanwal@rediffmail.com",
+   "lat": 30.6942,
+   "lon": 76.8606,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-033",
+   "name": "Dr. Shivam Agarwal",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Goa",
+   "state": "Goa",
+   "pincode": "403507",
+   "locality": "Camurlim",
+   "address": "before Galaxy hospital",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "7588967565",
+   "phones": [
+    "7588967565",
+    "8149081766"
+   ],
+   "email": null,
+   "lat": 15.5915,
+   "lon": 73.809,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-034",
+   "name": "Dr Manas Ranjan Pradhan",
+   "specialty": "Urology",
+   "categories": [
+    "urinary"
+   ],
+   "city": "Bhubaneswar",
+   "state": "Orissa",
+   "pincode": "751024",
+   "locality": "Chandrasekharpur",
+   "address": "C/O- Kalinga Hospital Ltd",
+   "landmark": "Near Jagannath Temple",
+   "practice_or_hospital": "Kalinga Hospital Ltd",
+   "phone": "7894437141",
+   "phones": [
+    "7894437141",
+    "8280060707",
+    "2300570",
+    "2301724"
+   ],
+   "email": "info@kalingahospital.com",
+   "lat": 20.2961,
+   "lon": 85.8245,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-035",
+   "name": "Dr Suresh D Raikar",
+   "specialty": "Anaesthesiology",
+   "categories": [],
+   "city": "Goa",
+   "state": "Goa",
+   "pincode": "403507",
+   "locality": "Mapusa",
+   "address": "D 2 Ansabhat Bhavan",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "2262007",
+   "phones": [
+    "2262007",
+    "8322262007",
+    "2252007",
+    "2262007"
+   ],
+   "email": null,
+   "lat": 15.5915,
+   "lon": 73.809,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-036",
+   "name": "Dr Mo Ali Saudagar",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Jabalpur",
+   "state": "Madhya Pradesh",
+   "pincode": "482001",
+   "locality": "Jabalpur",
+   "address": "Governme nt Ayurvedic Dispensar y, Baghraji",
+   "landmark": "Near Main Road",
+   "practice_or_hospital": null,
+   "phone": "8359006452",
+   "phones": [
+    "8359006452",
+    "8359006543"
+   ],
+   "email": null,
+   "lat": 23.1815,
+   "lon": 79.9864,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-037",
+   "name": "Dr Milind Dabolkar",
+   "specialty": "Ear, Nose & Throat",
+   "categories": [
+    "ent"
+   ],
+   "city": "Goa",
+   "state": "Goa",
+   "pincode": "403507",
+   "locality": "Mapusa",
+   "address": "C/O Dr. Kolwalkar's Galaxy Hospital, Xelpem - Duler",
+   "landmark": "Near S.P.G. Hall, Severina Gardens",
+   "practice_or_hospital": "Dr. Kolwalkar's Galaxy Hospital",
+   "phone": "8380065970",
+   "phones": [
+    "8380065970",
+    "8380065971",
+    "2266666",
+    "2266667",
+    "2266668"
+   ],
+   "email": "contact@galaxyhospitalgoa.com,drkolwalkargalaxyhospital@gmail.com",
+   "lat": 15.5915,
+   "lon": 73.809,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-038",
+   "name": "Dr Ravandale Nirmal",
+   "specialty": "Cardiology(Heart Specialists)",
+   "categories": [
+    "cardiac"
+   ],
+   "city": "Dhule",
+   "state": "Maharashtra",
+   "pincode": "424001",
+   "locality": "Dhule",
+   "address": "Varde Complex, 80 Feet Road, Manmad Jin",
+   "landmark": "Opp Prachi Medicial",
+   "practice_or_hospital": null,
+   "phone": "8087733033",
+   "phones": [
+    "8087733033",
+    "8380096221"
+   ],
+   "email": null,
+   "lat": 20.9042,
+   "lon": 74.7749,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-039",
+   "name": "Dr Rajal Patel",
+   "specialty": "Algologists(Pain Specialists)",
+   "categories": [
+    "musculoskeletal"
+   ],
+   "city": "Ahmedabad",
+   "state": "Gujarat",
+   "pincode": "382424",
+   "locality": "Chandkheda",
+   "address": "Ground Floor, Astha Apartment, Karamcha ri Nagar Road, Ghatlodia",
+   "landmark": "Near Saibaba Temple",
+   "practice_or_hospital": null,
+   "phone": "7802883566",
+   "phones": [
+    "7802883566",
+    "8401542388"
+   ],
+   "email": null,
+   "lat": 23.0225,
+   "lon": 72.5714,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-040",
+   "name": "Dr Saikat Deb",
+   "specialty": "Endodontics(Root Canal Treatment)",
+   "categories": [
+    "dental"
+   ],
+   "city": "Kolkata",
+   "state": "West Bengal",
+   "pincode": "700012",
+   "locality": "Bowbazar",
+   "address": "134B, Raja Rajendra Lal Mitra Road",
+   "landmark": "Opp Omkar Tea Shop",
+   "practice_or_hospital": null,
+   "phone": "7044168093",
+   "phones": [
+    "7044168093",
+    "8444834598"
+   ],
+   "email": null,
+   "lat": 22.5726,
+   "lon": 88.3639,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-041",
+   "name": "Dr Bhavesh A Patel",
+   "specialty": "Geriatric Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Surat",
+   "state": "Gujarat",
+   "pincode": "394221",
+   "locality": "Pandesara",
+   "address": "B/16, Laxmi Dental Car",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8401305589",
+   "phones": [
+    "8401305589",
+    "8460436400"
+   ],
+   "email": null,
+   "lat": 21.1702,
+   "lon": 72.8311,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-042",
+   "name": "Dr Mittal Cosmetic Skin Center",
+   "specialty": "Dermatology(Skin Specialist)",
+   "categories": [
+    "skin"
+   ],
+   "city": "Agra",
+   "state": "Uttar Pradesh",
+   "pincode": "282002",
+   "locality": "Civil Lines",
+   "address": "2nd Floor, Saar Complex, M G Road",
+   "landmark": "Opp Sur Sadan",
+   "practice_or_hospital": null,
+   "phone": "7500062037",
+   "phones": [
+    "7500062037",
+    "8534814233"
+   ],
+   "email": null,
+   "lat": 27.1767,
+   "lon": 78.0081,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-043",
+   "name": "Dr Sharad Kumar Chaurasia",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Panna",
+   "state": "Madhya Pradesh",
+   "pincode": "488442",
+   "locality": "Adhrod",
+   "address": "Chhatarpur, Mahoba",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8223038340",
+   "phones": [
+    "8223038340",
+    "8602166002",
+    "8989870127"
+   ],
+   "email": null,
+   "lat": 24.7176,
+   "lon": 80.1819,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-044",
+   "name": "Dr Net",
+   "specialty": "Geriatric Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "pincode": "400053",
+   "locality": "Andheri",
+   "address": "Door No 18, Raviraj Ob",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8652307273",
+   "phones": [
+    "8652307273",
+    "8767884448"
+   ],
+   "email": null,
+   "lat": 19.076,
+   "lon": 72.8777,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-045",
+   "name": "Dr. Amod urocare",
+   "specialty": "Urology",
+   "categories": [
+    "urinary"
+   ],
+   "city": "Kanpur",
+   "state": "Uttar Pradesh",
+   "pincode": "208012",
+   "locality": "Ashok Nagar",
+   "address": "111/350",
+   "landmark": "Near Beech Wala Mandir",
+   "practice_or_hospital": null,
+   "phone": "8795058333",
+   "phones": [
+    "8795058333",
+    "8795058444",
+    "8795058555"
+   ],
+   "email": "dramoddwivedi@yahoo.co.in",
+   "lat": 26.4499,
+   "lon": 80.3319,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-046",
+   "name": "Dr Dar Mohd Harun Khan",
+   "specialty": "Cardiology(Heart Specialists)",
+   "categories": [
+    "cardiac"
+   ],
+   "city": "Lucknow",
+   "state": "Uttar Pradesh",
+   "pincode": "226001",
+   "locality": "Lucknow",
+   "address": "Lal Diggi Chauraha",
+   "landmark": "Near Main Road",
+   "practice_or_hospital": null,
+   "phone": "8423875723",
+   "phones": [
+    "8423875723",
+    "8795339904"
+   ],
+   "email": null,
+   "lat": 26.8467,
+   "lon": 80.9462,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-047",
+   "name": "Dr Anil Kasliwal",
+   "specialty": "Paediatrics(Child Specialist)",
+   "categories": [
+    "pediatric"
+   ],
+   "city": "Nashik",
+   "state": "Maharashtra",
+   "pincode": "422001",
+   "locality": "Nashik",
+   "address": "Ashok Stambh",
+   "landmark": "Opp Vikas Cinema",
+   "practice_or_hospital": null,
+   "phone": "7767962427",
+   "phones": [
+    "7767962427",
+    "8805525777",
+    "2577477"
+   ],
+   "email": "anilmkasliwal@gmail.com",
+   "lat": 19.9975,
+   "lon": 73.7898,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-048",
+   "name": "Dr Anil Shrikhande",
+   "specialty": "Urology",
+   "categories": [
+    "urinary"
+   ],
+   "city": "Nagpur",
+   "state": "Maharashtra",
+   "pincode": "440012",
+   "locality": "Dhantoli",
+   "address": "C/O Shrikhande Hospital & IVF Research Center, 34/2, Abhyankar Road",
+   "landmark": "Near Ramkrishn a Math",
+   "practice_or_hospital": "Shrikhande Hospital & IVF Research Center",
+   "phone": "8805577600",
+   "phones": [
+    "8805577600",
+    "8805677600",
+    "2420124"
+   ],
+   "email": "info@shrikhandeivf.com",
+   "lat": 21.1458,
+   "lon": 79.0882,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-049",
+   "name": "Dr Harman Frank",
+   "specialty": "Orthopaedics(Bone Specialists)",
+   "categories": [
+    "musculoskeletal",
+    "injury"
+   ],
+   "city": "Guwahati",
+   "state": "Assam",
+   "pincode": "781001",
+   "locality": "Guwahati",
+   "address": "C/O-Satribari Christian",
+   "landmark": "",
+   "practice_or_hospital": "Satribari Christian",
+   "phone": "8473011363",
+   "phones": [
+    "8473011363",
+    "8811092740",
+    "2600051",
+    "2970061"
+   ],
+   "email": null,
+   "lat": 26.1445,
+   "lon": 91.7362,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-050",
+   "name": "Dr Anil",
+   "specialty": "Dermatology(Skin Specialist)",
+   "categories": [
+    "skin"
+   ],
+   "city": "Indore",
+   "state": "Madhya Pradesh",
+   "pincode": "452001",
+   "locality": "Mg Road",
+   "address": "Main Road",
+   "landmark": "Near Ghant Ghar",
+   "practice_or_hospital": null,
+   "phone": "7314064744",
+   "phones": [
+    "7314064744",
+    "8817423307"
+   ],
+   "email": null,
+   "lat": 22.7196,
+   "lon": 75.8577,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-051",
+   "name": "Dr Akanksha Aggarwal",
+   "specialty": "Nephrology(Kidney Specialists)",
+   "categories": [
+    "urinary"
+   ],
+   "city": "Greater Noida",
+   "state": "Uttar Pradesh",
+   "pincode": "201308",
+   "locality": "Greater Noida",
+   "address": "C/O Yatharth Wellness",
+   "landmark": "",
+   "practice_or_hospital": "Yatharth Wellness",
+   "phone": "8800447777",
+   "phones": [
+    "8800447777",
+    "8826447777"
+   ],
+   "email": null,
+   "lat": 28.4744,
+   "lon": 77.504,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-052",
+   "name": "Dr Ajay Wadhwan",
+   "specialty": "Orthopaedics(Bone Specialists)",
+   "categories": [
+    "musculoskeletal",
+    "injury"
+   ],
+   "city": "Noida",
+   "state": "Uttar Pradesh",
+   "pincode": "201301",
+   "locality": "Sector 30",
+   "address": "E-16, c/o NMC Hospit",
+   "landmark": "",
+   "practice_or_hospital": "NMC Hospit (name cut off in source)",
+   "phone": "8826699523",
+   "phones": [
+    "8826699523",
+    "8826699525",
+    "2453801",
+    "2453809"
+   ],
+   "email": null,
+   "lat": 28.5355,
+   "lon": 77.391,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-053",
+   "name": "Dr Dilip Waske",
+   "specialty": "Paediatrics(Child Specialist)",
+   "categories": [
+    "pediatric"
+   ],
+   "city": "Ratlam",
+   "state": "Madhya Pradesh",
+   "pincode": "457001",
+   "locality": "Bcm Heights",
+   "address": "Special Care New Bor",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8602421928",
+   "phones": [
+    "8602421928",
+    "8827772842"
+   ],
+   "email": null,
+   "lat": 23.3315,
+   "lon": 75.0367,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-054",
+   "name": "Dr Rokade Deepak",
+   "specialty": "Osteopathy",
+   "categories": [
+    "musculoskeletal"
+   ],
+   "city": "Pune",
+   "state": "Maharashtra",
+   "pincode": "411002",
+   "locality": "Nana Peth",
+   "address": "612, Shri Ganga Hospital, Laxmi Road",
+   "landmark": "Near Alpana Talkies, Opp Ghode Pir",
+   "practice_or_hospital": "Shri Ganga Hospital",
+   "phone": "8806211355",
+   "phones": [
+    "8806211355",
+    "8856085940"
+   ],
+   "email": null,
+   "lat": 18.5204,
+   "lon": 73.8567,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-055",
+   "name": "Dr Shivesh Goyal",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Meerut",
+   "state": "Uttar Pradesh",
+   "pincode": "250001",
+   "locality": "Meerut",
+   "address": "139, R A Bazar, Topkh",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8859698003",
+   "phones": [
+    "8859698003",
+    "8859959693"
+   ],
+   "email": "shivesh84@gmail.com",
+   "lat": 28.9845,
+   "lon": 77.7064,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-056",
+   "name": "Drs Point",
+   "specialty": "Paediatric Cardiology",
+   "categories": [
+    "pediatric",
+    "cardiac"
+   ],
+   "city": "Ghaziabad",
+   "state": "Uttar Pradesh",
+   "pincode": "201014",
+   "locality": "Makanpur",
+   "address": "Ff-06, Parshvnat h Majestic Arcade, Indirapura m , Opposite Shipra Sun , Indirapura m",
+   "landmark": "Opp Shipra Sun",
+   "practice_or_hospital": null,
+   "phone": "8376829992",
+   "phones": [
+    "8376829992",
+    "8860508396"
+   ],
+   "email": "zuthipawan@gmail.com",
+   "lat": 28.6692,
+   "lon": 77.4538,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-057",
+   "name": "Dr Rishi Dental & Implant Centre",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Gurgaon",
+   "state": "Haryana",
+   "pincode": "122001",
+   "locality": "Gurgaon",
+   "address": "Palam Vihar Road",
+   "landmark": "Opposite Samrat Garden",
+   "practice_or_hospital": null,
+   "phone": "7838336971",
+   "phones": [
+    "7838336971",
+    "8860515339"
+   ],
+   "email": null,
+   "lat": 28.4595,
+   "lon": 77.0266,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-058",
+   "name": "Dr Akhilendra Singh",
+   "specialty": "Dermatology(Skin Specialist)",
+   "categories": [
+    "skin"
+   ],
+   "city": "Bhiwadi",
+   "state": "Rajasthan",
+   "pincode": "301019",
+   "locality": "Bhiwadi",
+   "address": "C-1070, Sushant Lok",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8826624040",
+   "phones": [
+    "8826624040",
+    "8860755231"
+   ],
+   "email": "cliniceks@gmail.com",
+   "lat": 28.209,
+   "lon": 76.8606,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-059",
+   "name": "Dr Ritesh Kumar Walmik",
+   "specialty": "Paediatrics(Child Specialist)",
+   "categories": [
+    "pediatric"
+   ],
+   "city": "Durg",
+   "state": "Chhattisgarh",
+   "pincode": "491001",
+   "locality": "Durg",
+   "address": "418, H I G 1, New Bor",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "7869406409",
+   "phones": [
+    "7869406409",
+    "8871081727"
+   ],
+   "email": null,
+   "lat": 21.1904,
+   "lon": 81.2849,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-060",
+   "name": "Dr Anurakti Dev Singla",
+   "specialty": "Paediatric Cardiology",
+   "categories": [
+    "pediatric",
+    "cardiac"
+   ],
+   "city": "Ludhiana",
+   "state": "Punjab",
+   "pincode": "141008",
+   "locality": "Sherpur",
+   "address": "C/O SPS Hospital, Gran",
+   "landmark": "",
+   "practice_or_hospital": "SPS Hospital",
+   "phone": "8872027036",
+   "phones": [
+    "8872027036",
+    "8872027302",
+    "6617111",
+    "6617222",
+    "6617333"
+   ],
+   "email": "contact@spshospitals.com",
+   "lat": 30.901,
+   "lon": 75.8573,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-061",
+   "name": "Dr Abhilekh Mishra",
+   "specialty": "Orthopaedics(Bone Specialists)",
+   "categories": [
+    "musculoskeletal",
+    "injury"
+   ],
+   "city": "Gwalior",
+   "state": "Madhya Pradesh",
+   "pincode": "474003",
+   "locality": "Gwalior City",
+   "address": "Gajra Raja Medical Co",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "7509239199",
+   "phones": [
+    "7509239199",
+    "8878522206"
+   ],
+   "email": null,
+   "lat": 26.2183,
+   "lon": 78.1828,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-062",
+   "name": "Dr Dinesh",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "pincode": "400066",
+   "locality": "Borivali East",
+   "address": "A/206, Pratap Building, Carter No 3",
+   "landmark": "Near Ambe Mata Mandir",
+   "practice_or_hospital": null,
+   "phone": "7738037996",
+   "phones": [
+    "7738037996",
+    "8888854120"
+   ],
+   "email": "dr.dinesh1978@yahoo.com",
+   "lat": 19.076,
+   "lon": 72.8777,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-063",
+   "name": "Dr Meghana Kelkar",
+   "specialty": "Paediatrics(Child Specialist)",
+   "categories": [
+    "pediatric"
+   ],
+   "city": "Indore",
+   "state": "Madhya Pradesh",
+   "pincode": "452003",
+   "locality": "Indore Pardesipura",
+   "address": "7, Ram Krishna Mark",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8109803740",
+   "phones": [
+    "8109803740",
+    "8889052225"
+   ],
+   "email": "himanshukelkar@rediffmail.com",
+   "lat": 22.7196,
+   "lon": 75.8577,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-064",
+   "name": "Dr Prakash Advai",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Indore",
+   "state": "Madhya Pradesh",
+   "pincode": "452001",
+   "locality": "A B Road",
+   "address": "30, Vinayak Apartme",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8889588831",
+   "phones": [
+    "8889588831",
+    "8889588832"
+   ],
+   "email": null,
+   "lat": 22.7196,
+   "lon": 75.8577,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-065",
+   "name": "Dr Alok Pratap Siingh",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Rewa",
+   "state": "Madhya Pradesh",
+   "pincode": "486001",
+   "locality": "Rewa",
+   "address": "F-5, Doctors Colony, S",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8878323344",
+   "phones": [
+    "8878323344",
+    "8889868168"
+   ],
+   "email": null,
+   "lat": 24.5362,
+   "lon": 81.3037,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-066",
+   "name": "Dr Ramsaran Rastogi",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Meerut",
+   "state": "Uttar Pradesh",
+   "pincode": "250001",
+   "locality": "Meerut",
+   "address": "D-54, Subhash Bazar",
+   "landmark": "Near Canara Bank A TM",
+   "practice_or_hospital": null,
+   "phone": "8439121147",
+   "phones": [
+    "8439121147",
+    "8899603991"
+   ],
+   "email": null,
+   "lat": 28.9845,
+   "lon": 77.7064,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-067",
+   "name": "Dr Rahul Singhai",
+   "specialty": "Orthopaedics(Bone Specialists)",
+   "categories": [
+    "musculoskeletal",
+    "injury"
+   ],
+   "city": "Sagar",
+   "state": "Madhya Pradesh",
+   "pincode": "470125",
+   "locality": "Agariya",
+   "address": "11, Kotwali Road",
+   "landmark": "Near Katra Masjid",
+   "practice_or_hospital": null,
+   "phone": "7415214414",
+   "phones": [
+    "7415214414",
+    "8965052082"
+   ],
+   "email": null,
+   "lat": 23.8388,
+   "lon": 78.7378,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-068",
+   "name": "Dr Charanjit Lal",
+   "specialty": "Nephrology(Kidney Specialists)",
+   "categories": [
+    "urinary"
+   ],
+   "city": "Chandigarh",
+   "state": "Chandigarh",
+   "pincode": "160022",
+   "locality": "Sector 34 A",
+   "address": "Inscol Hospital",
+   "landmark": "",
+   "practice_or_hospital": "Inscol Hospital",
+   "phone": "8965075432",
+   "phones": [
+    "8965075432",
+    "8968075438",
+    "2265503"
+   ],
+   "email": null,
+   "lat": 30.7333,
+   "lon": 76.7794,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-069",
+   "name": "Dr Ayesha Khaliq",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Hyderabad",
+   "state": "Andhra Pradesh",
+   "pincode": "500008",
+   "locality": "Beerban",
+   "address": "Door No 3, Joseph 1st Street",
+   "landmark": "Behind Orange Honda & Banaras Mall",
+   "practice_or_hospital": null,
+   "phone": "8790211775",
+   "phones": [
+    "8790211775",
+    "8978023781"
+   ],
+   "email": null,
+   "lat": 17.385,
+   "lon": 78.4867,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-070",
+   "name": "Dr Ankur Gupta",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Meerut",
+   "state": "Uttar Pradesh",
+   "pincode": "250001",
+   "locality": "Abdullapur",
+   "address": "244, Piyau Road",
+   "landmark": "Near Shiv Sai Mandir",
+   "practice_or_hospital": null,
+   "phone": "7500035597",
+   "phones": [
+    "7500035597",
+    "8979201751",
+    "9997811114",
+    "2663549",
+    "4032247"
+   ],
+   "email": null,
+   "lat": 28.9845,
+   "lon": 77.7064,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-071",
+   "name": "Dr Kuntal Shah",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Ahmedabad",
+   "state": "Gujarat",
+   "pincode": "380007",
+   "locality": "Paldi",
+   "address": "Bodyline Hospital, Nava Vikas Gruh Road",
+   "landmark": "Near Dev Status",
+   "practice_or_hospital": "Bodyline Hospital",
+   "phone": "7698003120",
+   "phones": [
+    "7698003120",
+    "8980075065",
+    "26640505"
+   ],
+   "email": null,
+   "lat": 23.0225,
+   "lon": 72.5714,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-072",
+   "name": "Dr Hemant Kumar",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Pune",
+   "state": "Maharashtra",
+   "pincode": "411015",
+   "locality": "Vishrantwadi",
+   "address": "45, Ajinkya Tara Building, Alandi Road, Wadi Chowk",
+   "landmark": "Near Big Bazar, Opp Mega Mart",
+   "practice_or_hospital": null,
+   "phone": "8805293414",
+   "phones": [
+    "8805293414",
+    "8983002288"
+   ],
+   "email": null,
+   "lat": 18.5204,
+   "lon": 73.8567,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-073",
+   "name": "Dr Kolappa Pillai M",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Chennai",
+   "state": "Tamil Nadu",
+   "pincode": "600059",
+   "locality": "Tambaram East",
+   "address": "2, Kalidasar Street",
+   "landmark": "Near Madras Christian College",
+   "practice_or_hospital": null,
+   "phone": "7667919334",
+   "phones": [
+    "7667919334",
+    "9003256670",
+    "22260261",
+    "22394384"
+   ],
+   "email": null,
+   "lat": 13.0827,
+   "lon": 80.2707,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-074",
+   "name": "Dr Aloy Majumdar",
+   "specialty": "Eye Surgeon",
+   "categories": [
+    "eye"
+   ],
+   "city": "Lucknow",
+   "state": "Uttar Pradesh",
+   "pincode": "226010",
+   "locality": "Gomti Nagar",
+   "address": "C/O Chandra Super Speciality Eye Hospital, Chandra Tower, Baroda House, Vibhuti Khand",
+   "landmark": "Near Indira Gandhi Pratishthan & Bank of Baroda House",
+   "practice_or_hospital": "Chandra Super Speciality Eye Hospital",
+   "phone": "7570005596",
+   "phones": [
+    "7570005596",
+    "9005546485",
+    "2397677",
+    "2397757",
+    "4933333"
+   ],
+   "email": "support@chandraeyecarehospital.com",
+   "lat": 26.8467,
+   "lon": 80.9462,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-075",
+   "name": "Dr Syed Faisal",
+   "specialty": "Geriatric Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Bangalore",
+   "state": "Karnataka",
+   "pincode": "560022",
+   "locality": "Goragunta Palya",
+   "address": "Door No 17, Y K R R Complex",
+   "landmark": "Opposite To Lakshmi Venkatesh wara Kalyana Mandapa m",
+   "practice_or_hospital": null,
+   "phone": "7676868670",
+   "phones": [
+    "7676868670",
+    "9008777165"
+   ],
+   "email": null,
+   "lat": 12.9716,
+   "lon": 77.5946,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-076",
+   "name": "Dr Nikhat",
+   "specialty": "Dermatology(Skin Specialist)",
+   "categories": [
+    "skin"
+   ],
+   "city": "Bangalore",
+   "state": "Karnataka",
+   "pincode": "560054",
+   "locality": "Mathikere",
+   "address": "No 48, Pipeline Road",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "7411684014",
+   "phones": [
+    "7411684014",
+    "9008883526"
+   ],
+   "email": null,
+   "lat": 12.9716,
+   "lon": 77.5946,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-077",
+   "name": "Dr Anup Kumar Jain",
+   "specialty": "Neurologist",
+   "categories": [
+    "urinary"
+   ],
+   "city": "Jabalpur",
+   "state": "Madhya Pradesh",
+   "pincode": "482004",
+   "locality": "Adhartal",
+   "address": "302, Vimal Sheel High",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "7415109996",
+   "phones": [
+    "7415109996",
+    "9009111028"
+   ],
+   "email": null,
+   "lat": 23.1815,
+   "lon": 79.9864,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-078",
+   "name": "Dr Abhishek Kalantri",
+   "specialty": "Orthopaedics(Bone Specialists)",
+   "categories": [
+    "musculoskeletal",
+    "injury"
+   ],
+   "city": "Indore",
+   "state": "Madhya Pradesh",
+   "pincode": "452001",
+   "locality": "Indore Gpo",
+   "address": "303, B C M Heights, D Block, Link Road",
+   "landmark": "Near Bombay Hospital",
+   "practice_or_hospital": null,
+   "phone": "7879791661",
+   "phones": [
+    "7879791661",
+    "9009266651",
+    "4060055"
+   ],
+   "email": null,
+   "lat": 22.7196,
+   "lon": 75.8577,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-079",
+   "name": "Dr Rekha Skin & Slim Centre",
+   "specialty": "Dermatology(Skin Specialist)",
+   "categories": [
+    "skin"
+   ],
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "pincode": "400055",
+   "locality": "Santacruz East",
+   "address": "Ground Floor, Summer Villa, Railway Station, Viith Lane",
+   "landmark": "Opp Hdfc Bank",
+   "practice_or_hospital": null,
+   "phone": "7350652424",
+   "phones": [
+    "7350652424",
+    "9011102424",
+    "9921212424"
+   ],
+   "email": null,
+   "lat": 19.076,
+   "lon": 72.8777,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-080",
+   "name": "Dr Jyoti",
+   "specialty": "Dermatology(Skin Specialist)",
+   "categories": [
+    "skin"
+   ],
+   "city": "Pune",
+   "state": "Maharashtra",
+   "pincode": "411030",
+   "locality": "Shaniwar Peth",
+   "address": "13, Himali Society, Mhatre Breeze",
+   "landmark": "Near Deenanat h Mangeshkar Hospital",
+   "practice_or_hospital": null,
+   "phone": "7588276532",
+   "phones": [
+    "7588276532",
+    "9011666326"
+   ],
+   "email": null,
+   "lat": 18.5204,
+   "lon": 73.8567,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-081",
+   "name": "Dr Ravi Sabharwal",
+   "specialty": "Orthopaedics(Bone Specialists)",
+   "categories": [
+    "musculoskeletal",
+    "injury"
+   ],
+   "city": "Agra",
+   "state": "Uttar Pradesh",
+   "pincode": "282001",
+   "locality": "M G Road",
+   "address": "A-70",
+   "landmark": "Opp Subhash Park",
+   "practice_or_hospital": null,
+   "phone": "9012252233",
+   "phones": [
+    "9012252233",
+    "9012252244"
+   ],
+   "email": null,
+   "lat": 27.1767,
+   "lon": 78.0081,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-082",
+   "name": "Dr Kunal C Shah",
+   "specialty": "Orthodontics & Dentofacial Orthopaedician",
+   "categories": [
+    "dental"
+   ],
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "pincode": "400068",
+   "locality": "Dahisar",
+   "address": "13, B P Road",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "9022290406",
+   "phones": [
+    "9022290406",
+    "9022356065"
+   ],
+   "email": null,
+   "lat": 19.076,
+   "lon": 72.8777,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-083",
+   "name": "Dr Milind Barhate",
+   "specialty": "Neurosurgeon",
+   "categories": [
+    "neuro",
+    "injury"
+   ],
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "pincode": "400001",
+   "locality": "Fort",
+   "address": "566, Shri Vikas Apparmen t, Chembur Nakka",
+   "landmark": "Near Sai Hospital",
+   "practice_or_hospital": null,
+   "phone": "7875991067",
+   "phones": [
+    "7875991067",
+    "9022370322"
+   ],
+   "email": "barhatemilind@gmail.com",
+   "lat": 19.076,
+   "lon": 72.8777,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-084",
+   "name": "Snehal Bheda Dr",
+   "specialty": "Geriatric Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Navi Mumbai",
+   "state": "Maharashtra",
+   "pincode": "400703",
+   "locality": "Vashi",
+   "address": "Shop No 7, Plot No 63, Sai Prasad Society, Sector 14",
+   "landmark": "Opposite Furniture World",
+   "practice_or_hospital": null,
+   "phone": "8691077292",
+   "phones": [
+    "8691077292",
+    "9022939311",
+    "9833983757"
+   ],
+   "email": null,
+   "lat": 19.033,
+   "lon": 73.0297,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-085",
+   "name": "B R Sharma Dr",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Kanpur",
+   "state": "Uttar Pradesh",
+   "pincode": "208001",
+   "locality": "Coloneganj",
+   "address": "21, M.I.G, Jarouli Fac",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8546084546",
+   "phones": [
+    "8546084546",
+    "9026897853",
+    "9336897853"
+   ],
+   "email": null,
+   "lat": 26.4499,
+   "lon": 80.3319,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-086",
+   "name": "Dr Sarika Dinesh Dalvi",
+   "specialty": "Ophthalmologist(Eye Specialists)",
+   "categories": [
+    "eye"
+   ],
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "pincode": "400080",
+   "locality": "Mulund West",
+   "address": "103, Sai Shraddha Apartment, S N Road",
+   "landmark": "Behind Ration Office",
+   "practice_or_hospital": null,
+   "phone": "7208056844",
+   "phones": [
+    "7208056844",
+    "9029056844"
+   ],
+   "email": null,
+   "lat": 19.076,
+   "lon": 72.8777,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-087",
+   "name": "Dr Amish Golbara",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Jamshedpur",
+   "state": "Jharkhand",
+   "pincode": "831003",
+   "locality": "Golmuri",
+   "address": "C O Sidddiqui Dental Care, Nanak Kutir",
+   "landmark": "Opp Sbi Bank",
+   "practice_or_hospital": null,
+   "phone": "9031025238",
+   "phones": [
+    "9031025238",
+    "9031725238",
+    "9386538772"
+   ],
+   "email": null,
+   "lat": 22.8046,
+   "lon": 86.2029,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-088",
+   "name": "Dr Kapil Choudhary",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Bhopal",
+   "state": "Madhya Pradesh",
+   "pincode": "462043",
+   "locality": "Bag Mungalia",
+   "address": "387, Sangam Colony",
+   "landmark": "Opposite Harsiddhi Mandir",
+   "practice_or_hospital": null,
+   "phone": "8109400393",
+   "phones": [
+    "8109400393",
+    "9039223003"
+   ],
+   "email": "sdcbhopal@yahoo.com",
+   "lat": 23.2599,
+   "lon": 77.4126,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-089",
+   "name": "Dr Ritesh Ramlal Kumawat",
+   "specialty": "Radiology",
+   "categories": [],
+   "city": "Bhopal",
+   "state": "Madhya Pradesh",
+   "pincode": "462001",
+   "locality": "Berasia Road",
+   "address": "10, 169, Naseer Com",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8889822122",
+   "phones": [
+    "8889822122",
+    "9039822122"
+   ],
+   "email": null,
+   "lat": 23.2599,
+   "lon": 77.4126,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-090",
+   "name": "Dr Vaishali Jain",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Saharanpur",
+   "state": "Uttar Pradesh",
+   "pincode": "247001",
+   "locality": "Saharanpur",
+   "address": "Chilkana Road",
+   "landmark": "Opposite Aman Palace",
+   "practice_or_hospital": null,
+   "phone": "7417164085",
+   "phones": [
+    "7417164085",
+    "9045820804",
+    "9897178299"
+   ],
+   "email": "ashishjain0132@gmail.com",
+   "lat": 29.968,
+   "lon": 77.5552,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-091",
+   "name": "Dr Devraj Singh Dental Surgeon",
+   "specialty": "Dental Clinic / Dentist",
+   "categories": [
+    "dental"
+   ],
+   "city": "Meerut",
+   "state": "Uttar Pradesh",
+   "pincode": "250001",
+   "locality": "Meerut",
+   "address": "Path Bazar, Kanker Khera",
+   "landmark": "Near Punjab National Bank",
+   "practice_or_hospital": null,
+   "phone": "8755844914",
+   "phones": [
+    "8755844914",
+    "9045870299"
+   ],
+   "email": null,
+   "lat": 28.9845,
+   "lon": 77.7064,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-092",
+   "name": "Dr Kansal's Dentistree",
+   "specialty": "Orthodontics & Dentofacial Orthopaedician",
+   "categories": [
+    "dental"
+   ],
+   "city": "Karnal",
+   "state": "Haryana",
+   "pincode": "132001",
+   "locality": "Mugal Canal",
+   "address": "402",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8053997990",
+   "phones": [
+    "8053997990",
+    "9050697990"
+   ],
+   "email": "ankur85kansal@gmail.com",
+   "lat": 29.6857,
+   "lon": 76.9905,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-093",
+   "name": "Piya Ray Dr",
+   "specialty": "Obstetrics & Gynaecology",
+   "categories": [
+    "maternal"
+   ],
+   "city": "Kolkata",
+   "state": "West Bengal",
+   "pincode": "700075",
+   "locality": "Santoshpur",
+   "address": "63, Miracle Clinic, 63",
+   "landmark": "",
+   "practice_or_hospital": "Miracle Clinic",
+   "phone": "8902235337",
+   "phones": [
+    "8902235337",
+    "9051295837",
+    "9748577342"
+   ],
+   "email": "raypiya@hotmail.com",
+   "lat": 22.5726,
+   "lon": 88.3639,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-094",
+   "name": "Dr Tirthankar Dasgupta",
+   "specialty": "Psychiatry",
+   "categories": [
+    "mental"
+   ],
+   "city": "Kolkata",
+   "state": "West Bengal",
+   "pincode": "700126",
+   "locality": "Navapally",
+   "address": "C/O Moner Alo, Barasa",
+   "landmark": "",
+   "practice_or_hospital": "Moner Alo",
+   "phone": "9051503332",
+   "phones": [
+    "9051503332",
+    "9051680953"
+   ],
+   "email": "info@moneralo.com",
+   "lat": 22.5726,
+   "lon": 88.3639,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-095",
+   "name": "Dr Anand Shukla",
+   "specialty": "Cardiology(Heart Specialists)",
+   "categories": [
+    "cardiac"
+   ],
+   "city": "Ahmedabad",
+   "state": "Gujarat",
+   "pincode": "380006",
+   "locality": "Ellisbridge",
+   "address": "C/o. HCG Medi-Surge",
+   "landmark": "",
+   "practice_or_hospital": "HCG Medi-Surge",
+   "phone": "8141215050",
+   "phones": [
+    "8141215050",
+    "9067151246",
+    "9825868849"
+   ],
+   "email": "dranand1978@yahoo.co.in",
+   "lat": 23.0225,
+   "lon": 72.5714,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-096",
+   "name": "Dr Jay Doshi",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "pincode": "400092",
+   "locality": "Borivali West",
+   "address": "B/105, Ekveerana gar Building, Link Road",
+   "landmark": "Opp Aura Hotel",
+   "practice_or_hospital": null,
+   "phone": "9022422152",
+   "phones": [
+    "9022422152",
+    "9076964063"
+   ],
+   "email": "doshijayp@gmail.com",
+   "lat": 19.076,
+   "lon": 72.8777,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-097",
+   "name": "Dr K Prakasam",
+   "specialty": "General Medicine",
+   "categories": [
+    "general",
+    "respiratory",
+    "digestive",
+    "urinary",
+    "tb",
+    "musculoskeletal",
+    "skin",
+    "ent",
+    "maternal",
+    "pediatric",
+    "mental"
+   ],
+   "city": "Vellore",
+   "state": "Tamil Nadu",
+   "pincode": "635751",
+   "locality": "Vaniyambadi",
+   "address": "228, Pillaiar Kovil Stre",
+   "landmark": "",
+   "practice_or_hospital": null,
+   "phone": "8940888999",
+   "phones": [
+    "8940888999",
+    "9080020001"
+   ],
+   "email": null,
+   "lat": 12.682,
+   "lon": 78.62,
+   "location_precision": "locality (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-098",
+   "name": "Dr. Syed Altaf Hussain",
+   "specialty": "Plastic, Cosmetic & Reconstructive Surgery",
+   "categories": [
+    "skin"
+   ],
+   "city": "Guwahati",
+   "state": "Assam",
+   "pincode": "781001",
+   "locality": "Guwahati",
+   "address": "C/O Monjoven Hair Transplant and Cosmetic Clinic, VIP Road, Borbari, Six Mile",
+   "landmark": "Near Pratiksha Hospital",
+   "practice_or_hospital": "Monjoven Hair Transplant and Cosmetic Clinic",
+   "phone": "8011002870",
+   "phones": [
+    "8011002870",
+    "9085887034"
+   ],
+   "email": null,
+   "lat": 26.1445,
+   "lon": 91.7362,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  },
+  {
+   "id": "DOC-099",
+   "name": "Dr.Jagdale Healthcare and Weightloss Center.",
+   "specialty": "Migraine",
+   "categories": [
+    "neuro"
+   ],
+   "city": "Aurangabad",
+   "state": "Maharashtra",
+   "pincode": "431001",
+   "locality": "Samarth Nagar",
+   "address": "Plot No.276, C/O.Samarth Polyclinic, Varad Ganesh Road",
+   "landmark": "Besides SBI Bank",
+   "practice_or_hospital": "Samarth Polyclinic",
+   "phone": "7030778798",
+   "phones": [
+    "7030778798",
+    "9096289202",
+    "2329950"
+   ],
+   "email": "dr.vilasjagdale1985@gmail.com",
+   "lat": 19.8762,
+   "lon": 75.3433,
+   "location_precision": "city centre (approximate)",
+   "source_flag": "Valid Data",
+   "nmc_verified": false
+  }
+ ]
+}

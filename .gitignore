@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.pytest_logs/
+.parity_js.json
+logs/
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+node_modules/
